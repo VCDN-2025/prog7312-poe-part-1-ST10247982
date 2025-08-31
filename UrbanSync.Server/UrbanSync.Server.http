@@ -1,0 +1,6 @@
+@UrbanSync.Server_HostAddress = http://localhost:5147
+
+GET {{UrbanSync.Server_HostAddress}}/api/UrbanSync/
+Accept: application/json
+
+###
