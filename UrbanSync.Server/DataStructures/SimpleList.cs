@@ -2,11 +2,11 @@
     public class SimpleList<T> {
         private int _size = 0;
         private int _count = 0;
-        public int Count { get;private set; }  
+        public int Count { get; private set; }
         public SimpleList(int size) {
-           _size = size;    
+            _size = size;
         }
-      
+
         T[] values = new T[100];
         public T this[int Index] {
             get => values[Index];
@@ -14,26 +14,26 @@
         }
 
         public void Add(T value) {
-            if (_size == _count ) {
-             Resize();
+            if (_size == _count) {
+                Resize();
             }
             _count++;
             values[_count] = value;
-            
+
         }
-        private void Resize() { 
+        private void Resize() {
             // i was going to use Array.Copy to be efficient as it does more low level work but
             // there is also Array.Resize which is more tempting, howver I felt that it would do the work for me
             // hence i did it manually with a loop. 
-            T[] newArray = new T[_size*2];
-            for(int i =  0; i < values.Length; i++) {
+            T[] newArray = new T[_size * 2];
+            for (int i = 0; i < values.Length; i++) {
                 newArray[i] = values[i];
             }
         }
-       public int  ContainsAt(T Value) {
+        public int ContainsAt(T Value) {
             if (!Contains(Value)) return -1;
             int foundIndex = 0;
-            for(int i = 0; i<_size; i++) {
+            for (int i = 0; i < _size; i++) {
                 if (values[i]!.Equals(Value)) {
                     foundIndex = i;
                 }
@@ -41,9 +41,16 @@
             return foundIndex; ;
         }
         public bool Contains(T value) {
-        return values.Contains(value);
+            return values.Contains(value);
         }
-
+        public T PeekStart() => values[0];
+        public T PeekEnd() => values[_size];
+        public T Pop() {
+            T poppedValue = values[_size - 1];
+            _size--;
+            values[_size] = default!;
+              return poppedValue;   
+        }
         public void Clear() {
             for (int i = 0; i < _count; i++) {
                 values[i] = default!;
