@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using UrbanSync.Server.Data;
+
 namespace UrbanSync.Server
 {
     public class Program
@@ -6,24 +9,23 @@ namespace UrbanSync.Server
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnectionString")
+                ?? throw new InvalidOperationException("Connection String" + "Default Connection String not found");
+            builder.Services.AddDbContext<UrbanSyncDb>(options =>
+                options.UseSqlServer(connectionString));
             // Add services to the container.
             builder.Services.AddAuthorization();
             builder.Services.AddAuthentication();
             // Requires Microsoft.AspNetCore.Authentication.JwtBearer
-            builder.Services.AddAuthentication().AddJwtBearer();
+          
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddAuthentication()
-              .AddJwtBearer()
-              .AddJwtBearer();
-
-          
+       
             var app = builder.Build();
 
-            app.UseCors();
+           // app.UseCors();
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseDefaultFiles();

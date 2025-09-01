@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
 using UrbanSync.Server.Models;
 namespace UrbanSync.Server.Data {
     
