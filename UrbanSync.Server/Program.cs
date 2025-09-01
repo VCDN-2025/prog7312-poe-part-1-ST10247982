@@ -1,6 +1,9 @@
 
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using UrbanSync.Server.Data;
+using UrbanSync.Server.Models;
+using UrbanSync.Server.Validation;
 
 namespace UrbanSync.Server
 {
@@ -9,6 +12,7 @@ namespace UrbanSync.Server
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddProblemDetails();
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnectionString")
                 ?? throw new InvalidOperationException("Connection String" + "Default Connection String not found");
             builder.Services.AddDbContext<UrbanSyncDb>(options =>
@@ -17,7 +21,8 @@ namespace UrbanSync.Server
             builder.Services.AddAuthorization();
             builder.Services.AddAuthentication();
             // Requires Microsoft.AspNetCore.Authentication.JwtBearer
-          
+           builder.Services.AddScoped<IValidator<User>, UserValidator>();
+            builder.Services.AddScoped<IValidator<ReportedIssue>, ReportIssueValidator>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -39,7 +44,7 @@ namespace UrbanSync.Server
             }
 
             app.UseHttpsRedirection();
-
+            app.UseExceptionHandler();
             app.UseAuthorization();
 
             var summaries = new[]
