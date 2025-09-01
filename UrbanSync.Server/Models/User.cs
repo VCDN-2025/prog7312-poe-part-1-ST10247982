@@ -5,7 +5,6 @@
         public string Email { get; set; }
         public string PasswordHash { get; set; }
         public string Username { get; set; } = string.Empty;
-        public string Location { get; set; }
         public DateTime DateOfRegistrstion { get; set; }
         public bool IsAuthenticated { get; set; }
 
