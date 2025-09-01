@@ -1,8 +1,9 @@
 ﻿namespace UrbanSync.Server.DTO {
     public record UserRegisterDto(
-        string username,
-        string password,
-        string email,
+        string Username,
+        string Password,
+        string Email,
+        string Name, 
         DateTime DateOfRegistrstion
-        ):BaseUserDto(username, password); 
+        ):BaseUserDto(Username, Password); 
     }
