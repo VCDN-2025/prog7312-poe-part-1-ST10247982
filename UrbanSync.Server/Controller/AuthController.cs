@@ -13,14 +13,16 @@ namespace UrbanSync.Server.Controller {
     using ValidationResult = FluentValidation.Results.ValidationResult;
 
     public static class AuthController {
-        public static async Task<IResult> LoginUser( [FromBody]BaseUserDto userDto, [FromServices]UrbanSyncDb context) {
+        public static async Task<IResult> LoginUser([FromBody] BaseUserDto userDto, [FromServices] UrbanSyncDb context, [FromServices] TokenProvider tokenProvider) {
 
             if (string.IsNullOrEmpty(userDto.Username)) { throw new ArgumentNullException("email"); }
             if (string.IsNullOrEmpty(userDto.Password)) { throw new ArgumentNullException("password"); }
 
-            
-            User? foundUser = await context.Users.Where(u => u.Username == userDto.Username).FirstOrDefaultAsync<User>();
-           
+
+            User? foundUser = await context.Users.Where(u => u.Username == userDto.Username)
+                .AsNoTracking()
+                .FirstOrDefaultAsync<User>();
+
             if (foundUser == null) {
                 return TypedResults.NotFound();
             }
@@ -28,14 +30,13 @@ namespace UrbanSync.Server.Controller {
             if (!validPassword) {
                 return TypedResults.Unauthorized();
             }
-            return TypedResults.Ok(new BaseUserDto( // create a record dto and also return jwts
-            Username: userDto.Username,
-            Password: userDto.Password
-            )
-);
+            string token = tokenProvider.Create(foundUser);
+            return TypedResults.Ok(new {
+                Token = token
+            });
         }
 
-        public static async Task<IResult> RegisterUser([FromBody]UserRegisterDto registerDto,[FromServices] UrbanSyncDb db,[FromServices] IValidator<User> validator,[FromServices] ILogger<User> logger,[FromServices] TokenProvider tokenProvider) {
+        public static async Task<IResult> RegisterUser([FromBody] UserRegisterDto registerDto, [FromServices] UrbanSyncDb db, [FromServices] IValidator<User> validator, [FromServices] ILogger<User> logger) {
             // we can add a custom validator tomorrow
 
             User user = new User {
@@ -53,8 +54,8 @@ namespace UrbanSync.Server.Controller {
                 return TypedResults.BadRequest(new { Errors = errors });
             }
             try {
-                User? foundUser =await db.Users.Where(u => u.Username == registerDto.Username).FirstOrDefaultAsync<User>();
-                if (foundUser!=null) {
+                User? foundUser = await db.Users.Where(u => u.Username == registerDto.Username).FirstOrDefaultAsync<User>();
+                if (foundUser != null) {
                     return TypedResults.Conflict(new {
                         Message = "Username already exists"
                     });
@@ -62,10 +63,10 @@ namespace UrbanSync.Server.Controller {
                 user.PasswordHash = BCrypt.HashPassword(registerDto.Password);
                 await db.Users.AddAsync(user);
                 await db.SaveChangesAsync();
-               string token =  tokenProvider.Create(user);
-                return TypedResults.Created( token );
+
+                return TypedResults.Created();
             }
-            catch (Exception ex) {  
+            catch (Exception ex) {
                 logger.LogError(ex, "Internal server error while registering user {Email}", registerDto.Email);
                 return TypedResults.Problem("An unexpected error occurred while creating the user.");
             }
