@@ -3,14 +3,12 @@ using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using UrbanSync.Server.Data;
 using UrbanSync.Server.Models;
+using UrbanSync.Server.Route;
 using UrbanSync.Server.Validation;
 
-namespace UrbanSync.Server
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
+namespace UrbanSync.Server {
+    public class Program {
+        public static void Main(string[] args) {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddProblemDetails();
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnectionString")
@@ -21,24 +19,23 @@ namespace UrbanSync.Server
             builder.Services.AddAuthorization();
             builder.Services.AddAuthentication();
             // Requires Microsoft.AspNetCore.Authentication.JwtBearer
-           builder.Services.AddScoped<IValidator<User>, UserValidator>();
+            builder.Services.AddScoped<IValidator<User>, UserValidator>();
             builder.Services.AddScoped<IValidator<ReportedIssue>, ReportIssueValidator>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-       
+
             var app = builder.Build();
 
-           // app.UseCors();
+            // app.UseCors();
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseDefaultFiles();
             app.UseStaticFiles();
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
+            if (app.Environment.IsDevelopment()) {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
@@ -47,12 +44,10 @@ namespace UrbanSync.Server
             app.UseExceptionHandler();
             app.UseAuthorization();
 
-            var summaries = new[]
-            {
-                "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-            };
+            app.MapGroup("/api/auth")
+                 .MapAuthAPi()
+                 .WithTags("public");
 
-            
 
             app.MapFallbackToFile("/index.html");
 

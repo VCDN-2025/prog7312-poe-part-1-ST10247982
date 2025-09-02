@@ -6,12 +6,13 @@ namespace UrbanSync.Server.Controller {
     using FluentValidation;
     using FluentValidation.Results;
     using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Mvc;
     using System.ComponentModel.DataAnnotations;
     using UrbanSync.Server.DTO;
     using ValidationResult = FluentValidation.Results.ValidationResult;
 
     public static class AuthController {
-        public static async Task<IResult> LoginUser(BaseUserDto userDto, UrbanSyncDb context) {
+        public static async Task<IResult> LoginUser( [FromBody]BaseUserDto userDto, [FromServices]UrbanSyncDb context) {
 
             if (string.IsNullOrEmpty(userDto.Username)) { throw new ArgumentNullException("email"); }
             if (string.IsNullOrEmpty(userDto.Password)) { throw new ArgumentNullException("password"); }
@@ -33,7 +34,7 @@ namespace UrbanSync.Server.Controller {
 );
         }
 
-        public static async Task<IResult> RegisterUser(UserRegisterDto registerDto, UrbanSyncDb db, InlineValidator<User> validator, Logger<User> logger) {
+        public static async Task<IResult> RegisterUser([FromBody]UserRegisterDto registerDto,[FromServices] UrbanSyncDb db,[FromServices] IValidator<User> validator,[FromServices] ILogger<User> logger) {
             // we can add a custom validator tomorrow
 
             User user = new User {
@@ -51,12 +52,18 @@ namespace UrbanSync.Server.Controller {
                 return TypedResults.BadRequest(new { Errors = errors });
             }
             try {
+                User? foundUser =await db.Users.Where(u => u.Username == registerDto.Username).FirstOrDefaultAsync<User>();
+                if (foundUser!=null) {
+                    return TypedResults.Conflict(new {
+                        Message = "Username already exists"
+                    });
+                }
                 user.PasswordHash = BCrypt.HashPassword(registerDto.Password);
                 await db.Users.AddAsync(user);
                 await db.SaveChangesAsync();
                 return TypedResults.Created();
             }
-            catch (Exception ex) {
+            catch (Exception ex) {  
                 logger.LogError(ex, "Internal server error while registering user {Email}", registerDto.Email);
                 
                 return TypedResults.Problem("An unexpected error occurred while creating the user.");
