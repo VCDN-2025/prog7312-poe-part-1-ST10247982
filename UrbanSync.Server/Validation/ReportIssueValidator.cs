@@ -8,6 +8,7 @@ namespace UrbanSync.Server.Validation {
             RuleFor(report=>report.UserId).NotEmpty().NotNull();
             RuleFor(report=>report.Description).MinimumLength(10);
             RuleFor(report=> report.Image).NotEmpty();
+            RuleFor(report=>report.MunicipalityLevel.ToString()).MinimumLength(4).NotNull().NotEmpty().WithMessage("Enter a valid Municipality level ex. Provincial");
         }
     }
 }

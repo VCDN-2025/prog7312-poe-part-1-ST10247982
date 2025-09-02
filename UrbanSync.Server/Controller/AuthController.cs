@@ -9,6 +9,7 @@ namespace UrbanSync.Server.Controller {
     using Microsoft.AspNetCore.Mvc;
     using System.ComponentModel.DataAnnotations;
     using UrbanSync.Server.DTO;
+    using UrbanSync.Server.Services;
     using ValidationResult = FluentValidation.Results.ValidationResult;
 
     public static class AuthController {
@@ -34,7 +35,7 @@ namespace UrbanSync.Server.Controller {
 );
         }
 
-        public static async Task<IResult> RegisterUser([FromBody]UserRegisterDto registerDto,[FromServices] UrbanSyncDb db,[FromServices] IValidator<User> validator,[FromServices] ILogger<User> logger) {
+        public static async Task<IResult> RegisterUser([FromBody]UserRegisterDto registerDto,[FromServices] UrbanSyncDb db,[FromServices] IValidator<User> validator,[FromServices] ILogger<User> logger,[FromServices] TokenProvider tokenProvider) {
             // we can add a custom validator tomorrow
 
             User user = new User {
@@ -61,11 +62,11 @@ namespace UrbanSync.Server.Controller {
                 user.PasswordHash = BCrypt.HashPassword(registerDto.Password);
                 await db.Users.AddAsync(user);
                 await db.SaveChangesAsync();
-                return TypedResults.Created();
+               string token =  tokenProvider.Create(user);
+                return TypedResults.Created( token );
             }
             catch (Exception ex) {  
                 logger.LogError(ex, "Internal server error while registering user {Email}", registerDto.Email);
-                
                 return TypedResults.Problem("An unexpected error occurred while creating the user.");
             }
 

@@ -1,4 +1,5 @@
-﻿using System.Buffers.Text;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Buffers.Text;
 
 namespace UrbanSync.Server.Models {
     public class ReportedIssue {
@@ -6,6 +7,9 @@ namespace UrbanSync.Server.Models {
         public string Location { get; set; }
         public string Description { get; set; }
         public string? Image { get; set; }
+        public string MunicipalityLevel { get; set; }
+       
+        public string MunicipalitySector { get; set; }
 
         public Guid UserId { get; set; }
         public User User { get; set; }
