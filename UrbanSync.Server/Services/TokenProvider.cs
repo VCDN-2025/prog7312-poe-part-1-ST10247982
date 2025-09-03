@@ -19,13 +19,14 @@ namespace UrbanSync.Server.Services {
                     [
                     new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
                     new Claim(JwtRegisteredClaimNames.Email, user.Email.ToString()),
+                    new Claim(JwtRegisteredClaimNames.Aud, configuration.GetSection("Jwt:Audience").Get<string>()!),
                     new Claim("email_verified", user.IsAuthenticated.ToString())
                     ]),
                 Expires = DateTime.UtcNow.AddDays(14),
-                SigningCredentials = credentials, 
-                Issuer = configuration["Jwt:Issuer"], 
+                SigningCredentials = credentials,
+                Issuer = configuration["Jwt:Issuer"],
                 Audience = configuration["Jwt:Audience"],
-                
+
             };
             var handler = new JsonWebTokenHandler();
             string token = handler.CreateToken(tokenDescription);

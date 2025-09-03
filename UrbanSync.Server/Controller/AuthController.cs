@@ -55,6 +55,7 @@ namespace UrbanSync.Server.Controller {
 
             User? foundUser = await db.Users.Where(u => u.Username == registerDto.Username).FirstOrDefaultAsync<User>();
             if (foundUser != null) {
+                
                 return TypedResults.Conflict(new {
                     Message = "Username already exists"
                 });

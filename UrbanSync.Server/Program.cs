@@ -2,6 +2,7 @@
 using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using UrbanSync.Server.Data;
@@ -28,33 +29,47 @@ namespace UrbanSync.Server {
             builder.Services.AddExceptionHandler<ValidationExceptionHandler>();
             builder.Services.AddExceptionHandler<GlobalException>();
             // Add services to the container.
+            builder.Services.AddAuthentication().AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, jwtOptions => {
+
+                // Optional if the MetadataAddress is specified
+
+                jwtOptions.RequireHttpsMetadata = false;
+                jwtOptions.TokenValidationParameters = new TokenValidationParameters {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = builder.Configuration.GetSection("Jwt:Issuer").Get<string>(),
+                    ValidAudience = builder.Configuration.GetSection("Jwt:Audience").Get<string>(),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]!)),
+                    ClockSkew = TimeSpan.Zero
+                };
+
+                jwtOptions.MapInboundClaims = false;
+                jwtOptions.Events = new JwtBearerEvents {
+                    OnMessageReceived = context =>
+                    {
+                        // If the Authorization header is missing,
+                        // try to get the token from the cookie
+                        if (string.IsNullOrEmpty(context.Token) &&
+                            context.Request.Cookies.ContainsKey("Token")) {
+                            context.Token = context.Request.Cookies["Token"];
+                        }
+
+                        return Task.CompletedTask;
+                    }
+                };
+            });
+
             builder.Services.AddAuthorization();
           
-     builder.Services.AddAuthentication().AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, jwtOptions => {
-
-         // Optional if the MetadataAddress is specified
-       
-         jwtOptions.RequireHttpsMetadata = false;
-         jwtOptions.TokenValidationParameters = new TokenValidationParameters {
-             ValidateIssuer = true,
-             ValidateAudience = true,
-             ValidateIssuerSigningKey = true,
-             ValidIssuer = builder.Configuration.GetSection("Jwt:Issuer").Get<string>(),
-             ValidAudience = builder.Configuration.GetSection("Jwt:ValidAudience").Get<string>(),
-             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]!)),
-             ClockSkew = TimeSpan.Zero
-         };
-
-         jwtOptions.MapInboundClaims = false;
-     });
-       
+    
             builder.Services.AddSingleton<TokenProvider>();
             // Requires Microsoft.AspNetCore.Authentication.JwtBearer
             builder.Services.AddScoped<IValidator<User>, UserValidator>();
             builder.Services.AddScoped<IValidator<ReportedIssue>, ReportIssueValidator>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGenWithAuth();
 
 
             var app = builder.Build();
@@ -79,6 +94,10 @@ namespace UrbanSync.Server {
             app.MapGroup("/api/auth")
                  .MapAuthAPi()
                  .WithTags("public");
+            app.MapGroup("api/reportissue")
+                .MapReportIssueApi()
+                .WithTags("public")
+                .RequireAuthorization();
 
             app.MapFallbackToFile("/index.html");
 
