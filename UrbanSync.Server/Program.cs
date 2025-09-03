@@ -2,7 +2,10 @@
 using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using UrbanSync.Server.Data;
+using UrbanSync.Server.Exceptions;
 using UrbanSync.Server.Models;
 using UrbanSync.Server.Route;
 using UrbanSync.Server.Services;
@@ -13,14 +16,38 @@ namespace UrbanSync.Server {
         public static void Main(string[] args) {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddProblemDetails();
-         
+
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnectionString")
                 ?? throw new InvalidOperationException("Connection String" + "Default Connection String not found");
             builder.Services.AddDbContext<UrbanSyncDb>(options =>
                 options.UseSqlServer(connectionString));
+            builder.Services.AddProblemDetails(config =>
+            config.CustomizeProblemDetails = context => {
+                context.ProblemDetails.Extensions.TryAdd("requestId", context.HttpContext.TraceIdentifier);
+            });
+            builder.Services.AddExceptionHandler<ValidationExceptionHandler>();
+            builder.Services.AddExceptionHandler<GlobalException>();
             // Add services to the container.
             builder.Services.AddAuthorization();
-            builder.Services.AddAuthentication();
+          
+     builder.Services.AddAuthentication().AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, jwtOptions => {
+
+         // Optional if the MetadataAddress is specified
+       
+         jwtOptions.RequireHttpsMetadata = false;
+         jwtOptions.TokenValidationParameters = new TokenValidationParameters {
+             ValidateIssuer = true,
+             ValidateAudience = true,
+             ValidateIssuerSigningKey = true,
+             ValidIssuer = builder.Configuration.GetSection("Jwt:Issuer").Get<string>(),
+             ValidAudience = builder.Configuration.GetSection("Jwt:ValidAudience").Get<string>(),
+             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Secret"]!)),
+             ClockSkew = TimeSpan.Zero
+         };
+
+         jwtOptions.MapInboundClaims = false;
+     });
+       
             builder.Services.AddSingleton<TokenProvider>();
             // Requires Microsoft.AspNetCore.Authentication.JwtBearer
             builder.Services.AddScoped<IValidator<User>, UserValidator>();
@@ -46,12 +73,12 @@ namespace UrbanSync.Server {
 
             app.UseHttpsRedirection();
             app.UseExceptionHandler();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapGroup("/api/auth")
                  .MapAuthAPi()
                  .WithTags("public");
-
 
             app.MapFallbackToFile("/index.html");
 

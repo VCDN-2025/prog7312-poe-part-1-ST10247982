@@ -1,5 +1,7 @@
-﻿namespace UrbanSync.Server.DataStructures {
-    public class SimpleList<T> {
+﻿using System.Collections;
+
+namespace UrbanSync.Server.DataStructures {
+    public class SimpleList<T>:IEnumerable<T> {
         private int _size = 0;
         private int _count = 0;
         public int Count { get; private set; }
@@ -21,6 +23,7 @@
             values[_count] = value;
 
         }
+        
         private void Resize() {
             // i was going to use Array.Copy to be efficient as it does more low level work but
             // there is also Array.Resize which is more tempting, howver I felt that it would do the work for me
@@ -46,7 +49,7 @@
         public T PeekStart() => values[0];
         public T PeekEnd() => values[_size];
         public T Pop() {
-            T poppedValue = values[_size - 1];
+            T poppedValue = values[0];
             _size--;
             values[_size] = default!;
               return poppedValue;   
@@ -55,6 +58,17 @@
             for (int i = 0; i < _count; i++) {
                 values[i] = default!;
             }
+        }
+
+        public IEnumerator<T> GetEnumerator() {
+
+            foreach(T item in values) {
+                yield return item;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() {
+            return GetEnumerator();
         }
     }
 }

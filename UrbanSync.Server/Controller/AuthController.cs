@@ -5,6 +5,7 @@ namespace UrbanSync.Server.Controller {
     using BCrypt.Net;
     using FluentValidation;
     using FluentValidation.Results;
+    using Microsoft.AspNetCore.DataProtection;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using System.ComponentModel.DataAnnotations;
@@ -13,7 +14,7 @@ namespace UrbanSync.Server.Controller {
     using ValidationResult = FluentValidation.Results.ValidationResult;
 
     public static class AuthController {
-        public static async Task<IResult> LoginUser([FromBody] BaseUserDto userDto, [FromServices] UrbanSyncDb context, [FromServices] TokenProvider tokenProvider) {
+        public static async Task<IResult> LoginUser(HttpContext httpContext, [FromBody] BaseUserDto userDto, [FromServices] UrbanSyncDb context, [FromServices] TokenProvider tokenProvider) {
 
             if (string.IsNullOrEmpty(userDto.Username)) { throw new ArgumentNullException("email"); }
             if (string.IsNullOrEmpty(userDto.Password)) { throw new ArgumentNullException("password"); }
@@ -21,19 +22,20 @@ namespace UrbanSync.Server.Controller {
 
             User? foundUser = await context.Users.Where(u => u.Username == userDto.Username)
                 .AsNoTracking()
-                .FirstOrDefaultAsync<User>();
-
-            if (foundUser == null) {
-                return TypedResults.NotFound();
-            }
+                .FirstOrDefaultAsync<User>() ?? throw new KeyNotFoundException(userDto.Username);
             bool validPassword = BCrypt.Verify(userDto.Password, foundUser.PasswordHash);
-            if (!validPassword) {
-                return TypedResults.Unauthorized();
-            }
+            if (!validPassword) throw new UnauthorizedAccessException();
+
             string token = tokenProvider.Create(foundUser);
-            return TypedResults.Ok(new {
-                Token = token
-            });
+
+            httpContext.Response.Cookies.Append("Token", token, new CookieOptions {
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.Strict,
+                Expires = DateTimeOffset.UtcNow.AddDays(14)
+            }); ;
+            return TypedResults.Ok(new {Message = "Logged in successfully!"});
+
         }
 
         public static async Task<IResult> RegisterUser([FromBody] UserRegisterDto registerDto, [FromServices] UrbanSyncDb db, [FromServices] IValidator<User> validator, [FromServices] ILogger<User> logger) {
@@ -44,33 +46,25 @@ namespace UrbanSync.Server.Controller {
                 DateOfRegistrstion = registerDto.DateOfRegistrstion,
                 Email = registerDto.Email,
                 Name = registerDto.Name,
-                PasswordHash = registerDto.Password
+                PasswordHash = registerDto.Password,
+                Id = Guid.NewGuid(),
             };
 
-            ValidationResult result = await validator.ValidateAsync(user);
-            if (!result.IsValid) {
-                var errors = result.Errors.Select(e => new { e.PropertyName, e.ErrorMessage });
-                logger.LogWarning("Validation failed for {Email}: {@Errors}", registerDto.Email, errors);
-                return TypedResults.BadRequest(new { Errors = errors });
-            }
-            try {
-                User? foundUser = await db.Users.Where(u => u.Username == registerDto.Username).FirstOrDefaultAsync<User>();
-                if (foundUser != null) {
-                    return TypedResults.Conflict(new {
-                        Message = "Username already exists"
-                    });
-                }
-                user.PasswordHash = BCrypt.HashPassword(registerDto.Password);
-                await db.Users.AddAsync(user);
-                await db.SaveChangesAsync();
+            await validator.ValidateAndThrowAsync(user);
 
-                return TypedResults.Created();
-            }
-            catch (Exception ex) {
-                logger.LogError(ex, "Internal server error while registering user {Email}", registerDto.Email);
-                return TypedResults.Problem("An unexpected error occurred while creating the user.");
-            }
 
+            User? foundUser = await db.Users.Where(u => u.Username == registerDto.Username).FirstOrDefaultAsync<User>();
+            if (foundUser != null) {
+                return TypedResults.Conflict(new {
+                    Message = "Username already exists"
+                });
+            }
+            user.PasswordHash = BCrypt.HashPassword(registerDto.Password);
+            await db.Users.AddAsync(user);
+            await db.SaveChangesAsync();
+
+            return TypedResults.Created();
         }
+
     }
 }

@@ -15,7 +15,7 @@
             RuleFor(user => user.Email).EmailAddress().NotNull();
             RuleFor(user => user.DateOfRegistrstion).NotEmpty().NotNull();
             RuleFor(user => user.Name).NotEmpty().MinimumLength(3).NotNull();
-
+            RuleFor(user => user.Id).NotNull().NotEmpty();
         }
     }
 }
