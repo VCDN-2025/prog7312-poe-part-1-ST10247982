@@ -1,10 +1,15 @@
-import { useEffect, useState } from 'react';
-import './App.css';
+import { useEffect, useState } from "react";
 
+import system from "../chakra.config";
+import { Box, Text, Button, ChakraProvider, HStack } from "@chakra-ui/react";
 function App() {
-    return (
-      <h1>Hey</h1>  
-   )
+  return (
+    <ChakraProvider value={system}>
+      <Box>
+        <Text>Hello</Text>
+      </Box>
+    </ChakraProvider>
+  );
 }
 
 export default App;
