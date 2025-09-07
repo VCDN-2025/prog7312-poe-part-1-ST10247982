@@ -5,10 +5,12 @@ namespace UrbanSync.Server.DataStructures {
         private int _size = 0;
         private int _count = 0;
         public int Count { get; private set; }
-        public SimpleList(int size) {
-            _size = size;
+        public SimpleList() {
+            _size = 100;
         }
-
+        public SimpleList(int size) {
+        _size =size;    
+        }
         T[] values = new T[100];
         public T this[int Index] {
             get => values[Index];
@@ -19,9 +21,9 @@ namespace UrbanSync.Server.DataStructures {
             if (_size == _count) {
                 Resize();
             }
-            _count++;
+       
             values[_count] = value;
-
+            _count++;
         }
         
         private void Resize() {

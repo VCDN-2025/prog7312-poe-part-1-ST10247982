@@ -12,10 +12,15 @@ using UrbanSync.Server.Models;
 namespace UrbanSync.Server.Controller {
     public static class ReportIssueController {
         // incorporate retry logic
-        private static SimpleList<ReportedIssue> _toBeSaved = new(100);
-        public static async Task<IResult> Create(HttpContext httpContext, [FromServices] IValidator<ReportedIssue> validator,[FromServices]ILogger<ReportedIssue> logger,[FromServices] UrbanSyncDb db,[FromBody] SimpleList<ReportIssueDto> reportIssueDtos) {
+
+        public static async Task<IResult> Create(
+            HttpContext httpContext,
+            [FromServices] IValidator<ReportedIssue> validator,
+            [FromServices]ILogger<ReportedIssue> logger,
+            [FromServices] UrbanSyncDb db,
+            [FromBody] List<ReportIssueDto> reportIssueDtos) {
             // we will do the validation logic
-            
+           
             if (reportIssueDtos is null) throw new BadHttpRequestException("No issues were reported/sent");
             string userId = httpContext.User.FindFirst(JwtRegisteredClaimNames.Sub)!.Value;
             
@@ -31,7 +36,8 @@ namespace UrbanSync.Server.Controller {
                     MunicipalitySector = currentReportDto.MunicipalitySector,
                     UserId = Guid.Parse(userId)
                 };
-               db.ReportedIssues.Add(reportedIssue);
+              await db.ReportedIssues.AddAsync(reportedIssue);
+             await  db.SaveChangesAsync();
             }
             
             

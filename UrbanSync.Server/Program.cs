@@ -5,7 +5,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using System.Text.Json;
 using UrbanSync.Server.Data;
+using UrbanSync.Server.DataStructures;
 using UrbanSync.Server.Exceptions;
 using UrbanSync.Server.Models;
 using UrbanSync.Server.Route;
@@ -17,6 +19,10 @@ namespace UrbanSync.Server {
         public static void Main(string[] args) {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddProblemDetails();
+            var options = new JsonSerializerOptions {
+                WriteIndented = true
+            };
+            options.Converters.Add(new SimpleListJsonConverter());
 
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnectionString")
                 ?? throw new InvalidOperationException("Connection String" + "Default Connection String not found");
