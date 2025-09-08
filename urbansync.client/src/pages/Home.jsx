@@ -1,4 +1,5 @@
 import { Flex, Avatar, Button, Card } from "@chakra-ui/react";
+import { useNavigate } from "react-router";
 export function Home() {
   return (
     <>
@@ -17,7 +18,7 @@ export function Home() {
             </Card.Description>
           </Card.Body>
           <Card.Footer justifyContent="flex-end">
-            <Button variant="outline">View</Button>
+            <Button  variant="outline">View</Button>
             <Button>Join</Button>
           </Card.Footer>
         </Card.Root>

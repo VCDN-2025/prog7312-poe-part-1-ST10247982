@@ -15,6 +15,8 @@ import {
 } from "@chakra-ui/react";
 import { Home } from "./pages/Home";
 import { ReportIssue } from "./pages/ReportIssue";
+import { Login } from "./pages/Login";
+import { Register } from "./pages/Register";
 function App() {
   return (
     <>
@@ -22,7 +24,7 @@ function App() {
         <AppLayout />
         <Home />
         <Center>
-          <ReportIssue />
+          <Register />
         </Center>
       </ChakraProvider>
     </>
