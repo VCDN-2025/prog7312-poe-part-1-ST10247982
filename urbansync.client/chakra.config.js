@@ -14,7 +14,14 @@ const config = defineConfig({
     },
     tokens: {
       colors: {
-        red: "#EE0F0F",
+        brand: {
+          primary: { value: "#497921ff" },
+          background: { value: "#171212ff" },
+          onContainer: { value: "#90cbb1ff" },
+          primaryText: { value: "#191717ff" },
+          accents: { value: "#d7d768ff" },
+          error: { value: "#ae2929ff" },
+        },
       },
     },
     semanticTokens: {
