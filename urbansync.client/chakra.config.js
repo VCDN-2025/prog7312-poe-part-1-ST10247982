@@ -4,6 +4,7 @@ import {
   defaultConfig,
   defineConfig,
 } from "@chakra-ui/react";
+
 const config = defineConfig({
   theme: {
     breakpoints: {
@@ -29,6 +30,7 @@ const config = defineConfig({
         danger: { value: "{colors.red}" },
       },
     },
+
     keyframes: {
       spin: {
         from: { transform: "rotate(0deg)" },

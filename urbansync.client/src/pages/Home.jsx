@@ -18,7 +18,7 @@ export function Home() {
             </Card.Description>
           </Card.Body>
           <Card.Footer justifyContent="flex-end">
-            <Button  variant="outline">View</Button>
+            <Button variant="outline">View</Button>
             <Button>Join</Button>
           </Card.Footer>
         </Card.Root>
