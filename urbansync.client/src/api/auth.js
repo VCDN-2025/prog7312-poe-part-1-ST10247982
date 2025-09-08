@@ -1,10 +1,28 @@
 import api from "./axios.config";
 
-const login = async (user) => {
-  try {
-    const response = await api.post("/api/auth/login", user);
-    if (response.status == 200) {
-      return response.data;
-    }
-  } 
+export const login = async (user) => {
+  return apiHandler(() =>
+    api.post("/api/auth/login", {
+      username: user.username,
+      password: user.password,
+    })
+  );
+};
+
+export const register = async (
+  username,
+  password,
+  email,
+  name,
+  dateOfRegistration
+) => {
+  return apiHandler(() => {
+    api.post("/api/auth/register", {
+      username,
+      password,
+      email,
+      name,
+      dateOfRegistration,
+    });
+  });
 };
