@@ -1,4 +1,5 @@
 const requiredFieldMessage = "This field is required";
+
 const isValidEmail = (email, setEmailError) => {
   if (!email || email.length < 1) {
     setEmailError(requiredFieldMessage);
@@ -16,23 +17,32 @@ const isValidUsername = (username, setUsernameError) => {
     return false;
   }
   if (username.length < 6) {
-    setUsernameError("Usernmae must be atleast 6 characters long.");
+    setUsernameError("Username must be atleast 6 characters long.");
     return false;
   }
   return true;
 };
 
-const isValidPassword = (password, setPasswordError) => {
+const isValidPassword = (
+  password,
+  setPasswordError,
+  confirmPassword,
+  setConfirmPasswordError
+) => {
   if (!password) {
     setPasswordError(requiredFieldMessage);
-    false;
+    return false;
   }
   const passwordRegex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
   if (!passwordRegex.test(password)) {
     setPasswordError(
-      "Must be atleast 8 characters long,1 upper case, 1 special character: Somthing.1"
+      "Must be at least 8 characters long,1 upper case, 1 special character: Something.1"
     );
+    return false;
+  }
+  if (password !== confirmPassword) {
+    setConfirmPasswordError("Passwords do not match");
     return false;
   }
   return true;
@@ -44,7 +54,7 @@ const isValidName = (name, setNameError) => {
     return false;
   }
   if (name.length <= 3) {
-    setNameError("Name must be more then 3 characters long.");
+    setNameError("Name must be more than 3 characters long.");
     return false;
   }
 };

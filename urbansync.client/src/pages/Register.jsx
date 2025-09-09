@@ -8,14 +8,46 @@ import {
   Stack,
 } from "@chakra-ui/react";
 import { PasswordInput } from "@/components/ui/password-input";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
+
 export function Register() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
+  const [usernameError, setUsernameError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [confirmPasswordError, setConfirmPasswordError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [success, setSuccess] = useState(false);
+  const navigate = useNavigate();
+  const onSubmit = async () => {
+    isValidEmail(email, setEmailError);
+    isValidName(name, setNameError);
+    isValidPassword(
+      password,
+      setPassword,
+      confirmPassword,
+      setConfirmPasswordError
+    );
+    isValidUsername(username, password);
+    if (isValidEmail && isValidPassword && isValidUsername && !isValidName) {
+      setSuccess(true);
+    }
+    if (!isValidPassword) {
+      setPassword("");
+      setConfirmPassword("");
+    }
+  };
 
+  useEffect(() => {
+    if (success) {
+      navigate("/login");
+    }
+  }, [success]);
   return (
     <Fieldset.Root size="lg" maxW="md" alignContent={"center"}>
       <Heading alignSelf={"center"}>UrbanSync</Heading>
@@ -91,7 +123,7 @@ export function Register() {
         </Field.Root>
       </Fieldset.Content>
 
-      <Button type="submit" alignSelf="center" width={"6vw"}>
+      <Button onClick={onSubmit} type="submit" alignSelf="center" width={"6vw"}>
         Submit
       </Button>
     </Fieldset.Root>
