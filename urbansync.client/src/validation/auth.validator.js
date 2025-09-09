@@ -1,60 +1,46 @@
 const requiredFieldMessage = "This field is required";
-
-const isValidEmail = (email, setEmailError) => {
+export const isValidEmail = (email) => {
   if (!email || email.length < 1) {
-    setEmailError(requiredFieldMessage);
-    return false;
+    return requiredFieldMessage;
   }
   if (!email.match(/@/)) {
-    setEmailError("Invalid email address, must contian the @.");
-    return false;
-  }
-  return true;
-};
-const isValidUsername = (username, setUsernameError) => {
-  if (!username) {
-    setUsernameError(requiredFieldMessage);
-    return false;
-  }
-  if (username.length < 6) {
-    setUsernameError("Username must be atleast 6 characters long.");
-    return false;
+    return "Invalid email address, must contain @.";
   }
   return true;
 };
 
-const isValidPassword = (
-  password,
-  setPasswordError,
-  confirmPassword,
-  setConfirmPasswordError
-) => {
+export const isValidUsername = (username) => {
+  if (!username) {
+    return requiredFieldMessage;
+  }
+  if (username.length < 6) {
+    return "Username must be at least 6 characters long.";
+  }
+
+  return true;
+};
+
+export const isValidPassword = (password) => {
   if (!password) {
-    setPasswordError(requiredFieldMessage);
-    return false;
+    return requiredFieldMessage;
   }
   const passwordRegex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
   if (!passwordRegex.test(password)) {
-    setPasswordError(
-      "Must be at least 8 characters long,1 upper case, 1 special character: Something.1"
-    );
-    return false;
-  }
-  if (password !== confirmPassword) {
-    setConfirmPasswordError("Passwords do not match");
-    return false;
+    return "Must be at least 8 characters long, include 1 uppercase, 1 number, 1 special character.";
   }
   return true;
 };
 
-const isValidName = (name, setNameError) => {
+export const isValidName = (name) => {
   if (!name) {
-    setNameError(requiredFieldMessage);
-    return false;
+    return requiredFieldMessage;
+    
   }
   if (name.length <= 3) {
-    setNameError("Name must be more than 3 characters long.");
-    return false;
+   return "Name must be more than 3 characters long.";
+    
   }
+
+  return true;
 };

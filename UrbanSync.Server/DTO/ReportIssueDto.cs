@@ -2,7 +2,12 @@
 
 namespace UrbanSync.Server.DTO {
 
-    public record ReportIssueDto(string Location, string Description, string? Image,string MunicipalityLevel, string MunicipalitySector   ) {
+    public record ReportIssueDto(
+        string Location,
+         string Description,
+          string? Image,
+          string MunicipalityLevel,
+           string MunicipalitySector) {
 
     }
 }

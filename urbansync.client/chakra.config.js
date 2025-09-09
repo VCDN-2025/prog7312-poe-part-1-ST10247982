@@ -26,6 +26,14 @@ const config = defineConfig({
       },
     },
     semanticTokens: {
+      shadows: {
+        custom: {
+          value: {
+            _light: "0 32px 56px 0 rgba(211, 195, 48, 0.25)",
+            _dark: "0 32px 56px 0 rgba(163, 168, 70, 1)",
+          },
+        },
+      },
       colors: {
         danger: { value: "{colors.red}" },
       },

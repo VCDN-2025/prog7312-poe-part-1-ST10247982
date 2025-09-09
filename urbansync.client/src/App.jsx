@@ -22,9 +22,9 @@ function App() {
     <>
       <ChakraProvider value={system}>
         <AppLayout />
-        <Home />
+
         <Center>
-          <Register />
+          <ReportIssue />
         </Center>
       </ChakraProvider>
     </>
