@@ -18,7 +18,7 @@ import {
   isValidPassword,
   isValidUsername,
 } from "../validation/auth.validator";
-import { system } from "@chakra-ui/react/preset";
+import system from "../../chakra.config.js";
 
 export function Register() {
   const [password, setPassword] = useState("");

@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { PasswordInput } from "@/components/ui/password-input";
 import { useState } from "react";
-import { system } from "@chakra-ui/react/preset";
+import system from "../../chakra.config";
 export function Login() {
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
@@ -25,7 +25,13 @@ export function Login() {
         backdropBlur={"md"}
         blur={"brand.primary"}
       >
-        <Fieldset.Root size="lg" maxW="md" height={"lg"} rounded={"x1"} color={"brand.primary"}>
+        <Fieldset.Root
+          size="lg"
+          maxW="md"
+          height={"lg"}
+          rounded={"x1"}
+          color={"brand.primary"}
+        >
           <Heading alignSelf={"center"}>UrbanSync</Heading>
           <Stack alignItems={"center"}>
             <Fieldset.Legend>Sign in details</Fieldset.Legend>

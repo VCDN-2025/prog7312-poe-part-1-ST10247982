@@ -10,16 +10,19 @@ import { Login } from "./pages/Login.jsx";
 import { Register } from "./pages/Register.jsx";
 import { Home } from "./pages/Home.jsx";
 import { ReportIssue } from "./pages/ReportIssue.jsx";
+import NotFound from "./pages/Error.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: App,
+    errorElement: NotFound,
 
     children: [
       {
         index: true,
         Component: Home,
+        errorElement: NotFound,
       },
     ],
   },
@@ -34,6 +37,7 @@ const router = createBrowserRouter([
   {
     path: "/report",
     Component: ReportIssue,
+    errorElement: NotFound,
   },
 ]);
 
