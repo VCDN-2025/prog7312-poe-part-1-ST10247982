@@ -1,3 +1,5 @@
+import api from "./axios.config";
+import { apiHandler } from "./api.handler";
 export const createReportedIssue = async (
   location,
   description,
@@ -14,4 +16,8 @@ export const createReportedIssue = async (
       municipalitySector: municipalitySector,
     })
   );
+};
+
+export const getReportedIssue = async (PaginationDto) => {
+  return apiHandler(() => api.get("api/reportissue", { PaginationDto }));
 };

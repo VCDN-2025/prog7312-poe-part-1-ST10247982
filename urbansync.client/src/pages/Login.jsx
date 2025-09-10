@@ -12,11 +12,15 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { PasswordInput } from "@/components/ui/password-input";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import system from "../../chakra.config";
 import { login } from "../api/auth";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../authContext.jsx";
+
 export function Login() {
+  const { login } = useAuth();
+  const [currentUser, setCurrentUser] = useState(null);
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
   const [error, setError] = useState("");
@@ -43,22 +47,27 @@ export function Login() {
   const onSubmit = async () => {
     setLoading(true);
     const user = { username: username, password: password };
-    const response = await login(user);
-    console.log(response);
-    if (!response) {
+    const { apiSuccess, message, status } = await login(user);
+    console.log(message);
+    if (!apiSuccess) {
       setError("Something went wrong!");
-      setLoading(false);
+      setLoading(apiSuccess);
     }
 
-    if (response.status == 200) {
+    if (status == 200) {
+      console.log(message.User);
+      setCurrentUser(message.User);
       setSuccess(true);
+      login();
     } else {
-      setError(response.data);
+      setError(message);
     }
+
+    setLoading(false);
   };
   useEffect(() => {
     if (success === true) {
-      navigate("/login");
+      navigate("/");
     }
   }, [success, navigate]);
   if (loading === true) {
@@ -68,7 +77,7 @@ export function Login() {
           display="flex"
           justifyContent="center"
           alignItems="center"
-          width={"100vw"}
+          width={"100%"}
           height={"50vw"}
           backdropBlur={"md"}
           blur={"brand.primary"}
@@ -104,7 +113,7 @@ export function Login() {
           display="flex"
           justifyContent="center"
           alignItems="center"
-          width={"100vw"}
+          width={"100%"}
           height={"50vw"}
           backdropBlur={"md"}
           blur={"brand.primary"}

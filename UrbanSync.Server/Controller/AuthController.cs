@@ -34,16 +34,16 @@ namespace UrbanSync.Server.Controller {
                 SameSite = SameSiteMode.Strict,
                 Expires = DateTimeOffset.UtcNow.AddDays(14)
             }); ;
-            return TypedResults.Ok(new {Message = "Logged in successfully!"});
+            return TypedResults.Ok(new {Message = "Logged in successfully!", User = foundUser.Username});
 
         }
 
         public static async Task<IResult> RegisterUser([FromBody] UserRegisterDto registerDto, [FromServices] UrbanSyncDb db, [FromServices] IValidator<User> validator, [FromServices] ILogger<User> logger) {
             // we can add a custom validator tomorrow
-
+            logger.LogDebug("we are hitting the api");
             User user = new User {
                 Username = registerDto.Username,
-                DateOfRegistrstion = registerDto.DateOfRegistrstion,
+                DateOfRegistrstion = DateTime.Now,
                 Email = registerDto.Email,
                 Name = registerDto.Name,
                 PasswordHash = registerDto.Password,
@@ -60,6 +60,7 @@ namespace UrbanSync.Server.Controller {
                     Message = "Username already exists"
                 });
             }
+            logger.LogDebug("found user");
             user.PasswordHash = BCrypt.HashPassword(registerDto.Password);
             await db.Users.AddAsync(user);
             await db.SaveChangesAsync();

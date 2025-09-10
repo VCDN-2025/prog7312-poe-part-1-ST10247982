@@ -1,3 +1,4 @@
+import { apiHandler } from "./api.handler";
 import api from "./axios.config";
 
 export const login = async (user) => {
@@ -10,12 +11,12 @@ export const login = async (user) => {
 };
 
 export const register = async (username, password, email, name) => {
-  return apiHandler(() => {
+  return apiHandler(() => 
     api.post("/api/auth/register", {
       username,
       password,
       email,
       name,
-    });
-  });
+    } )
+  );
 };

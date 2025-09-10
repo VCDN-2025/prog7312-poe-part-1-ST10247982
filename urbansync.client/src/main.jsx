@@ -12,6 +12,7 @@ import { Home } from "./pages/Home.jsx";
 import { ReportIssue } from "./pages/ReportIssue.jsx";
 import NotFound from "./pages/Error.jsx";
 import MunicipalIssuesList from "./pages/ReportHistory.jsx";
+import { AuthProvider } from "./authContext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,4 +49,8 @@ const router = createBrowserRouter([
 ]);
 
 const root = document.getElementById("root");
-ReactDOM.createRoot(root).render(<RouterProvider router={router} />);
+ReactDOM.createRoot(root).render(
+  <AuthProvider>
+    <RouterProvider router={router} />
+  </AuthProvider>
+);

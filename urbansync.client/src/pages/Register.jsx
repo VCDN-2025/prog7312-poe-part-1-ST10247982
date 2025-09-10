@@ -9,6 +9,7 @@ import {
   ChakraProvider,
   Card,
   Spinner,
+  Text,
 } from "@chakra-ui/react";
 import { PasswordInput } from "@/components/ui/password-input";
 import { useEffect, useState } from "react";
@@ -86,22 +87,51 @@ export function Register() {
   };
 
   const onSubmit = async () => {
+    console.log("🔹 onSubmit called");
+
     const isValid = validate();
+    console.log("✅ Validation result:", isValid);
+
     if (!isValid) {
+      console.log("⛔ Validation failed, aborting submit");
       return;
     }
+
     setLoading(true);
-    const response = await register(username, password, email, name);
-    if (response.status == 201) {
-      setSuccess(true);
-    } else {
-      setErrorMessage(response.data);
+    console.log("⏳ Loading set to true");
+
+    try {
+      console.log("📨 Sending registration request with:", {
+        username,
+        password,
+        email,
+        name,
+      });
+
+     const { apiSuccess, message, status } = await register(username, password, email, name);
+      console.log("📩 Response received:", message);
+
+      if (status === 201 && apiSuccess===true) {
+        console.log("🎉 Registration successful");
+        setSuccess(true);
+      } else {
+        console.log("⚠️ Registration failed with status:", status);
+        console.log("❌ Error message from server:", message);
+        setErrorMessage(message);
+      }
+    } catch (error) {
+      console.error("🚨 Exception during registration:", error);
+      setErrorMessage("Unexpected error occurred. Please try again.");
+    } finally {
+      setLoading(false);
+      console.log("✅ Loading set to false");
     }
-    setLoading(true);
   };
 
   useEffect(() => {
+    console.log("📡 useEffect triggered. Success state:", success);
     if (success === true) {
+      console.log("🔀 Navigating to /login");
       navigate("/login");
     }
   }, [success, navigate]);
@@ -112,7 +142,7 @@ export function Register() {
           display="flex"
           justifyContent="center"
           alignItems="center"
-          width={"100vw"}
+          width={"100%"}
           height={"50vw"}
           backdropBlur={"md"}
           blur={"brand.primary"}
@@ -148,7 +178,7 @@ export function Register() {
           display="flex"
           justifyContent="center"
           alignItems="center"
-          width={"100vw"}
+          width={"100%"}
           height={"50vw"}
           bgColor={"brand.background"}
         >
@@ -161,7 +191,7 @@ export function Register() {
             maxH={"700px"}
             minH={"xs"}
             p={"5"}
-            shadowColor="brand.accents"
+         
             _hover={{
               shadow: "-1px 20px 50px var(--shadow-color)",
               boxShadowColor: "brand.primary",

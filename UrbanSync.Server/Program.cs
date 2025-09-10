@@ -31,6 +31,15 @@ namespace UrbanSync.Server {
             builder.Services.AddProblemDetails(config =>
             config.CustomizeProblemDetails = context => {
                 context.ProblemDetails.Extensions.TryAdd("requestId", context.HttpContext.TraceIdentifier);
+            }); builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowReactApp",
+                    policy => {
+                        policy.WithOrigins("https://localhost:58643") // React dev server
+                              .AllowAnyHeader()
+                              .AllowAnyMethod()
+                              .AllowCredentials();
+                    });
             });
             builder.Services.AddExceptionHandler<ValidationExceptionHandler>();
             builder.Services.AddExceptionHandler<GlobalException>();
@@ -80,7 +89,7 @@ namespace UrbanSync.Server {
 
             var app = builder.Build();
 
-            // app.UseCors();
+            app.UseCors("AllowReactApp"); ;
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseDefaultFiles();
@@ -91,7 +100,7 @@ namespace UrbanSync.Server {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+           
             app.UseHttpsRedirection();
             app.UseExceptionHandler();
             app.UseAuthentication();

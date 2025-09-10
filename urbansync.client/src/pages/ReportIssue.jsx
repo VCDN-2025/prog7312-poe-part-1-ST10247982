@@ -6,27 +6,27 @@ import {
   Input,
   NativeSelect,
   Stack,
-  FileUpload,
-  Icon,
   Card,
   ChakraProvider,
-  Wrap,
-  WrapItem,
+  FileUpload,
+  Float,
+  useFileUploadContext,
+  Center,
+  Flex,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { LuUpload } from "react-icons/lu";
+import { LuFileImage, LuX } from "react-icons/lu";
 import system from "../../chakra.config";
 
 export function ReportIssue() {
+  const { isAuthenticated, logout } = useAuth();
   const [municipalityLevel, setMunicipalityLevel] = useState("");
   const [municipalitySector, setMunicipalitySector] = useState("");
   const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
+  const [image, setImage] = useState(null); // single file
 
-  // Store images in base64 + preview
-  const [images, setImages] = useState([]);
-
-  // Convert file → base64
+  // Convert file → Base64
   const toBase64 = (file) =>
     new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -35,43 +35,90 @@ export function ReportIssue() {
       reader.onerror = (err) => reject(err);
     });
 
-  // Handle file upload
-  const handleFiles = async (files) => {
-    const base64Files = await Promise.all(
-      
-      files.map(async (file) => ({
-        name: file.name,
-        preview: URL.createObjectURL(file),
-        base64: await toBase64(file),
-      }))
-    );
-    setImages(base64Files);
+  // Handle single file selection
+  const handleFileChange = async (file) => {
+    if (!file) return;
+    const base64 = await toBase64(file);
+    setImage({
+      name: file.name,
+      preview: URL.createObjectURL(file),
+      base64,
+    });
   };
-
+  const FileUploadHandler = () => {
+    const fileUpload = useFileUploadContext();
+    const files = fileUpload.acceptedFiles;
+    if (files.length === 0) return null;
+    return (
+      <FileUpload.ItemGroup>
+        {files.map((file) => (
+          <FileUpload.Item
+            w="auto"
+            boxSize="40"
+            p="2"
+            file={file}
+            key={file.name}
+          >
+            <FileUpload.ItemPreviewImage />
+            <Float placement="top-end">
+              <FileUpload.ItemDeleteTrigger boxSize="4" layerStyle="fill.solid">
+                <LuX />
+              </FileUpload.ItemDeleteTrigger>
+            </Float>
+          </FileUpload.Item>
+        ))}
+      </FileUpload.ItemGroup>
+    );
+  };
+  const ImageUpload = () => {
+    return (
+      <FileUpload.Root accept="image/*" transformFiles={toBase64(File)}>
+        <FileUpload.HiddenInput />
+        <FileUpload.Trigger asChild>
+          <Button
+            variant="outline"
+            size="md"
+            outline={"solid"}
+            outlineWidth={"1px"}
+            outlineColor={"brand.primary"}
+          >
+            <LuFileImage /> Upload Image
+          </Button>
+        </FileUpload.Trigger>
+        <FileUploadHandler />
+      </FileUpload.Root>
+    );
+  };
   // Handle form submit
-  const handleUpload = async (e) => {
+  const handleUpload = async () => {
+    if (!image) {
+      console.warn("No file selected");
+      return;
+    }
+
     const payload = {
       municipalityLevel,
       municipalitySector,
       location,
       description,
-      images: images.map((img) => img.base64), // send only base64
+      image: handleFileChange(image), // send only Base64 string
     };
-    
-    console.log(images.map((img) => img.base64));
-    // Example: POST request
+
+    console.log("Submitting payload:", payload);
+
+    // TODO: POST payload to your API
   };
 
   return (
     <ChakraProvider value={system}>
       <Box
-        width={"100vw"}
-        height={"80vw"}
+        width={"100%"}
+        height={"50vw"}
         maxH={"2000px"}
-        justifyContent={"center"}
-        alignItems={"center"}
         display={"flex"}
         flexDirection={"column"}
+        justifyContent={"center"}
+        alignItems={"center"}
         bgColor={"brand.background"}
       >
         <Card.Root
@@ -79,11 +126,10 @@ export function ReportIssue() {
           width={"lg"}
           alignItems={"center"}
           bg={"brand.onContainer"}
-          height={"55vw"}
+          height={"40vw"}
           maxH={"800px"}
           minH={"xs"}
           p={"5"}
-          shadowColor="brand.accents"
           _hover={{
             shadow: "-1px 20px 50px var(--shadow-color)",
             boxShadowColor: "brand.accents",
@@ -92,12 +138,12 @@ export function ReportIssue() {
           transitionDuration="slow"
         >
           <Fieldset.Root size="lg" minWidth={"xs"} maxW="md">
-            <Stack>
+            <Stack alignItems={"center"} p={"10"}>
               <Fieldset.Legend alignSelf={"center"}>
-                Contact details
+                Report Issue
               </Fieldset.Legend>
               <Fieldset.HelperText alignSelf={"center"} minWidth={"xs"}>
-                Please provide your contact details below.
+                Please upoad necassary info to log your complaint
               </Fieldset.HelperText>
             </Stack>
 
@@ -106,13 +152,15 @@ export function ReportIssue() {
               <NativeSelect.Field
                 placeholder="Select option"
                 value={municipalityLevel}
+                outline={"solid"}
+                outlineWidth={"1px"}
+                outlineColor={"brand.primary"}
                 onChange={(e) => setMunicipalityLevel(e.currentTarget.value)}
               >
                 <option value="local">Local</option>
                 <option value="provincial">Provincial</option>
                 <option value="national">National</option>
               </NativeSelect.Field>
-              <NativeSelect.Indicator />
             </NativeSelect.Root>
 
             {/* Municipality Sector */}
@@ -121,22 +169,30 @@ export function ReportIssue() {
                 placeholder="Select option"
                 value={municipalitySector}
                 onChange={(e) => setMunicipalitySector(e.currentTarget.value)}
+                outline={"solid"}
+                outlineWidth={"1px"}
+                outlineColor={"brand.primary"}
               >
                 <option value="health">Health</option>
                 <option value="education">Education</option>
-                <option value="water">Water and sanitation</option>
+                <option value="water">Water and Sanitation</option>
                 <option value="transport">Transport</option>
                 <option value="safety">Safety and Security</option>
-                <option value="social">Social welfare</option>
+                <option value="social">Social Welfare</option>
               </NativeSelect.Field>
-              <NativeSelect.Indicator />
             </NativeSelect.Root>
 
             <Fieldset.Content>
               <Field.Root>
                 <Field.Label>Location</Field.Label>
                 <Input
-                  variant={"subtle"}
+                  variant="outline"
+                  bgColor={"brand.input"}
+                  color={"brand.primaryText"}
+                  outline={"solid"}
+                  outlineWidth={"1px"}
+                  outlineColor={"brand.primary"}
+                  _focus={{ outlineColor: "black" }}
                   name="location"
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
@@ -145,67 +201,32 @@ export function ReportIssue() {
               <Field.Root>
                 <Field.Label>Description</Field.Label>
                 <Input
-                  variant={"subtle"}
+                  variant="outline"
+                  bgColor={"brand.input"}
+                  color={"brand.primaryText"}
+                  outline={"solid"}
+                  outlineWidth={"1px"}
+                  outlineColor={"brand.primary"}
+                  _focus={{ outlineColor: "black" }}
                   name="description"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
                 />
               </Field.Root>
             </Fieldset.Content>
-
-            {/* File Upload */}
-            <FileUpload.Root
-              maxW="md"
-              alignItems="stretch"
-              maxFiles={10}
-              onFileChange={(files) => handleFiles(files)}
+            <Flex
+              p={"5"}
+              justifyContent={"center"}
+              gap={"10"}
+              alignItems={"flex-start"}
             >
-              <FileUpload.HiddenInput />
-              <FileUpload.Dropzone>
-                <Icon size="md" color="fg.muted">
-                  <LuUpload />
-                </Icon>
-                <FileUpload.DropzoneContent>
-                  <Box>Drag and drop files here</Box>
-                  <Box color="fg.muted">.png, .jpg up to 5MB</Box>
-                </FileUpload.DropzoneContent>
-              </FileUpload.Dropzone>
-              <FileUpload.List clearable={true} />
-            </FileUpload.Root>
+              <ImageUpload />
 
-            {/* Image Preview */}
-            <Stack direction="row" wrap="wrap" mt="4" spacing="4">
-              {images.map((img, idx) => (
-                <img
-                  key={idx}
-                  src={img.preview}
-                  alt={img.name}
-                  style={{ width: "120px", borderRadius: "8px" }}
-                />
-              ))}
-            </Stack>
-
-            <Button
-              type="button"
-              onClick={handleUpload}
-              alignSelf="center"
-              mt="4"
-            >
-              Submit
-            </Button>
+              <Button type="button" onClick={handleUpload}>
+                Submit
+              </Button>
+            </Flex>
           </Fieldset.Root>
-
-          <Wrap spacing="12px">
-            {images.map((img, idx) => (
-              <WrapItem key={idx}>
-                <img
-                  src={img.preview}
-                  alt={img.name}
-                  style={{ width: "100px", borderRadius: "8px" }}
-                />
-              </WrapItem>
-            ))}
-          </Wrap>
         </Card.Root>
       </Box>
     </ChakraProvider>

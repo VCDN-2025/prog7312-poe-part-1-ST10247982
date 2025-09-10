@@ -23,9 +23,10 @@ import {
   LuFileText,
 } from "react-icons/lu";
 import system from "../../chakra.config";
+import { getReportedIssue } from "../api/report";
+import PaginationDto from "../models/pagination";
 
 // API endpoint configuration
-const API_BASE_URL = "http://localhost:32769/api/reportissue";
 
 export default function MunicipalIssuesList() {
   const [reports, setReports] = useState([]);
@@ -40,59 +41,36 @@ export default function MunicipalIssuesList() {
   const fetchReports = async (pageNumber, pageSize) => {
     setLoading(true);
     setError(null);
+    const pagination = new PaginationDto(pageNumber, pageSize);
+    const response = await getReportedIssue(pagination);
 
-    try {
-      const paginationDto = {
-        PageNumber: pageNumber,
-        PageSize: pageSize,
-      };
-
-      const response = await fetch(`${API_BASE_URL}/report`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${localStorage.getItem("authToken")}`, // Adjust based on your auth implementation
-        },
-        body: JSON.stringify(paginationDto),
-      });
-
-      if (response.status === 204) {
-        // No content - empty result
-        setReports([]);
-        setTotalPages(0);
-        setTotalItems(0);
-        return;
-      }
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const data = await response.json();
-
-      // Handle the SimpleList response structure
-      if (data && Array.isArray(data)) {
-        setReports(data);
-        // Calculate total pages - you might need to adjust this based on your API response structure
-        const calculatedTotalPages = Math.ceil(
-          data.length === pageSize ? currentPage + 1 : currentPage
-        );
-        setTotalPages(calculatedTotalPages);
-        setTotalItems(data.length);
-      } else {
-        setReports([]);
-        setTotalPages(0);
-        setTotalItems(0);
-      }
-    } catch (err) {
-      console.log(err);
-      console.error("Error fetching reports:", err);
-      setError(err.message);
+    if (response.status === 204) {
+      // No content - empty result
       setReports([]);
       setTotalPages(0);
       setTotalItems(0);
-    } finally {
-      setLoading(false);
+      return;
+    }
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.data;
+
+    // Handle the SimpleList response structure
+    if (data && Array.isArray(data)) {
+      setReports(data);
+      // Calculate total pages - you might need to adjust this based on your API response structure
+      const calculatedTotalPages = Math.ceil(
+        data.length === pageSize ? currentPage + 1 : currentPage
+      );
+      setTotalPages(calculatedTotalPages);
+      setTotalItems(data.length);
+    } else {
+      setReports([]);
+      setTotalPages(0);
+      setTotalItems(0);
     }
   };
 

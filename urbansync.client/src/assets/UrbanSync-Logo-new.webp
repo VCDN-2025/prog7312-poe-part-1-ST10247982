@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://sora.chatgpt.com/g/gen_01k4t6mhnrffzbg095bjqnftac -->
+<html lang="en-US" dir="ltr" class="dark" style="color-scheme: dark;" data-qb-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><link rel="stylesheet" href="./UrbanSync-Logo-new_files/3d99eced86ab1de4.css" data-precedence="next"><link rel="stylesheet" href="./UrbanSync-Logo-new_files/0a3b284a330a818e.css" data-precedence="next"><link rel="preload" as="script" fetchpriority="low" href="./UrbanSync-Logo-new_files/webpack-ee845f0b3479610f.js.download"><script src="./UrbanSync-Logo-new_files/56078b33-e21064fc8506df6f.js.download" async=""></script><script src="./UrbanSync-Logo-new_files/9534-4a4522b8001e7fe2.js.download" async=""></script><script src="./UrbanSync-Logo-new_files/main-app-cc8286de3858bd56.js.download" async=""></script><script src="./UrbanSync-Logo-new_files/93923311-547459e8a9f7cc19.js.download" async=""></script><script src="./UrbanSync-Logo-new_files/2204-332bfacd6818316e.js.download" async=""></script><script src="./UrbanSync-Logo-new_files/6774-6314b40c19facf52.js.download" async=""></script><script src="./UrbanSync-Logo-new_files/layout-cd4ab8575b4a46e7.js.download" async=""></script><title>Sora</title><meta property="og:title" content="Sora"><meta property="og:description" content="Transform text and images into immersive videos. Animate stories, visualize ideas, and bring your concepts to life."><meta property="og:url" content="https://sora.com/explore"><meta property="og:site_name" content="Sora"><meta property="og:image" content="https://cdn.openai.com/sora/images/og-cover-24.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Sora"><meta name="twitter:description" content="Transform text and images into immersive videos. Animate stories, visualize ideas, and bring your concepts to life."><meta name="twitter:image" content="https://cdn.openai.com/sora/images/og-cover-24.jpg"><meta name="twitter:image:width" content="1200"><meta name="twitter:image:height" content="630"><link rel="icon" href="https://cdn.openai.com/sora/assets/favicon.ico" type="image/x-icon"><link rel="icon" href="https://cdn.openai.com/sora/assets/favicon-light.ico" type="image/x-icon" media="(prefers-color-scheme: light)"><link rel="icon" href="https://cdn.openai.com/sora/assets/favicon-dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)"><link rel="apple-touch-icon" href="https://cdn.openai.com/sora/assets/apple-touch-icon.png" sizes="180x180"><script src="./UrbanSync-Logo-new_files/polyfills-42372ed130431b0a.js.download" nomodule=""></script><style type="text/css">:where(html[dir="ltr"]),:where([data-sonner-toaster][dir="ltr"]){--toast-icon-margin-start: -3px;--toast-icon-margin-end: 4px;--toast-svg-margin-start: -1px;--toast-svg-margin-end: 0px;--toast-button-margin-start: auto;--toast-button-margin-end: 0;--toast-close-button-start: 0;--toast-close-button-end: unset;--toast-close-button-transform: translate(-35%, -35%)}:where(html[dir="rtl"]),:where([data-sonner-toaster][dir="rtl"]){--toast-icon-margin-start: 4px;--toast-icon-margin-end: -3px;--toast-svg-margin-start: 0px;--toast-svg-margin-end: -1px;--toast-button-margin-start: 0;--toast-button-margin-end: auto;--toast-close-button-start: unset;--toast-close-button-end: 0;--toast-close-button-transform: translate(35%, -35%)}:where([data-sonner-toaster]){position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1: hsl(0, 0%, 99%);--gray2: hsl(0, 0%, 97.3%);--gray3: hsl(0, 0%, 95.1%);--gray4: hsl(0, 0%, 93%);--gray5: hsl(0, 0%, 90.9%);--gray6: hsl(0, 0%, 88.7%);--gray7: hsl(0, 0%, 85.8%);--gray8: hsl(0, 0%, 78%);--gray9: hsl(0, 0%, 56.1%);--gray10: hsl(0, 0%, 52.3%);--gray11: hsl(0, 0%, 43.5%);--gray12: hsl(0, 0%, 9%);--border-radius: 8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:none;z-index:999999999}:where([data-sonner-toaster][data-x-position="right"]){right:max(var(--offset),env(safe-area-inset-right))}:where([data-sonner-toaster][data-x-position="left"]){left:max(var(--offset),env(safe-area-inset-left))}:where([data-sonner-toaster][data-x-position="center"]){left:50%;transform:translate(-50%)}:where([data-sonner-toaster][data-y-position="top"]){top:max(var(--offset),env(safe-area-inset-top))}:where([data-sonner-toaster][data-y-position="bottom"]){bottom:max(var(--offset),env(safe-area-inset-bottom))}:where([data-sonner-toast]){--y: translateY(100%);--lift-amount: calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);filter:blur(0);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:none;overflow-wrap:anywhere}:where([data-sonner-toast][data-styled="true"]){padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px #0000001a;width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}:where([data-sonner-toast]:focus-visible){box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast][data-y-position="top"]){top:0;--y: translateY(-100%);--lift: 1;--lift-amount: calc(1 * var(--gap))}:where([data-sonner-toast][data-y-position="bottom"]){bottom:0;--y: translateY(100%);--lift: -1;--lift-amount: calc(var(--lift) * var(--gap))}:where([data-sonner-toast]) :where([data-description]){font-weight:400;line-height:1.4;color:inherit}:where([data-sonner-toast]) :where([data-title]){font-weight:500;line-height:1.5;color:inherit}:where([data-sonner-toast]) :where([data-icon]){display:flex;height:16px;width:16px;position:relative;justify-content:flex-start;align-items:center;flex-shrink:0;margin-left:var(--toast-icon-margin-start);margin-right:var(--toast-icon-margin-end)}:where([data-sonner-toast][data-promise="true"]) :where([data-icon])>svg{opacity:0;transform:scale(.8);transform-origin:center;animation:sonner-fade-in .3s ease forwards}:where([data-sonner-toast]) :where([data-icon])>*{flex-shrink:0}:where([data-sonner-toast]) :where([data-icon]) svg{margin-left:var(--toast-svg-margin-start);margin-right:var(--toast-svg-margin-end)}:where([data-sonner-toast]) :where([data-content]){display:flex;flex-direction:column;gap:2px}[data-sonner-toast][data-styled=true] [data-button]{border-radius:4px;padding-left:8px;padding-right:8px;height:24px;font-size:12px;color:var(--normal-bg);background:var(--normal-text);margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end);border:none;cursor:pointer;outline:none;display:flex;align-items:center;flex-shrink:0;transition:opacity .4s,box-shadow .2s}:where([data-sonner-toast]) :where([data-button]):focus-visible{box-shadow:0 0 0 2px #0006}:where([data-sonner-toast]) :where([data-button]):first-of-type{margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end)}:where([data-sonner-toast]) :where([data-cancel]){color:var(--normal-text);background:rgba(0,0,0,.08)}:where([data-sonner-toast][data-theme="dark"]) :where([data-cancel]){background:rgba(255,255,255,.3)}:where([data-sonner-toast]) :where([data-close-button]){position:absolute;left:var(--toast-close-button-start);right:var(--toast-close-button-end);top:0;height:20px;width:20px;display:flex;justify-content:center;align-items:center;padding:0;background:var(--gray1);color:var(--gray12);border:1px solid var(--gray4);transform:var(--toast-close-button-transform);border-radius:50%;cursor:pointer;z-index:1;transition:opacity .1s,background .2s,border-color .2s}:where([data-sonner-toast]) :where([data-close-button]):focus-visible{box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast]) :where([data-disabled="true"]){cursor:not-allowed}:where([data-sonner-toast]):hover :where([data-close-button]):hover{background:var(--gray2);border-color:var(--gray5)}:where([data-sonner-toast][data-swiping="true"]):before{content:"";position:absolute;left:0;right:0;height:100%;z-index:-1}:where([data-sonner-toast][data-y-position="top"][data-swiping="true"]):before{bottom:50%;transform:scaleY(3) translateY(50%)}:where([data-sonner-toast][data-y-position="bottom"][data-swiping="true"]):before{top:50%;transform:scaleY(3) translateY(-50%)}:where([data-sonner-toast][data-swiping="false"][data-removed="true"]):before{content:"";position:absolute;inset:0;transform:scaleY(2)}:where([data-sonner-toast]):after{content:"";position:absolute;left:0;height:calc(var(--gap) + 1px);bottom:100%;width:100%}:where([data-sonner-toast][data-mounted="true"]){--y: translateY(0);opacity:1}:where([data-sonner-toast][data-expanded="false"][data-front="false"]){--scale: var(--toasts-before) * .05 + 1;--y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));height:var(--front-toast-height)}:where([data-sonner-toast])>*{transition:opacity .4s}:where([data-sonner-toast][data-expanded="false"][data-front="false"][data-styled="true"])>*{opacity:0}:where([data-sonner-toast][data-visible="false"]){opacity:0;pointer-events:none}:where([data-sonner-toast][data-mounted="true"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset)));height:var(--initial-height)}:where([data-sonner-toast][data-removed="true"][data-front="true"][data-swipe-out="false"]){--y: translateY(calc(var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="true"]){--y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="false"]){--y: translateY(40%);opacity:0;transition:transform .5s,opacity .2s}:where([data-sonner-toast][data-removed="true"][data-front="false"]):before{height:calc(var(--initial-height) + 20%)}[data-sonner-toast][data-swiping=true]{transform:var(--y) translateY(var(--swipe-amount, 0px));transition:none}[data-sonner-toast][data-swipe-out=true][data-y-position=bottom],[data-sonner-toast][data-swipe-out=true][data-y-position=top]{animation:swipe-out .2s ease-out forwards}@keyframes swipe-out{0%{transform:translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount)));opacity:1}to{transform:translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount) + var(--lift) * -100%));opacity:0}}@media (max-width: 600px){[data-sonner-toaster]{position:fixed;--mobile-offset: 16px;right:var(--mobile-offset);left:var(--mobile-offset);width:100%}[data-sonner-toaster] [data-sonner-toast]{left:0;right:0;width:calc(100% - var(--mobile-offset) * 2)}[data-sonner-toaster][data-x-position=left]{left:var(--mobile-offset)}[data-sonner-toaster][data-y-position=bottom]{bottom:20px}[data-sonner-toaster][data-y-position=top]{top:20px}[data-sonner-toaster][data-x-position=center]{left:var(--mobile-offset);right:var(--mobile-offset);transform:none}}[data-sonner-toaster][data-theme=light]{--normal-bg: #fff;--normal-border: var(--gray4);--normal-text: var(--gray12);--success-bg: hsl(143, 85%, 96%);--success-border: hsl(145, 92%, 91%);--success-text: hsl(140, 100%, 27%);--info-bg: hsl(208, 100%, 97%);--info-border: hsl(221, 91%, 91%);--info-text: hsl(210, 92%, 45%);--warning-bg: hsl(49, 100%, 97%);--warning-border: hsl(49, 91%, 91%);--warning-text: hsl(31, 92%, 45%);--error-bg: hsl(359, 100%, 97%);--error-border: hsl(359, 100%, 94%);--error-text: hsl(360, 100%, 45%)}[data-sonner-toaster][data-theme=light] [data-sonner-toast][data-invert=true]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast][data-invert=true]{--normal-bg: #fff;--normal-border: var(--gray3);--normal-text: var(--gray12)}[data-sonner-toaster][data-theme=dark]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1);--success-bg: hsl(150, 100%, 6%);--success-border: hsl(147, 100%, 12%);--success-text: hsl(150, 86%, 65%);--info-bg: hsl(215, 100%, 6%);--info-border: hsl(223, 100%, 12%);--info-text: hsl(216, 87%, 65%);--warning-bg: hsl(64, 100%, 6%);--warning-border: hsl(60, 100%, 12%);--warning-text: hsl(46, 87%, 65%);--error-bg: hsl(358, 76%, 10%);--error-border: hsl(357, 89%, 16%);--error-text: hsl(358, 100%, 81%)}[data-rich-colors=true][data-sonner-toast][data-type=success],[data-rich-colors=true][data-sonner-toast][data-type=success] [data-close-button]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=info],[data-rich-colors=true][data-sonner-toast][data-type=info] [data-close-button]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning],[data-rich-colors=true][data-sonner-toast][data-type=warning] [data-close-button]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=error],[data-rich-colors=true][data-sonner-toast][data-type=error] [data-close-button]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}.sonner-loading-wrapper{--size: 16px;height:var(--size);width:var(--size);position:absolute;inset:0;z-index:10}.sonner-loading-wrapper[data-visible=false]{transform-origin:center;animation:sonner-fade-out .2s ease forwards}.sonner-spinner{position:relative;top:50%;left:50%;height:var(--size);width:var(--size)}.sonner-loading-bar{animation:sonner-spin 1.2s linear infinite;background:var(--gray11);border-radius:6px;height:8%;left:-10%;position:absolute;top:-3.9%;width:24%}.sonner-loading-bar:nth-child(1){animation-delay:-1.2s;transform:rotate(.0001deg) translate(146%)}.sonner-loading-bar:nth-child(2){animation-delay:-1.1s;transform:rotate(30deg) translate(146%)}.sonner-loading-bar:nth-child(3){animation-delay:-1s;transform:rotate(60deg) translate(146%)}.sonner-loading-bar:nth-child(4){animation-delay:-.9s;transform:rotate(90deg) translate(146%)}.sonner-loading-bar:nth-child(5){animation-delay:-.8s;transform:rotate(120deg) translate(146%)}.sonner-loading-bar:nth-child(6){animation-delay:-.7s;transform:rotate(150deg) translate(146%)}.sonner-loading-bar:nth-child(7){animation-delay:-.6s;transform:rotate(180deg) translate(146%)}.sonner-loading-bar:nth-child(8){animation-delay:-.5s;transform:rotate(210deg) translate(146%)}.sonner-loading-bar:nth-child(9){animation-delay:-.4s;transform:rotate(240deg) translate(146%)}.sonner-loading-bar:nth-child(10){animation-delay:-.3s;transform:rotate(270deg) translate(146%)}.sonner-loading-bar:nth-child(11){animation-delay:-.2s;transform:rotate(300deg) translate(146%)}.sonner-loading-bar:nth-child(12){animation-delay:-.1s;transform:rotate(330deg) translate(146%)}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}to{opacity:.15}}@media (prefers-reduced-motion){[data-sonner-toast],[data-sonner-toast]>*,.sonner-loading-bar{transition:none!important;animation:none!important}}.sonner-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);transform-origin:center;transition:opacity .2s,transform .2s}.sonner-loader[data-visible=false]{opacity:0;transform:scale(.8) translate(-50%,-50%)}
+</style><style type="text/css">[data-vaul-drawer]{touch-action:none;will-change:transform;transition:transform .5s cubic-bezier(.32, .72, 0, 1);animation-duration:.5s;animation-timing-function:cubic-bezier(0.32,0.72,0,1)}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=bottom][data-state=open]{animation-name:slideFromBottom}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=bottom][data-state=closed]{animation-name:slideToBottom}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=top][data-state=open]{animation-name:slideFromTop}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=top][data-state=closed]{animation-name:slideToTop}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=left][data-state=open]{animation-name:slideFromLeft}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=left][data-state=closed]{animation-name:slideToLeft}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=right][data-state=open]{animation-name:slideFromRight}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=right][data-state=closed]{animation-name:slideToRight}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=bottom]{transform:translate3d(0,var(--initial-transform,100%),0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=top]{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=left]{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=right]{transform:translate3d(var(--initial-transform,100%),0,0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=top]{transform:translate3d(0,var(--snap-point-height,0),0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=bottom]{transform:translate3d(0,var(--snap-point-height,0),0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=left]{transform:translate3d(var(--snap-point-height,0),0,0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=right]{transform:translate3d(var(--snap-point-height,0),0,0)}[data-vaul-overlay][data-vaul-snap-points=false]{animation-duration:.5s;animation-timing-function:cubic-bezier(0.32,0.72,0,1)}[data-vaul-overlay][data-vaul-snap-points=false][data-state=open]{animation-name:fadeIn}[data-vaul-overlay][data-state=closed]{animation-name:fadeOut}[data-vaul-animate=false]{animation:none!important}[data-vaul-overlay][data-vaul-snap-points=true]{opacity:0;transition:opacity .5s cubic-bezier(.32, .72, 0, 1)}[data-vaul-overlay][data-vaul-snap-points=true]{opacity:1}[data-vaul-drawer]:not([data-vaul-custom-container=true])::after{content:'';position:absolute;background:inherit;background-color:inherit}[data-vaul-drawer][data-vaul-drawer-direction=top]::after{top:initial;bottom:100%;left:0;right:0;height:200%}[data-vaul-drawer][data-vaul-drawer-direction=bottom]::after{top:100%;bottom:initial;left:0;right:0;height:200%}[data-vaul-drawer][data-vaul-drawer-direction=left]::after{left:initial;right:100%;top:0;bottom:0;width:200%}[data-vaul-drawer][data-vaul-drawer-direction=right]::after{left:100%;right:initial;top:0;bottom:0;width:200%}[data-vaul-overlay][data-vaul-snap-points=true]:not([data-vaul-snap-points-overlay=true]):not(
+[data-state=closed]
+){opacity:0}[data-vaul-overlay][data-vaul-snap-points-overlay=true]{opacity:1}[data-vaul-handle]{display:block;position:relative;opacity:.7;background:#e2e2e4;margin-left:auto;margin-right:auto;height:5px;width:32px;border-radius:1rem;touch-action:pan-y}[data-vaul-handle]:active,[data-vaul-handle]:hover{opacity:1}[data-vaul-handle-hitarea]{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:max(100%,2.75rem);height:max(100%,2.75rem);touch-action:inherit}@media (hover:hover) and (pointer:fine){[data-vaul-drawer]{user-select:none}}@media (pointer:fine){[data-vaul-handle-hitarea]:{width:100%;height:100%}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeOut{to{opacity:0}}@keyframes slideFromBottom{from{transform:translate3d(0,var(--initial-transform,100%),0)}to{transform:translate3d(0,0,0)}}@keyframes slideToBottom{to{transform:translate3d(0,var(--initial-transform,100%),0)}}@keyframes slideFromTop{from{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}to{transform:translate3d(0,0,0)}}@keyframes slideToTop{to{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}}@keyframes slideFromLeft{from{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}to{transform:translate3d(0,0,0)}}@keyframes slideToLeft{to{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}}@keyframes slideFromRight{from{transform:translate3d(var(--initial-transform,100%),0,0)}to{transform:translate3d(0,0,0)}}@keyframes slideToRight{to{transform:translate3d(var(--initial-transform,100%),0,0)}}</style><script type="text/javascript" src="./UrbanSync-Logo-new_files/sdk.js.download" async="" defer=""></script><link rel="icon" href="https://cdn.openai.com/sora/assets/favicon.ico" type="image/x-icon"><link rel="icon" href="https://cdn.openai.com/sora/assets/favicon-light.ico" type="image/x-icon" media="(prefers-color-scheme: light)"><link rel="icon" href="https://cdn.openai.com/sora/assets/favicon-dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)"><link rel="apple-touch-icon" href="https://cdn.openai.com/sora/assets/apple-touch-icon.png" sizes="180x180"><meta name="vg-head-count" content="4"><style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style><script type="text/javascript" src="./UrbanSync-Logo-new_files/sdk(1).js.download" async="" defer=""></script><style type="text/css">
+  .with-scroll-bars-hidden {
+   overflow: hidden !important;
+   padding-right: 15px !important;
+  }
+  body[data-scroll-locked] {
+    overflow: hidden !important;
+    overscroll-behavior: contain;
+    position: relative !important;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 15px;
+    margin-left:0;
+    margin-top:0;
+    margin-right: 15px !important;
+    
+  }
+  
+  .right-scroll-bar-position {
+    right: 15px !important;
+  }
+  
+  .width-before-scroll-bar {
+    margin-right: 15px !important;
+  }
+  
+  .right-scroll-bar-position .right-scroll-bar-position {
+    right: 0 !important;
+  }
+  
+  .width-before-scroll-bar .width-before-scroll-bar {
+    margin-right: 0 !important;
+  }
+  
+  body[data-scroll-locked] {
+    --removed-body-scroll-bar-size: 15px;
+  }
+</style></head><body class="min-h-screen overscroll-none bg-token-bg-primary font-sans antialiased" style="pointer-events: none;" data-scroll-locked="1"><span data-radix-focus-guard="" tabindex="0" data-aria-hidden="true" aria-hidden="true" style="outline: none; opacity: 0; position: fixed; pointer-events: none;"></span><script src="./UrbanSync-Logo-new_files/webpack-ee845f0b3479610f.js.download" async="" data-aria-hidden="true" aria-hidden="true"></script><script data-aria-hidden="true" aria-hidden="true">(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script data-aria-hidden="true" aria-hidden="true">self.__next_f.push([1,"1:HL[\"https://sora-cdn.oaistatic.com/_next/static/css/3d99eced86ab1de4.css\",\"style\"]\n2:HL[\"https://sora-cdn.oaistatic.com/_next/static/css/0a3b284a330a818e.css\",\"style\"]\n"])</script><script data-aria-hidden="true" aria-hidden="true">self.__next_f.push([1,"3:I[40908,[],\"\"]\n5:I[30330,[],\"ClientPageRoot\"]\n6:I[46953,[\"3346\",\"static/chunks/93923311-547459e8a9f7cc19.js\",\"2144\",\"static/chunks/2144-3e09ab8b8ce37c12.js\",\"3079\",\"static/chunks/3079-b80a994f4f715947.js\",\"693\",\"static/chunks/693-47618df74fdd6e76.js\",\"2204\",\"static/chunks/2204-332bfacd6818316e.js\",\"5181\",\"static/chunks/5181-8d992ae06316d95a.js\",\"5213\",\"static/chunks/5213-6cb4664809e45b63.js\",\"5263\",\"static/chunks/5263-cf4a041c362b1165.js\",\"1196\",\"static/chunks/1196-ef499744480a07cb.js\",\"2352\",\"static/chunks/2352-3a41c60905781155.js\",\"6774\",\"static/chunks/6774-6314b40c19facf52.js\",\"5421\",\"static/chunks/app/(main)/(home)/explore/page-4e86f08b505d400c.js\"],\"default\",1]\n7:I[41601,[],\"\"]\n8:I[57411,[],\"\"]\n9:I[87231,[\"3346\",\"static/chunks/93923311-547459e8a9f7cc19.js\",\"2144\",\"static/chunks/2144-3e09ab8b8ce37c12.js\",\"3079\",\"static/chunks/3079-b80a994f4f715947.js\",\"693\",\"static/chunks/693-47618df74fdd6e76.js\",\"2204\",\"static/chunks/2204-332bfacd6818316e.js\",\"5181\",\"static/chunks/5181-8d992ae06316d95a.js\",\"5213\",\"static/chunks/5213-6cb4664809e45b63.js\",\"5263\",\"static/chunks/5263-cf4a041c362b1165.js\",\"1196\",\"static/chunks/1196-ef499744480a07cb.js\",\"2352\",\"static/chunks/2352-3a41c60905781155.js\",\"7933\",\"static/chunks/app/(main)/(home)/layout-cd4ab8575b4a46e7.js\"],\"default\",1]\nb:I[62861,[\"3346\",\"static/chunks/93923311-547459e8a9f7cc19.js\",\"2144\",\"static/chunks/2144-3e09ab8b8ce37c12.js\",\"3079\",\"static/chunks/3079-b80a994f4f715947.js\",\"693\",\"static/chunks/693-47618df74fdd6e76.js\",\"2204\",\"static/chunks/2204-332bfacd6818316e.js\",\"5181\",\"static/chunks/5181-8d992ae06316d95a.js\",\"2078\",\"static/chunks/2078-5b113a06945b3e5f.js\",\"5213\",\"static/chunks/5213-6cb4664809e45b63.js\",\"5263\",\"static/chunks/5263-cf4a041c362b1165.js\",\"1196\",\"static/chunks/1196-ef499744480a07cb.js\",\"2352\",\"static/chunks/2352-3a41c60905781155.js\",\"4095\",\"static/chunks/app/(main)/layout-a728b15fa8f01fc8.js\"],\"default\",1]\n12:I[18368,[],\"\"]\na:{}\nc:[]\nd:{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"h"])</script><script data-aria-hidden="true" aria-hidden="true">self.__next_f.push([1,"eight\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"}\ne:{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"}\nf:{\"display\":\"inline-block\"}\n10:{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0}\n13:[]\n"])</script><script data-aria-hidden="true" aria-hidden="true">self.__next_f.push([1,"0:[\"$\",\"$L3\",null,{\"buildId\":\"1u4SNsVQNMdfrZRIp30Eh\",\"assetPrefix\":\"https://sora-cdn.oaistatic.com\",\"urlParts\":[\"\",\"explore\"],\"initialTree\":[\"\",{\"children\":[\"(main)\",{\"children\":[\"(home)\",{\"children\":[\"explore\",{\"children\":[\"__PAGE__\",{}]}]}],\"modalPages\":[\"__DEFAULT__\",{}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"(main)\",{\"children\":[\"(home)\",{\"children\":[\"explore\",{\"children\":[\"__PAGE__\",{},[[\"$L4\",[\"$\",\"$L5\",null,{\"props\":{\"params\":{},\"searchParams\":{}},\"Component\":\"$6\"}],null],null],null]},[null,[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(main)\",\"children\",\"(home)\",\"children\",\"explore\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[null,[\"$\",\"$L9\",null,{\"children\":[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(main)\",\"children\",\"(home)\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}],\"params\":\"$a\"}]],null],null],\"modalPages\":[\"__DEFAULT__\",{},[[\"$undefined\",null,null],null],null]},[[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"https://sora-cdn.oaistatic.com/_next/static/css/3d99eced86ab1de4.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"https://sora-cdn.oaistatic.com/_next/static/css/0a3b284a330a818e.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"$Lb\",null,{\"children\":[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"(main)\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}],\"modalPages\":[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"modalPages\",\"segmentPath\":[\"children\",\"(main)\",\"modalPages\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$c\"}],\"params\":\"$a\"}]],null],null]},[[null,[\"$\",\"$L7\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L8\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":\"$d\",\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":\"$e\",\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":\"$f\",\"children\":[\"$\",\"h2\",null,{\"style\":\"$10\",\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L11\"],\"globalErrorComponent\":\"$12\",\"missingSlots\":\"$W13\"}]\n"])</script><script data-aria-hidden="true" aria-hidden="true">self.__next_f.push([1,"11:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Sora\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:title\",\"content\":\"Sora\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:description\",\"content\":\"Transform text and images into immersive videos. Animate stories, visualize ideas, and bring your concepts to life.\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:url\",\"content\":\"https://sora.com/explore\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:site_name\",\"content\":\"Sora\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:image\",\"content\":\"https://cdn.openai.com/sora/images/og-cover-24.jpg\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"10\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:title\",\"content\":\"Sora\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:description\",\"content\":\"Transform text and images into immersive videos. Animate stories, visualize ideas, and bring your concepts to life.\"}],[\"$\",\"meta\",\"13\",{\"name\":\"twitter:image\",\"content\":\"https://cdn.openai.com/sora/images/og-cover-24.jpg\"}],[\"$\",\"meta\",\"14\",{\"name\":\"twitter:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"15\",{\"name\":\"twitter:image:height\",\"content\":\"630\"}],[\"$\",\"link\",\"16\",{\"rel\":\"icon\",\"href\":\"https://cdn.openai.com/sora/assets/favicon.ico\",\"type\":\"image/x-icon\"}],[\"$\",\"link\",\"17\",{\"rel\":\"icon\",\"href\":\"https://cdn.openai.com/sora/assets/favicon-light.ico\",\"type\":\"image/x-icon\",\"media\":\"(prefers-color-scheme: light)\"}],[\"$\",\"link\",\"18\",{\"rel\":\"icon\",\"href\":\"https://cdn.openai.com/sora/assets/favicon-dark.ico\",\"type\":\"image/x-icon\",\"media\":\"(prefers-color-scheme: dark)\"}],[\"$\",\"link\",\"19\",{\"rel\":\"apple-touch-icon\",\"href\":\"https://cdn.openai.com/sora/assets/apple-touch-icon.png\",\"sizes\":\"180x180\"}]]\n4:null\n"])</script><script data-aria-hidden="true" aria-hidden="true">(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97d035cf8a8b881b',t:'MTc1NzUyMDc4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" data-aria-hidden="true" aria-hidden="true" src="./UrbanSync-Logo-new_files/saved_resource.html"></iframe><next-route-announcer style="position: absolute;" data-aria-hidden="true" aria-hidden="true"><template shadowrootmode="open"><div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;"></div></template></next-route-announcer><iframe src="./UrbanSync-Logo-new_files/frame.html" style="display: none;" data-aria-hidden="true" aria-hidden="true"></iframe><script data-aria-hidden="true" aria-hidden="true">!function(){try{var d=document.documentElement,c=d.classList;c.remove('light','dark');var e=localStorage.getItem('theme');if('system'===e||(!e&&false)){var t='(prefers-color-scheme: dark)',m=window.matchMedia(t);if(m.media!==t||m.matches){d.style.colorScheme = 'dark';c.add('dark')}else{d.style.colorScheme = 'light';c.add('light')}}else if(e){c.add(e|| '')}else{c.add('dark')}if(e==='light'||e==='dark'||!e)d.style.colorScheme=e||'dark'}catch(e){}}()</script><main class="relative flex max-h-screen min-h-screen flex-col items-center justify-between" data-aria-hidden="true" aria-hidden="true"><div class="h-full max-h-screen min-h-screen w-full"><div class="h-full max-h-screen min-h-screen w-full"><div class="min-h-screen w-full" style="transform-origin: 768px 371px; will-change: auto; opacity: 0; transform: scale(0.975);"><div class="relative flex min-h-screen"><div class="sticky box-content w-[--sidebar-width] flex-shrink-0 overflow-y-auto px-[--sidebar-gap] max-tablet:hidden" style="top: 60px; height: calc(-60px + 100vh);"><div class="flex flex-col gap-6"><div class="-mx-3"><button class="inline-flex items-center justify-center whitespace-nowrap text-sm focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative shadow-inset-stroke text-token-text-primary hover:bg-token-bg-active data-[state=open]:bg-token-bg-active hover:shadow-none data-[state=open]:shadow-none px-3 py-2 h-9 rounded-full gap-2 font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-[18px] w-[18px]"><path fill="currentColor" fill-rule="evenodd" d="M11.327 4.609a6.25 6.25 0 1 0-.654 12.483 6.25 6.25 0 0 0 .654-12.483m-8.565 5.81a8.25 8.25 0 1 1 14.461 5.848l3.983 4.424a1 1 0 0 1-1.486 1.338l-3.983-4.424a8.25 8.25 0 0 1-12.975-7.187" clip-rule="evenodd"></path></svg>Search<div class="ml-1 text-token-text-secondary"><span class="whitespace-nowrap"><span>Ctrl</span><span class="inline-block w-0.5"></span><span>K</span></span></div></button></div><div class="flex flex-col items-start"><a class="flex items-center gap-2 rounded-full -mx-3 pl-3 pr-4 py-1.5 font-medium text-token-text-primary active:text-token-text-secondary cursor-pointer max-w-full" href="https://sora.chatgpt.com/explore"><div class="flex flex-grow items-center gap-2 overflow-hidden"><div class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28" class="h-[18px] w-[18px]"><path fill="currentColor" d="M11.778 17.507V12.66a.903.903 0 0 1 1.391-.764l3.75 2.423a.91.91 0 0 1 0 1.528l-3.75 2.424a.903.903 0 0 1-1.391-.764"></path><path stroke="currentColor" stroke-width="2.33" d="M24 15.676v-1.992c0-1.683 0-2.526-.239-3.285a5.2 5.2 0 0 0-1.016-1.827c-.519-.603-1.234-1.047-2.665-1.936l-1.704-1.058c-1.588-.986-2.382-1.479-3.233-1.671a5.2 5.2 0 0 0-2.286 0c-.851.192-1.645.685-3.233 1.671L7.92 6.636c-1.43.889-2.146 1.333-2.665 1.936a5.2 5.2 0 0 0-1.016 1.827C4 11.16 4 12.001 4 13.685v1.991c0 2.904 0 4.356.565 5.465a5.2 5.2 0 0 0 2.266 2.266c1.11.565 2.561.565 5.465.565h3.408c2.904 0 4.356 0 5.465-.565a5.2 5.2 0 0 0 2.266-2.266C24 20.031 24 18.58 24 15.676Z"></path></svg></div><div class="flex-grow truncate">Explore</div></div></a><a class="flex items-center gap-2 rounded-full -mx-3 pl-3 pr-4 py-1.5 font-medium text-token-text-primary active:text-token-text-secondary cursor-pointer max-w-full" href="https://sora.chatgpt.com/explore/images"><div class="flex flex-grow items-center gap-2 overflow-hidden"><div class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-[18px] w-[18px]"><path fill="currentColor" d="M8.759 3h6.482c.805 0 1.47 0 2.01.044.563.046 1.08.145 1.565.392a4 4 0 0 1 1.748 1.748c.247.485.346 1.002.392 1.564C21 7.29 21 7.954 21 8.758v6.483c0 .805 0 1.47-.044 2.01-.046.563-.145 1.08-.392 1.565a4 4 0 0 1-1.748 1.748c-.485.247-1.002.346-1.564.392-.541.044-1.206.044-2.01.044H8.758c-.805 0-1.47 0-2.01-.044-.563-.046-1.08-.145-1.565-.392a4 4 0 0 1-1.748-1.748c-.247-.485-.346-1.002-.392-1.564C3 16.71 3 16.046 3 15.242V8.758c0-.805 0-1.47.044-2.01.046-.563.145-1.08.392-1.565a4 4 0 0 1 1.748-1.748c.485-.247 1.002-.346 1.564-.392C7.29 3 7.954 3 8.758 3M6.91 5.038c-.438.035-.663.1-.819.18a2 2 0 0 0-.874.874c-.08.156-.145.38-.18.819C5 7.361 5 7.943 5 8.8v4.786l.879-.879a3 3 0 0 1 4.242 0l6.286 6.286c.261-.005.484-.014.682-.03.438-.036.663-.101.819-.181a2 2 0 0 0 .874-.874c.08-.156.145-.38.18-.819.037-.45.038-1.032.038-1.889V8.8c0-.857 0-1.439-.038-1.889-.035-.438-.1-.663-.18-.819a2 2 0 0 0-.874-.874c-.156-.08-.38-.145-.819-.18C16.639 5 16.057 5 15.2 5H8.8c-.857 0-1.439 0-1.889.038M13.586 19l-4.879-4.879a1 1 0 0 0-1.414 0l-2.286 2.286c.005.261.014.484.03.682.036.438.101.663.181.819a2 2 0 0 0 .874.874c.156.08.38.145.819.18C7.361 19 7.943 19 8.8 19zM14.5 8.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-3 1a3 3 0 1 1 6 0 3 3 0 0 1-6 0"></path></svg></div><div class="flex-grow truncate">Images</div></div></a><a class="flex items-center gap-2 rounded-full -mx-3 pl-3 pr-4 py-1.5 font-medium text-token-text-primary active:text-token-text-secondary cursor-pointer max-w-full" href="https://sora.chatgpt.com/explore/videos"><div class="flex flex-grow items-center gap-2 overflow-hidden"><div class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-[18px] w-[18px]"><path fill="currentColor" d="M16.679 4.371a1 1 0 0 0-1.857-.742zM12.822 8.63a1 1 0 0 0 1.857.742zM11.179 4.37a1 1 0 0 0-1.857-.742zM7.321 8.63a1 1 0 0 0 1.856.742zM6.184 19.564l.454-.891zm-1.748-1.748.891-.454zm15.128 0-.891-.454zm-1.748 1.748-.454-.891zm0-15.128-.454.891zm1.748 1.748-.891.454zM6.184 4.436l.454.891zM4.436 6.184l.891.454zM20 8H4v2h16zm-5.178-4.371-2 5 1.857.742 2-5zm-5.5 0-2 5 1.856.742 2-5zM10.4 5h3.2V3h-3.2zm8.6 5.4v3.2h2v-3.2zM13.6 19h-3.2v2h3.2zM5 13.6v-3.2H3v3.2zm5.4 5.4c-1.137 0-1.929 0-2.546-.051-.605-.05-.953-.142-1.216-.276l-.908 1.782c.592.302 1.233.428 1.961.487.718.059 1.605.058 2.709.058zM3 13.6c0 1.104 0 1.991.058 2.709.06.729.185 1.369.487 1.961l1.782-.908c-.134-.263-.226-.611-.276-1.216C5.001 15.529 5 14.736 5 13.6zm3.638 5.073a3 3 0 0 1-1.311-1.311l-1.782.908a5 5 0 0 0 2.185 2.185zM19 13.6c0 1.137 0 1.929-.051 2.546-.05.605-.142.953-.276 1.216l1.782.908c.302-.592.428-1.232.487-1.961.059-.718.058-1.605.058-2.709zM13.6 21c1.104 0 1.991 0 2.709-.058.729-.06 1.369-.185 1.961-.487l-.908-1.782c-.263.134-.611.226-1.216.276-.617.05-1.41.051-2.546.051zm5.073-3.638a3 3 0 0 1-1.311 1.311l.908 1.782a5 5 0 0 0 2.185-2.185zM13.6 5c1.137 0 1.929 0 2.546.051.605.05.953.142 1.216.276l.908-1.782c-.592-.302-1.232-.428-1.961-.487C15.59 2.999 14.704 3 13.6 3zm7.4 5.4c0-1.104 0-1.991-.058-2.709-.06-.728-.185-1.369-.487-1.96l-1.782.907c.134.263.226.611.276 1.216.05.617.051 1.41.051 2.546zm-3.638-5.073a3 3 0 0 1 1.311 1.311l1.782-.908a5 5 0 0 0-2.185-2.185zM10.4 3c-1.104 0-1.991 0-2.709.058-.728.06-1.369.185-1.96.487l.907 1.782c.263-.134.611-.226 1.216-.276C8.471 5.001 9.264 5 10.4 5zM5 10.4c0-1.137 0-1.929.051-2.546.05-.605.142-.953.276-1.216L3.545 5.73c-.302.592-.428 1.233-.487 1.961C2.999 8.41 3 9.296 3 10.4zm.73-6.855A5 5 0 0 0 3.545 5.73l1.782.908a3 3 0 0 1 1.311-1.311z"></path></svg></div><div class="flex-grow truncate">Videos</div></div></a><a class="flex items-center gap-2 rounded-full -mx-3 pl-3 pr-4 py-1.5 font-medium text-token-text-primary active:text-token-text-secondary cursor-pointer max-w-full" href="https://sora.chatgpt.com/explore/top"><div class="flex flex-grow items-center gap-2 overflow-hidden"><div class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 3H6v5.5a6 6 0 0 0 12 0zM18 5h2.5a1 1 0 0 1 1 1v1.5a3 3 0 0 1-3 3H18M6 5H3.5a1 1 0 0 0-1 1v1.5a3 3 0 0 0 3 3H6M7 20v-1.5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1M12 17.5v-3"></path></svg></div><div class="flex-grow truncate">Top</div></div></a><a class="flex items-center gap-2 rounded-full -mx-3 pl-3 pr-4 py-1.5 font-medium text-token-text-primary active:text-token-text-secondary cursor-pointer max-w-full" href="https://sora.chatgpt.com/explore/likes"><div class="flex flex-grow items-center gap-2 overflow-hidden"><div class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M12 5.822c6.504-6.44 17.654 5.52 0 15.178C-5.654 11.342 5.496-.618 12 5.822Z"></path></svg></div><div class="flex-grow truncate">Likes</div></div></a></div><div class="flex flex-col gap-3"><div class="flex flex-col items-start"><div class="py-2 font-bold text-token-text-secondary">Library</div><a class="flex items-center gap-2 rounded-full -mx-3 pl-3 pr-4 py-1.5 font-medium text-token-text-primary active:text-token-text-secondary cursor-pointer max-w-full" href="https://sora.chatgpt.com/library"><div class="flex flex-grow items-center gap-2 overflow-hidden"><div class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-width="1.5" d="M1.654 10.323c-.154-1.25-.23-1.876-.046-2.384a2.25 2.25 0 0 1 .856-1.095c.448-.302 1.073-.38 2.324-.533l2.531-.31c1.25-.154 1.876-.23 2.384-.046.446.162.83.462 1.096.856.302.448.379 1.073.532 2.324l.31 2.53c.154 1.252.231 1.877.046 2.385a2.25 2.25 0 0 1-.856 1.095c-.448.302-1.073.38-2.324.533l-2.53.31c-1.251.154-1.877.23-2.384.046a2.25 2.25 0 0 1-1.096-.856c-.302-.448-.379-1.073-.533-2.324z"></path><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M14.25 12.102q.065-.017.126-.04a2.25 2.25 0 0 0 1.095-.856c.302-.448.38-1.073.533-2.324l.31-2.53c.154-1.251.23-1.877.046-2.384a2.25 2.25 0 0 0-.856-1.096c-.448-.302-1.073-.379-2.324-.533l-2.531-.31c-1.25-.154-1.876-.23-2.384-.046a2.25 2.25 0 0 0-1.095.856c-.103.152-.18.325-.242.536"></path><path fill="currentColor" d="m5.371 12.718-.418-2.973a.563.563 0 0 1 .793-.589l2.52 1.162c.373.171.443.67.132.937l-2.103 1.811a.562.562 0 0 1-.924-.348"></path></svg></div><div class="flex-grow truncate">My media</div></div></a><a class="flex items-center gap-2 rounded-full -mx-3 pl-3 pr-4 py-1.5 font-medium text-token-text-primary active:text-token-text-secondary cursor-pointer max-w-full" href="https://sora.chatgpt.com/library/favorites"><div class="flex flex-grow items-center gap-2 overflow-hidden"><div class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-[18px] w-[18px]"><path fill="currentColor" fill-rule="evenodd" d="M9.822 2.077c.957-1.696 3.4-1.696 4.356 0l2.086 3.7a.5.5 0 0 0 .337.245l4.163.84c1.91.386 2.664 2.71 1.346 4.143l-2.875 3.127a.5.5 0 0 0-.128.396l.488 4.22c.223 1.934-1.753 3.37-3.524 2.56l-3.863-1.768a.5.5 0 0 0-.416 0L7.93 21.308c-1.771.81-3.748-.626-3.524-2.56l.488-4.22a.5.5 0 0 0-.129-.396L1.89 11.005C.572 9.571 1.327 7.248 3.236 6.862l4.164-.84a.5.5 0 0 0 .337-.244zm2.614.982a.5.5 0 0 0-.871 0l-2.086 3.7a2.5 2.5 0 0 1-1.683 1.224l-4.164.84a.5.5 0 0 0-.27.829l2.875 3.127a2.5 2.5 0 0 1 .643 1.979l-.487 4.22a.5.5 0 0 0 .704.511l3.863-1.768a2.5 2.5 0 0 1 2.08 0l3.863 1.768a.5.5 0 0 0 .705-.512l-.488-4.22a2.5 2.5 0 0 1 .643-1.978l2.875-3.127a.5.5 0 0 0-.27-.829l-4.163-.84a2.5 2.5 0 0 1-1.683-1.223z" clip-rule="evenodd"></path></svg></div><div class="flex-grow truncate">Favorites</div></div></a><a class="flex items-center gap-2 rounded-full -mx-3 pl-3 pr-4 py-1.5 font-medium text-token-text-primary active:text-token-text-secondary cursor-pointer max-w-full" href="https://sora.chatgpt.com/library/uploads"><div class="flex flex-grow items-center gap-2 overflow-hidden"><div class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 6.25v5.5"></path><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M6.25 9h5.5"></path><rect width="13.3" height="13.3" x="2.35" y="2.35" stroke="currentColor" stroke-width="1.5" rx="6.65"></rect></svg></div><div class="flex-grow truncate">Uploads</div></div></a><a class="flex items-center gap-2 rounded-full -mx-3 pl-3 pr-4 py-1.5 font-medium text-token-text-primary active:text-token-text-secondary cursor-pointer max-w-full" href="https://sora.chatgpt.com/library/trash"><div class="flex flex-grow items-center gap-2 overflow-hidden"><div class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-[18px] w-[18px]"><path fill="currentColor" fill-rule="evenodd" d="M10.556 4a1 1 0 0 0-.97.751l-.292 1.14h5.421l-.293-1.14A1 1 0 0 0 13.453 4zm6.224 1.892-.421-1.639A3 3 0 0 0 13.453 2h-2.897A3 3 0 0 0 7.65 4.253l-.421 1.639H4a1 1 0 1 0 0 2h.1l1.215 11.425A3 3 0 0 0 8.3 22H15.7a3 3 0 0 0 2.984-2.683l1.214-11.425H20a1 1 0 1 0 0-2zm1.108 2H6.112l1.192 11.214A1 1 0 0 0 8.3 20H15.7a1 1 0 0 0 .995-.894zM10 10a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1m4 0a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1" clip-rule="evenodd"></path></svg></div><div class="flex-grow truncate">Trash</div></div></a></div><div class="flex flex-col items-start"><button class="flex items-center gap-2 rounded-full -mx-3 pl-3 pr-4 py-1.5 font-medium text-token-text-primary active:text-token-text-secondary cursor-pointer max-w-full"><div class="flex flex-grow items-center gap-2 overflow-hidden"><div class="shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M9.5 14.505H5.85c-1.26 0-1.89 0-2.371-.245a2.25 2.25 0 0 1-.984-.983c-.245-.482-.245-1.112-.245-2.372V8.15m0 0V6.73c0-1.26 0-1.89.245-2.371a2.25 2.25 0 0 1 .984-.984c.48-.245 1.11-.245 2.371-.245h.59c.126 0 .189 0 .25.003.512.028.999.23 1.38.572.046.04.09.086.18.175v0c.09.09.134.134.18.175a2.25 2.25 0 0 0 1.38.572c.061.003.124.003.25.003h3.253c.174 0 .26 0 .334.005a2.25 2.25 0 0 1 2.098 2.098c.005.074.005.16.005.334v0c0 .077 0 .116-.002.148a1 1 0 0 1-.933.933c-.032.002-.07.002-.148.002zM12.5 13.5H17m-2.25-2.25v4.5"></path></svg></div><div class="flex-grow truncate text-left">New folder</div></div></button></div></div></div></div><div class="flex-1"><div class="flex min-h-[80vh] justify-center pb-[var(--mobile-tab-bar-height)] tablet:pb-40 tablet:pr-1"><div class="flex max-w-[1920px] grow flex-col"><div class="box-content flex h-[calc(var(--nav-height)-16px)] items-center justify-between px-mobile-x pt-[var(--nav-padding-top)] tablet:h-[var(--nav-height)] tablet:px-0" style="padding-bottom: 4px; --nav-height: 52px; --nav-padding-top: 4px;"><div class="flex items-center gap-4"><h2 class="text-lg font-semibold leading-[21px] nf2:text-3xl nf2:leading-9"><div class="flex gap-3">Explore</div></h2></div></div><div class="relative flex w-full flex-col gap-2"><div class="w-full"><div style="height: 4924px; width: 100%; position: relative;"><div data-index="0" style="position: absolute; top: 0px; left: 0px; width: 408px; height: 612px; transform: translate(0px, 0px);"><div class="h-full w-full"><div class="group relative h-full w-full"><a href="https://sora.chatgpt.com/g/gen_01k4sywn9he9ss3tgby4e6mtct"><img src="./UrbanSync-Logo-new_files/assets_task_01k4sywm24fv9sq4xvjk20fhrh_1757512984_img_1.webp" width="1024" height="1536" class="h-full w-full" alt="Generated image"></a><div class="pointer-events-none absolute bottom-0 z-20 flex h-20 w-full items-end bg-gradient-to-t from-black/50 to-transparent pb-1 pr-1.5"><div class="flex w-full items-center justify-between overflow-hidden"><div class="shrink overflow-hidden pl-1 pr-2 font-semibold text-white"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto w-full overflow-hidden px-3 py-1.5 text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><span class="truncate font-semibold">alonsogarcia</span></button></div><div class="flex shrink-0 gap-0.5"><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none" viewBox="0 0 19 18" class="h-[18px] w-[18px]"><circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="2"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M11.25 9a4.5 4.5 0 0 0-9 0M15.75 9a4.5 4.5 0 1 1-9 0"></path></svg></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15.5 15.5-3-3M13.5 7.9a5.58 5.58 0 0 1-1.64 3.96A5.6 5.6 0 1 1 13.5 7.9"></path></svg><span class="sr-only">Search for similar images</span></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 3.991c4.878-4.83 13.24 4.14 0 11.384C-4.24 8.131 4.122-.838 9 3.991Z"></path></svg><span class="truncate font-semibold">39</span></button></div></div></div></div></div></div></div><div data-index="1" style="position: absolute; top: 0px; left: 0px; width: 408px; height: 612px; transform: translate(412px, 0px);"><div class="h-full w-full"><div class="group relative h-full w-full"><a href="https://sora.chatgpt.com/g/gen_01k4svya8wfng8qactc4y9fv3t"><img src="./UrbanSync-Logo-new_files/assets_task_01k4svy93sed5v4yeamw1r1tkr_1757509906_img_0.webp" width="1024" height="1536" class="h-full w-full" alt="Generated image"></a><div class="pointer-events-none absolute bottom-0 z-20 flex h-20 w-full items-end bg-gradient-to-t from-black/50 to-transparent pb-1 pr-1.5"><div class="flex w-full items-center justify-between overflow-hidden"><div class="shrink overflow-hidden pl-1 pr-2 font-semibold text-white"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto w-full overflow-hidden px-3 py-1.5 text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><span class="truncate font-semibold">schwarzrock</span></button></div><div class="flex shrink-0 gap-0.5"><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none" viewBox="0 0 19 18" class="h-[18px] w-[18px]"><circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="2"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M11.25 9a4.5 4.5 0 0 0-9 0M15.75 9a4.5 4.5 0 1 1-9 0"></path></svg></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15.5 15.5-3-3M13.5 7.9a5.58 5.58 0 0 1-1.64 3.96A5.6 5.6 0 1 1 13.5 7.9"></path></svg><span class="sr-only">Search for similar images</span></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 3.991c4.878-4.83 13.24 4.14 0 11.384C-4.24 8.131 4.122-.838 9 3.991Z"></path></svg><span class="truncate font-semibold">63</span></button></div></div></div></div></div></div></div><div data-index="2" style="position: absolute; top: 0px; left: 0px; width: 408px; height: 612px; transform: translate(824px, 0px);"><div class="h-full w-full"><div class="group relative h-full w-full"><a href="https://sora.chatgpt.com/g/gen_01k4ss7xj7eq6brr1j6ffae8cx"><img src="./UrbanSync-Logo-new_files/assets_task_01k4ss7tk3f7nrnpjfq3ahfr8e_1757507094_img_0.webp" width="1024" height="1536" class="h-full w-full" alt="Generated image"></a><div class="pointer-events-none absolute bottom-0 z-20 flex h-20 w-full items-end bg-gradient-to-t from-black/50 to-transparent pb-1 pr-1.5"><div class="flex w-full items-center justify-between overflow-hidden"><div class="shrink overflow-hidden pl-1 pr-2 font-semibold text-white"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto w-full overflow-hidden px-3 py-1.5 text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><span class="truncate font-semibold">alexiikreator</span></button></div><div class="flex shrink-0 gap-0.5"><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none" viewBox="0 0 19 18" class="h-[18px] w-[18px]"><circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="2"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M11.25 9a4.5 4.5 0 0 0-9 0M15.75 9a4.5 4.5 0 1 1-9 0"></path></svg></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15.5 15.5-3-3M13.5 7.9a5.58 5.58 0 0 1-1.64 3.96A5.6 5.6 0 1 1 13.5 7.9"></path></svg><span class="sr-only">Search for similar images</span></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 3.991c4.878-4.83 13.24 4.14 0 11.384C-4.24 8.131 4.122-.838 9 3.991Z"></path></svg><span class="truncate font-semibold">91</span></button></div></div></div></div></div></div></div><div data-index="3" style="position: absolute; top: 0px; left: 0px; width: 408px; height: 612px; transform: translate(0px, 616px);"><div class="h-full w-full"><div class="group relative h-full w-full"><a href="https://sora.chatgpt.com/g/gen_01k4t33y2bfre98y4csr8etara"><img src="./UrbanSync-Logo-new_files/assets_task_01k4t33vcwexeaeb22rzpdxjt2_1757517414_img_1.webp" width="1024" height="1536" class="h-full w-full" alt="Generated image"></a><div class="pointer-events-none absolute bottom-0 z-20 flex h-20 w-full items-end bg-gradient-to-t from-black/50 to-transparent pb-1 pr-1.5"><div class="flex w-full items-center justify-between overflow-hidden"><div class="shrink overflow-hidden pl-1 pr-2 font-semibold text-white"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto w-full overflow-hidden px-3 py-1.5 text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><span class="truncate font-semibold">ramon007</span></button></div><div class="flex shrink-0 gap-0.5"><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none" viewBox="0 0 19 18" class="h-[18px] w-[18px]"><circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="2"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M11.25 9a4.5 4.5 0 0 0-9 0M15.75 9a4.5 4.5 0 1 1-9 0"></path></svg></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15.5 15.5-3-3M13.5 7.9a5.58 5.58 0 0 1-1.64 3.96A5.6 5.6 0 1 1 13.5 7.9"></path></svg><span class="sr-only">Search for similar images</span></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 3.991c4.878-4.83 13.24 4.14 0 11.384C-4.24 8.131 4.122-.838 9 3.991Z"></path></svg><span class="truncate font-semibold">11</span></button></div></div></div></div></div></div></div><div data-index="4" style="position: absolute; top: 0px; left: 0px; width: 408px; height: 612px; transform: translate(412px, 616px);"><div class="h-full w-full"><div class="group relative h-full w-full"><a href="https://sora.chatgpt.com/g/gen_01k4r0jnznfx4rxpzg6b4tngxg"><img src="./UrbanSync-Logo-new_files/assets_task_01k4r0jknkfqmrsevn1yagcsm3_1757447657_img_1.webp" width="1024" height="1536" class="h-full w-full" alt="Generated image"></a><div class="pointer-events-none absolute bottom-0 z-20 flex h-20 w-full items-end bg-gradient-to-t from-black/50 to-transparent pb-1 pr-1.5"><div class="flex w-full items-center justify-between overflow-hidden"><div class="shrink overflow-hidden pl-1 pr-2 font-semibold text-white"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto w-full overflow-hidden px-3 py-1.5 text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><span class="truncate font-semibold">danny_9704</span></button></div><div class="flex shrink-0 gap-0.5"><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none" viewBox="0 0 19 18" class="h-[18px] w-[18px]"><circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="2"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M11.25 9a4.5 4.5 0 0 0-9 0M15.75 9a4.5 4.5 0 1 1-9 0"></path></svg></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15.5 15.5-3-3M13.5 7.9a5.58 5.58 0 0 1-1.64 3.96A5.6 5.6 0 1 1 13.5 7.9"></path></svg><span class="sr-only">Search for similar images</span></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 3.991c4.878-4.83 13.24 4.14 0 11.384C-4.24 8.131 4.122-.838 9 3.991Z"></path></svg><span class="truncate font-semibold">288</span></button></div></div></div></div></div></div></div><div data-index="5" style="position: absolute; top: 0px; left: 0px; width: 408px; height: 272px; transform: translate(824px, 616px);"><div class="h-full w-full"><div class="group relative h-full w-full"><a href="https://sora.chatgpt.com/g/gen_01k4sn6svaet2rb6mv25k5sqhz"><img src="./UrbanSync-Logo-new_files/assets_task_01k4sn6qd3eczrqrgq2kwdp7ke_1757502773_img_0.webp" width="1536" height="1024" class="h-full w-full" alt="Generated image"></a><div class="pointer-events-none absolute bottom-0 z-20 flex h-20 w-full items-end bg-gradient-to-t from-black/50 to-transparent pb-1 pr-1.5"><div class="flex w-full items-center justify-between overflow-hidden"><div class="shrink overflow-hidden pl-1 pr-2 font-semibold text-white"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto w-full overflow-hidden px-3 py-1.5 text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><span class="truncate font-semibold">hutach</span></button></div><div class="flex shrink-0 gap-0.5"><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none" viewBox="0 0 19 18" class="h-[18px] w-[18px]"><circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="2"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M11.25 9a4.5 4.5 0 0 0-9 0M15.75 9a4.5 4.5 0 1 1-9 0"></path></svg></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15.5 15.5-3-3M13.5 7.9a5.58 5.58 0 0 1-1.64 3.96A5.6 5.6 0 1 1 13.5 7.9"></path></svg><span class="sr-only">Search for similar images</span></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 3.991c4.878-4.83 13.24 4.14 0 11.384C-4.24 8.131 4.122-.838 9 3.991Z"></path></svg><span class="truncate font-semibold">40</span></button></div></div></div></div></div></div></div><div data-index="6" style="position: absolute; top: 0px; left: 0px; width: 408px; height: 612px; transform: translate(824px, 892px);"><div class="h-full w-full"><div class="group relative h-full w-full"><a href="https://sora.chatgpt.com/g/gen_01k4qqhve4e5jbfjz2xy11qzdx"><img src="./UrbanSync-Logo-new_files/assets_task_01k4qqhqsnekx9akw25ajsebz1_1757438222_img_0.webp" width="1024" height="1536" class="h-full w-full" alt="Generated image"></a><div class="pointer-events-none absolute bottom-0 z-20 flex h-20 w-full items-end bg-gradient-to-t from-black/50 to-transparent pb-1 pr-1.5"><div class="flex w-full items-center justify-between overflow-hidden"><div class="shrink overflow-hidden pl-1 pr-2 font-semibold text-white"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto w-full overflow-hidden px-3 py-1.5 text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><span class="truncate font-semibold">ivotril</span></button></div><div class="flex shrink-0 gap-0.5"><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none" viewBox="0 0 19 18" class="h-[18px] w-[18px]"><circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="2"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M11.25 9a4.5 4.5 0 0 0-9 0M15.75 9a4.5 4.5 0 1 1-9 0"></path></svg></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15.5 15.5-3-3M13.5 7.9a5.58 5.58 0 0 1-1.64 3.96A5.6 5.6 0 1 1 13.5 7.9"></path></svg><span class="sr-only">Search for similar images</span></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 3.991c4.878-4.83 13.24 4.14 0 11.384C-4.24 8.131 4.122-.838 9 3.991Z"></path></svg><span class="truncate font-semibold">344</span></button></div></div></div></div></div></div></div><div data-index="7" style="position: absolute; top: 0px; left: 0px; width: 408px; height: 612px; transform: translate(0px, 1232px);"><div class="h-full w-full"><div class="group relative h-full w-full"><a href="https://sora.chatgpt.com/g/gen_01k4sp4p63ejka6kg2kj1v1xpj"><img src="./UrbanSync-Logo-new_files/assets_task_01k4sp4kxqfetbvme9xws7m91c_1757503742_img_1.webp" width="1024" height="1536" class="h-full w-full" alt="Generated image"></a><div class="pointer-events-none absolute bottom-0 z-20 flex h-20 w-full items-end bg-gradient-to-t from-black/50 to-transparent pb-1 pr-1.5"><div class="flex w-full items-center justify-between overflow-hidden"><div class="shrink overflow-hidden pl-1 pr-2 font-semibold text-white"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto w-full overflow-hidden px-3 py-1.5 text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><span class="truncate font-semibold">anmacar</span></button></div><div class="flex shrink-0 gap-0.5"><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none" viewBox="0 0 19 18" class="h-[18px] w-[18px]"><circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="2"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M11.25 9a4.5 4.5 0 0 0-9 0M15.75 9a4.5 4.5 0 1 1-9 0"></path></svg></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15.5 15.5-3-3M13.5 7.9a5.58 5.58 0 0 1-1.64 3.96A5.6 5.6 0 1 1 13.5 7.9"></path></svg><span class="sr-only">Search for similar images</span></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 3.991c4.878-4.83 13.24 4.14 0 11.384C-4.24 8.131 4.122-.838 9 3.991Z"></path></svg><span class="truncate font-semibold">92</span></button></div></div></div></div></div></div></div><div data-index="8" style="position: absolute; top: 0px; left: 0px; width: 408px; height: 612px; transform: translate(412px, 1232px);"><div class="h-full w-full"><div class="group relative h-full w-full"><a href="https://sora.chatgpt.com/g/gen_01k4qh8czkfmr9yrfwe8ys8ad9"><img src="./UrbanSync-Logo-new_files/assets_task_01k4qh8acpfr6b6xjzcmtrg7hb_1757431520_img_0.webp" width="1024" height="1536" class="h-full w-full" alt="Generated image"></a><div class="pointer-events-none absolute bottom-0 z-20 flex h-20 w-full items-end bg-gradient-to-t from-black/50 to-transparent pb-1 pr-1.5"><div class="flex w-full items-center justify-between overflow-hidden"><div class="shrink overflow-hidden pl-1 pr-2 font-semibold text-white"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto w-full overflow-hidden px-3 py-1.5 text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><span class="truncate font-semibold">yazar-hareketli-fotoraf</span></button></div><div class="flex shrink-0 gap-0.5"><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none" viewBox="0 0 19 18" class="h-[18px] w-[18px]"><circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="2"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M11.25 9a4.5 4.5 0 0 0-9 0M15.75 9a4.5 4.5 0 1 1-9 0"></path></svg></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15.5 15.5-3-3M13.5 7.9a5.58 5.58 0 0 1-1.64 3.96A5.6 5.6 0 1 1 13.5 7.9"></path></svg><span class="sr-only">Search for similar images</span></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 3.991c4.878-4.83 13.24 4.14 0 11.384C-4.24 8.131 4.122-.838 9 3.991Z"></path></svg><span class="truncate font-semibold">387</span></button></div></div></div></div></div></div></div><div data-index="9" style="position: absolute; top: 0px; left: 0px; width: 408px; height: 612px; transform: translate(824px, 1508px);"><div class="h-full w-full"><div class="group relative h-full w-full"><a href="https://sora.chatgpt.com/g/gen_01k4sqkr76em0anryxcdm6y1fv"><img src="./UrbanSync-Logo-new_files/assets_task_01k4sqkpxyffbv0pnp1crq097g_1757505346_img_1.webp" width="1024" height="1536" class="h-full w-full" alt="Generated image"></a><div class="pointer-events-none absolute bottom-0 z-20 flex h-20 w-full items-end bg-gradient-to-t from-black/50 to-transparent pb-1 pr-1.5"><div class="flex w-full items-center justify-between overflow-hidden"><div class="shrink overflow-hidden pl-1 pr-2 font-semibold text-white"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto w-full overflow-hidden px-3 py-1.5 text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><span class="truncate font-semibold">larsoy</span></button></div><div class="flex shrink-0 gap-0.5"><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="none" viewBox="0 0 19 18" class="h-[18px] w-[18px]"><circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="2"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M11.25 9a4.5 4.5 0 0 0-9 0M15.75 9a4.5 4.5 0 1 1-9 0"></path></svg></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15.5 15.5-3-3M13.5 7.9a5.58 5.58 0 0 1-1.64 3.96A5.6 5.6 0 1 1 13.5 7.9"></path></svg><span class="sr-only">Search for similar images</span></button></div><div data-state="closed"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative rounded-full pointer-events-auto p-[7px] text-white hover:bg-token-bg-active hover:backdrop-blur-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 3.991c4.878-4.83 13.24 4.14 0 11.384C-4.24 8.131 4.122-.838 9 3.991Z"></path></svg><span class="truncate font-semibold">151</span></button></div></div></div></div></div></div></div></div><div style="height: 1px;"></div></div></div></div></div></div></div></div></div><div class="pointer-events-none fixed inset-0" style="will-change: auto; opacity: 0; transform: scale(0.975);"><div class="fixed left-0 right-0 top-0 z-50 flex flex-col"><div class="h-full w-full"><div class="mt-2 grid grid-cols-[1fr_auto_1fr] gap-1 md:grid-cols-[minmax(100px,_1fr)_minmax(300px,_auto)_minmax(100px,_1fr)] md:gap-4"><div class="flex gap-0.5 justify-start pl-1 tablet:pl-2"><div class=""><a href="https://sora.chatgpt.com/explore"><button class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-6 w-6"><g clip-path="url(#a)"><path fill="currentColor" d="M21.139 10.053a5.35 5.35 0 0 0-.46-4.392 5.41 5.41 0 0 0-5.824-2.594 5.35 5.35 0 0 0-4.033-1.798 5.41 5.41 0 0 0-5.158 3.744 5.35 5.35 0 0 0-3.576 2.594 5.41 5.41 0 0 0 .665 6.34 5.35 5.35 0 0 0 .46 4.392 5.41 5.41 0 0 0 5.824 2.595 5.35 5.35 0 0 0 4.033 1.798 5.41 5.41 0 0 0 5.16-3.747 5.35 5.35 0 0 0 3.576-2.593 5.41 5.41 0 0 0-.667-6.34m-8.067 11.276a4 4 0 0 1-2.575-.931l.127-.072 4.274-2.469a.7.7 0 0 0 .35-.608v-6.024l1.807 1.043a.07.07 0 0 1 .035.049v4.99a4.027 4.027 0 0 1-4.018 4.022M4.43 17.638a4 4 0 0 1-.48-2.696l.127.076 4.273 2.469a.7.7 0 0 0 .702 0l5.218-3.013v2.086a.07.07 0 0 1-.026.056l-4.32 2.494a4.026 4.026 0 0 1-5.494-1.472m-1.125-9.33A4 4 0 0 1 5.4 6.545l-.002.147v4.937a.7.7 0 0 0 .35.608l5.218 3.012-1.806 1.043a.06.06 0 0 1-.061.005l-4.32-2.496a4.026 4.026 0 0 1-1.473-5.493m14.841 3.454L12.93 8.749l1.806-1.042a.07.07 0 0 1 .06-.006l4.321 2.494a4.024 4.024 0 0 1-.621 7.26v-5.086a.7.7 0 0 0-.349-.607m1.798-2.706-.127-.076-4.273-2.468a.7.7 0 0 0-.702 0L9.624 9.524V7.438a.07.07 0 0 1 .026-.055l4.32-2.492a4.023 4.023 0 0 1 5.974 4.165M8.642 12.774l-1.807-1.043a.06.06 0 0 1-.035-.05v-4.99a4.023 4.023 0 0 1 6.597-3.088l-.127.072-4.274 2.469a.7.7 0 0 0-.351.607zm.981-2.116 2.324-1.342 2.324 1.342v2.683l-2.324 1.341-2.324-1.341z"></path></g><defs><clippath id="a"><path fill="#fff" d="M1 1h22v22H1z"></path></clippath></defs></svg><span class="sr-only">Home</span></div></button></a></div></div><div class="flex gap-0.5 justify-center overflow-hidden"><div class="overflow-hidden"></div></div><div class="flex gap-0.5 justify-end pr-1 tablet:pr-2"><div class=""><button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r2t:" data-state="closed" class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><div class="relative flex h-full w-full items-center justify-center"><div class="relative flex h-7 w-7 items-center justify-center tablet:h-6 tablet:w-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-full w-full"><path fill="currentColor" fill-rule="evenodd" d="M3.8 9.603a8.248 8.248 0 0 1 16.399 0l.674 6.18A2 2 0 0 1 18.885 18h-2.043a5.002 5.002 0 0 1-9.685 0H5.115a2 2 0 0 1-1.988-2.217zM9.273 18a3 3 0 0 0 5.456 0zM12 4.25a6.25 6.25 0 0 0-6.21 5.57L5.114 16h13.77l-.674-6.18A6.25 6.25 0 0 0 12 4.25" clip-rule="evenodd"></path></svg></div></div><span class="sr-only">Activity</span></div></button></div><div class=""><div type="button" id="radix-:r2v:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><button class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><div class="flex select-none items-center justify-center rounded-full bg-gray-500 text-white h-6 w-6">S</div><span class="sr-only">User menu</span></div></button></div></div></div></div></div></div><div class="absolute bottom-2 left-1/2 hidden w-full max-w-[800px] -translate-x-1/2 px-3 tablet:block tablet:left-[calc(var(--sidebar-width)+2*var(--sidebar-gap)+(100%-(var(--sidebar-width)+2*var(--sidebar-gap)))/2)] tablet:w-[calc(100%-(var(--sidebar-width)+2*var(--sidebar-gap)))]"><div style="will-change: transform; transform: translateY(0%);"><div class="relative rounded-[24px] p-2 max-tablet:flex max-tablet:h-[50vh] max-tablet:flex-col"><div class="surface-composer absolute inset-0 -z-10 rounded-[24px] shadow-composer"></div><div class="flex h-full flex-col gap-1.5"><div class="flex"><template shadowrootmode="closed"><lt-mirror contenteditable="false" class="lt-mirror--grid-item" style="display: none;"><template shadowrootmode="closed"><qb-highlighter contenteditable="false" style="display: none;"><qb-div spellcheck="false" class="qb-highlighter__wrapper" style="width: 724px !important; height: 44px !important; transform: none !important; transform-origin: 362px 22px !important; zoom: 1 !important; margin-top: 8px !important; margin-left: 44px !important;"><qb-div class="qb-highlighter__scroll-element" style="top: 0px !important; left: 0px !important; width: 724px !important; height: 44px !important;"></qb-div></qb-div></qb-highlighter><slot style="color-scheme: inherit; forced-color-adjust: inherit; mask: inherit; math-depth: inherit; position: inherit; position-anchor: inherit; text-size-adjust: inherit; appearance: inherit; color: inherit; font: inherit; font-palette: inherit; font-synthesis: inherit; position-area: inherit; text-orientation: inherit; text-rendering: inherit; text-spacing-trim: inherit; -webkit-font-smoothing: inherit; -webkit-locale: inherit; -webkit-text-orientation: inherit; -webkit-writing-mode: inherit; writing-mode: inherit; zoom: inherit; accent-color: inherit; place-content: inherit; place-items: inherit; place-self: inherit; alignment-baseline: inherit; anchor-name: inherit; anchor-scope: inherit; animation-composition: inherit; animation: inherit; app-region: inherit; aspect-ratio: inherit; backdrop-filter: inherit; backface-visibility: inherit; background: inherit; background-blend-mode: inherit; baseline-shift: inherit; baseline-source: inherit; block-size: inherit; border-block: inherit; border: inherit; border-radius: inherit; border-collapse: inherit; border-end-end-radius: inherit; border-end-start-radius: inherit; border-inline: inherit; border-start-end-radius: inherit; border-start-start-radius: inherit; inset: inherit; box-decoration-break: inherit; box-shadow: inherit; box-sizing: inherit; break-after: inherit; break-before: inherit; break-inside: inherit; buffered-rendering: inherit; caption-side: inherit; caret-animation: inherit; caret-color: inherit; clear: inherit; clip: inherit; clip-path: inherit; clip-rule: inherit; color-interpolation: inherit; color-interpolation-filters: inherit; color-rendering: inherit; columns: inherit; column-fill: inherit; gap: inherit; column-rule: inherit; column-span: inherit; contain: inherit; contain-intrinsic-block-size: inherit; contain-intrinsic-size: inherit; contain-intrinsic-inline-size: inherit; container: inherit; content: inherit; content-visibility: inherit; corner-shape: inherit; corner-block-end-shape: inherit; corner-block-start-shape: inherit; counter-increment: inherit; counter-reset: inherit; counter-set: inherit; cursor: inherit; cx: inherit; cy: inherit; d: inherit; display: contents; dominant-baseline: inherit; dynamic-range-limit: inherit; empty-cells: inherit; field-sizing: inherit; fill: inherit; fill-opacity: inherit; fill-rule: inherit; filter: inherit; flex: inherit; flex-flow: inherit; float: inherit; flood-color: inherit; flood-opacity: inherit; grid: inherit; grid-area: inherit; height: inherit; hyphenate-character: inherit; hyphenate-limit-chars: inherit; hyphens: inherit; image-orientation: inherit; image-rendering: inherit; initial-letter: inherit; inline-size: inherit; inset-block: inherit; inset-inline: inherit; interpolate-size: inherit; isolation: inherit; letter-spacing: inherit; lighting-color: inherit; line-break: inherit; list-style: inherit; margin-block: inherit; margin: inherit; margin-inline: inherit; marker: inherit; mask-type: inherit; math-shift: inherit; math-style: inherit; max-block-size: inherit; max-height: inherit; max-inline-size: inherit; max-width: inherit; min-block-size: inherit; min-height: inherit; min-inline-size: inherit; min-width: inherit; mix-blend-mode: inherit; object-fit: inherit; object-position: inherit; object-view-box: inherit; offset: inherit; opacity: inherit; order: inherit; orphans: inherit; outline: inherit; outline-offset: inherit; overflow-anchor: inherit; overflow-block: inherit; overflow-clip-margin: inherit; overflow-inline: inherit; overflow-wrap: inherit; overflow: inherit; overlay: inherit; overscroll-behavior-block: inherit; overscroll-behavior-inline: inherit; overscroll-behavior: inherit; padding-block: inherit; padding: inherit; padding-inline: inherit; page: inherit; page-orientation: inherit; paint-order: inherit; perspective: inherit; perspective-origin: inherit; pointer-events: inherit; position-try: inherit; position-visibility: inherit; print-color-adjust: inherit; quotes: inherit; r: inherit; reading-flow: inherit; reading-order: inherit; resize: inherit; rotate: inherit; ruby-align: inherit; ruby-position: inherit; rx: inherit; ry: inherit; scale: inherit; scroll-behavior: inherit; scroll-initial-target: inherit; scroll-margin-block: inherit; scroll-margin: inherit; scroll-margin-inline: inherit; scroll-marker-group: inherit; scroll-padding-block: inherit; scroll-padding: inherit; scroll-padding-inline: inherit; scroll-snap-align: inherit; scroll-snap-stop: inherit; scroll-snap-type: inherit; scroll-target-group: inherit; scroll-timeline: inherit; scrollbar-color: inherit; scrollbar-gutter: inherit; scrollbar-width: inherit; shape-image-threshold: inherit; shape-margin: inherit; shape-outside: inherit; shape-rendering: inherit; size: inherit; speak: inherit; stop-color: inherit; stop-opacity: inherit; stroke: inherit; stroke-dasharray: inherit; stroke-dashoffset: inherit; stroke-linecap: inherit; stroke-linejoin: inherit; stroke-miterlimit: inherit; stroke-opacity: inherit; stroke-width: inherit; tab-size: inherit; table-layout: inherit; text-align: inherit; text-align-last: inherit; text-anchor: inherit; text-autospace: inherit; text-box: inherit; text-combine-upright: inherit; text-decoration: inherit; text-decoration-skip-ink: inherit; text-emphasis: inherit; text-emphasis-position: inherit; text-indent: inherit; text-overflow: inherit; text-shadow: inherit; text-transform: inherit; text-underline-offset: inherit; text-underline-position: inherit; text-wrap: inherit; timeline-scope: inherit; touch-action: inherit; transform: inherit; transform-box: inherit; transform-origin: inherit; transform-style: inherit; transition: inherit; translate: inherit; user-select: inherit; vector-effect: inherit; vertical-align: inherit; view-timeline: inherit; view-transition-class: inherit; view-transition-group: inherit; view-transition-name: inherit; visibility: inherit; border-spacing: inherit; -webkit-box-align: inherit; -webkit-box-decoration-break: inherit; -webkit-box-direction: inherit; -webkit-box-flex: inherit; -webkit-box-ordinal-group: inherit; -webkit-box-orient: inherit; -webkit-box-pack: inherit; -webkit-box-reflect: inherit; -webkit-line-break: inherit; -webkit-line-clamp: inherit; -webkit-mask-box-image: inherit; -webkit-rtl-ordering: inherit; -webkit-ruby-position: inherit; -webkit-tap-highlight-color: inherit; -webkit-text-combine: inherit; -webkit-text-decorations-in-effect: inherit; -webkit-text-fill-color: inherit; -webkit-text-security: inherit; -webkit-text-stroke: inherit; -webkit-user-drag: inherit; white-space-collapse: inherit; widows: inherit; width: inherit; will-change: inherit; word-break: inherit; word-spacing: inherit; x: inherit; y: inherit; z-index: inherit;"></slot></template><lt-div spellcheck="false" class="lt-mirror__wrapper notranslate" data-lt-scroll-top="0" data-lt-scroll-left="0" data-lt-scroll-top-scaled="0" data-lt-scroll-left-scaled="0" data-lt-scroll-top-scaled-and-zoomed="0" data-lt-scroll-left-scaled-and-zoomed="0" style="border: 0px solid rgba(255, 255, 255, 0.15) !important; border-radius: 6px !important; direction: ltr !important; font: 400 14px / 20px ui-sans-serif, system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, Ubuntu, Cantarell, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot; !important; font-synthesis: weight style small-caps !important; hyphens: manual !important; letter-spacing: normal !important; line-break: auto !important; margin: 8px 0px 0px 44px !important; padding: 12px 8px !important; text-align: start !important; text-decoration: rgb(255, 255, 255) !important; text-indent: 0px !important; text-rendering: auto !important; text-transform: none !important; transform: none !important; transform-origin: 362px 22px !important; unicode-bidi: normal !important; white-space: pre-wrap !important; word-spacing: 0px !important; overflow-wrap: break-word !important; writing-mode: horizontal-tb !important; zoom: 1 !important; -webkit-locale: &quot;en-US&quot; !important; -webkit-rtl-ordering: logical !important; width: 708px !important; height: 20px !important;"><lt-div class="lt-mirror__canvas" style="margin-top: 0px !important; margin-left: 0px !important; width: 708px !important; height: 20px !important; align-content: normal !important;"><lt-span></lt-span></lt-div></lt-div></lt-mirror><slot style="color-scheme: inherit; forced-color-adjust: inherit; mask: inherit; math-depth: inherit; position: inherit; position-anchor: inherit; text-size-adjust: inherit; appearance: inherit; color: inherit; font: inherit; font-palette: inherit; font-synthesis: inherit; position-area: inherit; text-orientation: inherit; text-rendering: inherit; text-spacing-trim: inherit; -webkit-font-smoothing: inherit; -webkit-locale: inherit; -webkit-text-orientation: inherit; -webkit-writing-mode: inherit; writing-mode: inherit; zoom: inherit; accent-color: inherit; place-content: inherit; place-items: inherit; place-self: inherit; alignment-baseline: inherit; anchor-name: inherit; anchor-scope: inherit; animation-composition: inherit; animation: inherit; app-region: inherit; aspect-ratio: inherit; backdrop-filter: inherit; backface-visibility: inherit; background: inherit; background-blend-mode: inherit; baseline-shift: inherit; baseline-source: inherit; block-size: inherit; border-block: inherit; border: inherit; border-radius: inherit; border-collapse: inherit; border-end-end-radius: inherit; border-end-start-radius: inherit; border-inline: inherit; border-start-end-radius: inherit; border-start-start-radius: inherit; inset: inherit; box-decoration-break: inherit; box-shadow: inherit; box-sizing: inherit; break-after: inherit; break-before: inherit; break-inside: inherit; buffered-rendering: inherit; caption-side: inherit; caret-animation: inherit; caret-color: inherit; clear: inherit; clip: inherit; clip-path: inherit; clip-rule: inherit; color-interpolation: inherit; color-interpolation-filters: inherit; color-rendering: inherit; columns: inherit; column-fill: inherit; gap: inherit; column-rule: inherit; column-span: inherit; contain: inherit; contain-intrinsic-block-size: inherit; contain-intrinsic-size: inherit; contain-intrinsic-inline-size: inherit; container: inherit; content: inherit; content-visibility: inherit; corner-shape: inherit; corner-block-end-shape: inherit; corner-block-start-shape: inherit; counter-increment: inherit; counter-reset: inherit; counter-set: inherit; cursor: inherit; cx: inherit; cy: inherit; d: inherit; display: contents; dominant-baseline: inherit; dynamic-range-limit: inherit; empty-cells: inherit; field-sizing: inherit; fill: inherit; fill-opacity: inherit; fill-rule: inherit; filter: inherit; flex: inherit; flex-flow: inherit; float: inherit; flood-color: inherit; flood-opacity: inherit; grid: inherit; grid-area: inherit; height: inherit; hyphenate-character: inherit; hyphenate-limit-chars: inherit; hyphens: inherit; image-orientation: inherit; image-rendering: inherit; initial-letter: inherit; inline-size: inherit; inset-block: inherit; inset-inline: inherit; interpolate-size: inherit; isolation: inherit; letter-spacing: inherit; lighting-color: inherit; line-break: inherit; list-style: inherit; margin-block: inherit; margin: inherit; margin-inline: inherit; marker: inherit; mask-type: inherit; math-shift: inherit; math-style: inherit; max-block-size: inherit; max-height: inherit; max-inline-size: inherit; max-width: inherit; min-block-size: inherit; min-height: inherit; min-inline-size: inherit; min-width: inherit; mix-blend-mode: inherit; object-fit: inherit; object-position: inherit; object-view-box: inherit; offset: inherit; opacity: inherit; order: inherit; orphans: inherit; outline: inherit; outline-offset: inherit; overflow-anchor: inherit; overflow-block: inherit; overflow-clip-margin: inherit; overflow-inline: inherit; overflow-wrap: inherit; overflow: inherit; overlay: inherit; overscroll-behavior-block: inherit; overscroll-behavior-inline: inherit; overscroll-behavior: inherit; padding-block: inherit; padding: inherit; padding-inline: inherit; page: inherit; page-orientation: inherit; paint-order: inherit; perspective: inherit; perspective-origin: inherit; pointer-events: inherit; position-try: inherit; position-visibility: inherit; print-color-adjust: inherit; quotes: inherit; r: inherit; reading-flow: inherit; reading-order: inherit; resize: inherit; rotate: inherit; ruby-align: inherit; ruby-position: inherit; rx: inherit; ry: inherit; scale: inherit; scroll-behavior: inherit; scroll-initial-target: inherit; scroll-margin-block: inherit; scroll-margin: inherit; scroll-margin-inline: inherit; scroll-marker-group: inherit; scroll-padding-block: inherit; scroll-padding: inherit; scroll-padding-inline: inherit; scroll-snap-align: inherit; scroll-snap-stop: inherit; scroll-snap-type: inherit; scroll-target-group: inherit; scroll-timeline: inherit; scrollbar-color: inherit; scrollbar-gutter: inherit; scrollbar-width: inherit; shape-image-threshold: inherit; shape-margin: inherit; shape-outside: inherit; shape-rendering: inherit; size: inherit; speak: inherit; stop-color: inherit; stop-opacity: inherit; stroke: inherit; stroke-dasharray: inherit; stroke-dashoffset: inherit; stroke-linecap: inherit; stroke-linejoin: inherit; stroke-miterlimit: inherit; stroke-opacity: inherit; stroke-width: inherit; tab-size: inherit; table-layout: inherit; text-align: inherit; text-align-last: inherit; text-anchor: inherit; text-autospace: inherit; text-box: inherit; text-combine-upright: inherit; text-decoration: inherit; text-decoration-skip-ink: inherit; text-emphasis: inherit; text-emphasis-position: inherit; text-indent: inherit; text-overflow: inherit; text-shadow: inherit; text-transform: inherit; text-underline-offset: inherit; text-underline-position: inherit; text-wrap: inherit; timeline-scope: inherit; touch-action: inherit; transform: inherit; transform-box: inherit; transform-origin: inherit; transform-style: inherit; transition: inherit; translate: inherit; user-select: inherit; vector-effect: inherit; vertical-align: inherit; view-timeline: inherit; view-transition-class: inherit; view-transition-group: inherit; view-transition-name: inherit; visibility: inherit; border-spacing: inherit; -webkit-box-align: inherit; -webkit-box-decoration-break: inherit; -webkit-box-direction: inherit; -webkit-box-flex: inherit; -webkit-box-ordinal-group: inherit; -webkit-box-orient: inherit; -webkit-box-pack: inherit; -webkit-box-reflect: inherit; -webkit-line-break: inherit; -webkit-line-clamp: inherit; -webkit-mask-box-image: inherit; -webkit-rtl-ordering: inherit; -webkit-ruby-position: inherit; -webkit-tap-highlight-color: inherit; -webkit-text-combine: inherit; -webkit-text-decorations-in-effect: inherit; -webkit-text-fill-color: inherit; -webkit-text-security: inherit; -webkit-text-stroke: inherit; -webkit-user-drag: inherit; white-space-collapse: inherit; widows: inherit; width: inherit; will-change: inherit; word-break: inherit; word-spacing: inherit; x: inherit; y: inherit; z-index: inherit;"></slot></template><div class="flex py-1"><span><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative w-[36px] h-[36px] p-1.5 rounded-full" type="button" id="radix-:r31:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 6a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1" clip-rule="evenodd"></path></svg><span class="sr-only">Attach media</span></button></span><button class="contents"></button><input accept="image/jpeg,image/png,image/webp" class="hidden" type="file"></div><textarea class="flex w-full rounded-md text-sm placeholder:text-token-text-secondary focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 !overflow-x-hidden tablet:max-h-[80vh] bg-transparent px-2 py-3 max-tablet:flex-1" placeholder="Describe your image..." rows="1" style="overflow: hidden; overflow-wrap: break-word; resize: none; text-align: start; height: 44px;" data-qb-tmp-id="lt-447564" spellcheck="false" data-gramm="false"></textarea></div><div class="flex items-center justify-between"><div class="flex gap-1.5"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative bg-token-bg-composer-button data-[disabled=false]:hover:bg-token-bg-active disabled:text-token-text-primary/40 px-3 py-2 h-9 rounded-full max-w-52 overflow-hidden font-semibold outline-none disabled:opacity-50" type="button" role="combobox" aria-controls="radix-:r33:" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="hidden h-[18px] w-[18px] desktop:block"><path fill="currentColor" d="M8.759 3h6.482c.805 0 1.47 0 2.01.044.563.046 1.08.145 1.565.392a4 4 0 0 1 1.748 1.748c.247.485.346 1.002.392 1.564C21 7.29 21 7.954 21 8.758v6.483c0 .805 0 1.47-.044 2.01-.046.563-.145 1.08-.392 1.565a4 4 0 0 1-1.748 1.748c-.485.247-1.002.346-1.564.392-.541.044-1.206.044-2.01.044H8.758c-.805 0-1.47 0-2.01-.044-.563-.046-1.08-.145-1.565-.392a4 4 0 0 1-1.748-1.748c-.247-.485-.346-1.002-.392-1.564C3 16.71 3 16.046 3 15.242V8.758c0-.805 0-1.47.044-2.01.046-.563.145-1.08.392-1.565a4 4 0 0 1 1.748-1.748c.485-.247 1.002-.346 1.564-.392C7.29 3 7.954 3 8.758 3M6.91 5.038c-.438.035-.663.1-.819.18a2 2 0 0 0-.874.874c-.08.156-.145.38-.18.819C5 7.361 5 7.943 5 8.8v4.786l.879-.879a3 3 0 0 1 4.242 0l6.286 6.286c.261-.005.484-.014.682-.03.438-.036.663-.101.819-.181a2 2 0 0 0 .874-.874c.08-.156.145-.38.18-.819.037-.45.038-1.032.038-1.889V8.8c0-.857 0-1.439-.038-1.889-.035-.438-.1-.663-.18-.819a2 2 0 0 0-.874-.874c-.156-.08-.38-.145-.819-.18C16.639 5 16.057 5 15.2 5H8.8c-.857 0-1.439 0-1.889.038M13.586 19l-4.879-4.879a1 1 0 0 0-1.414 0l-2.286 2.286c.005.261.014.484.03.682.036.438.101.663.181.819a2 2 0 0 0 .874.874c.156.08.38.145.819.18C7.361 19 7.943 19 8.8 19zM14.5 8.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-3 1a3 3 0 1 1 6 0 3 3 0 0 1-6 0"></path></svg><span class="truncate" style="pointer-events: none;">Image</span></div></button><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative bg-token-bg-composer-button data-[disabled=false]:hover:bg-token-bg-active disabled:text-token-text-primary/40 px-3 py-2 h-9 rounded-full max-w-52 overflow-hidden font-semibold outline-none disabled:opacity-50" type="button" role="combobox" aria-controls="radix-:r35:" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="hidden h-[18px] w-[18px] desktop:block"><path fill="currentColor" d="M10.759 1h2.482c.805 0 1.47 0 2.01.044.563.046 1.08.145 1.565.392a4 4 0 0 1 1.748 1.748c.247.485.346 1.002.392 1.564C19 5.29 19 5.954 19 6.758v10.483c0 .805 0 1.47-.044 2.01-.046.563-.145 1.08-.392 1.565a4 4 0 0 1-1.748 1.748c-.485.247-1.002.346-1.564.392-.541.044-1.206.044-2.01.044h-2.483c-.805 0-1.47 0-2.01-.044-.563-.046-1.08-.145-1.565-.392a4 4 0 0 1-1.748-1.748c-.247-.485-.346-1.002-.392-1.564C5 18.71 5 18.046 5 17.242V6.758c0-.805 0-1.47.044-2.01.046-.563.145-1.08.392-1.565a4 4 0 0 1 1.748-1.748c.485-.247 1.002-.346 1.564-.392C9.29 1 9.954 1 10.758 1M8.91 3.038c-.438.035-.663.1-.819.18a2 2 0 0 0-.874.874c-.08.156-.145.38-.18.819C7 5.361 7 5.943 7 6.8v10.4c0 .857 0 1.439.038 1.889.035.438.1.663.18.819a2 2 0 0 0 .874.874c.156.08.38.145.819.18C9.361 21 9.943 21 10.8 21h2.4c.857 0 1.439 0 1.889-.038.438-.035.663-.1.819-.18a2 2 0 0 0 .874-.874c.08-.156.145-.38.18-.819.037-.45.038-1.032.038-1.889V6.8c0-.857 0-1.439-.038-1.889-.035-.438-.1-.663-.18-.819a2 2 0 0 0-.874-.874c-.156-.08-.38-.145-.819-.18C14.639 3 14.057 3 13.2 3h-2.4c-.857 0-1.439 0-1.889.038"></path></svg><span class="truncate" style="pointer-events: none;">2:3</span></div></button><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative bg-token-bg-composer-button data-[disabled=false]:hover:bg-token-bg-active disabled:text-token-text-primary/40 px-3 py-2 h-9 rounded-full max-w-52 overflow-hidden font-semibold outline-none disabled:opacity-50" type="button" role="combobox" aria-controls="radix-:r37:" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="hidden h-[18px] w-[18px] desktop:block"><rect width="18" height="16" x="3" y="4" stroke="currentColor" stroke-width="2" rx="3"></rect><circle cx="9.5" cy="12" r="2" fill="currentColor"></circle><circle cx="14.5" cy="12" r="2" fill="currentColor"></circle></svg><span class="truncate" style="pointer-events: none;">2v</span></div></button><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative bg-token-bg-composer-button data-[disabled=false]:hover:bg-token-bg-active disabled:text-token-text-primary/40 rounded-full h-9 w-9 p-0 disabled:opacity-50" type="button" role="combobox" aria-controls="radix-:r39:" aria-expanded="false" aria-autocomplete="none" dir="ltr" data-state="closed"><div class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-[18px] w-[18px]"><path stroke="currentColor" stroke-width="2" d="M17.5 3h-11a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM4.5 17h15"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7.75h6m-2-1v2M15 12.25H9m2 1v-2"></path></svg></div></button><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative text-token-text-tertiary hover:text-token-text-primary bg-transparent hover:bg-token-bg-active hover:border-none border border-token-bg-composer-button w-[36px] h-[36px] p-1.5 rounded-full aspect-square outline-none" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r3b:" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" class="h-4 w-4"><path fill="currentColor" stroke="currentColor" stroke-width="1.242" d="M8.546 13.5a.546.546 0 1 1-1.092 0 .546.546 0 0 1 1.092 0Z"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10c0-.763.4-1.466 1.038-1.881 1.522-.99 2.028-1.552 2.028-2.887 0-1.6-1.345-2.899-3.066-2.899-1.452 0-2.721.924-3.067 2.175"></path></svg></button></div><div class="flex gap-1.5"><button class="inline-flex gap-1.5 items-center justify-center whitespace-nowrap text-sm font-semibold focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default group/button relative bg-token-bg-inverse text-token-text-inverse hover:bg-token-bg-inverse/80 data-[disabled=true]:opacity-100 data-[disabled=true]:bg-token-bg-composer-button data-[disabled=true]:text-token-text-primary/40 w-[36px] h-[36px] p-1.5 rounded-full" data-disabled="true" data-state="closed" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M11.293 5.293a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1-1.414 1.414L13 8.414V18a1 1 0 1 1-2 0V8.414l-3.293 3.293a1 1 0 0 1-1.414-1.414z"></path></svg><span class="sr-only">Create image</span></button></div></div></div></div></div></div></div></div></main><div class="group fixed bottom-0 left-0 z-[9999] h-4 w-4 transition-all duration-300 hover:pointer-events-auto hover:h-auto hover:w-auto" data-aria-hidden="true" aria-hidden="true"><div class="rounded-tr-xl bg-transparent p-2 group-hover:bg-token-bg-tertiary"><div class="hidden group-hover:block"></div></div></div><qb-toolbar contenteditable="false" id="qb-toolbar-container" style="display: none;" data-aria-hidden="true" aria-hidden="true"><qb-div class="qb-toolbar__wrapper qb-toolbar__wrapper--hide" style="left: 1205px; position: absolute !important; top: 650px !important; bottom: auto !important; z-index: auto; opacity: 1 !important; pointer-events: all !important;"><div style="all: initial !important;"><qb-div style="all: initial !important;"><template shadowrootmode="open"><style>[contenteditable]:focus {
+  outline: 0px solid transparent;
+}
+
+:root {
+  --new: #499557;
+  --new-hover: #41894e;
+  --new-secondary: #71b657;
+  --new-filter: saturate(150%) hue-rotate(25deg) brightness(92%);
+  --new-filter-hover: brightness(90%);
+  --new-banner: #6aab76;
+  --new-banner-hover: #65986f;
+
+  --traditional-filter: none;
+  --traditional-filter-hover: none;
+  --traditional-secondary: #8aad67;
+  --traditional: #849e63;
+  --traditional-hover: #687b50;
+  --traditional-banner: #99b576;
+  --traditional-banner-hover: #799655;
+
+  --primary: var(--new);
+  --secondary: var(--new-secondary);
+  --primary-hover: var(--new-hover);
+  --image-filter: var(--new-filter);
+  --image-filter-hover: var(--new-filter-hover);
+  --banner: var(--new-banner);
+  --banner-hover: var(--new-banner-hover);
+
+  --default-font: Lato, sans-serif;
+}
+
+body {
+  background: #fff;
+  justify-content: center;
+  text-rendering: optimizelegibility;
+  margin: 0 !important;
+}
+
+.mobile-quill-bottom-controls > div {
+  min-width: 48px;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* .title {
+  width: 500px;
+  font-size: 1.5rem;
+  display: inline-block;
+} */
+
+.btn {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.3s;
+}
+
+/* hide google re-captcha */
+
+.go-premium-btn {
+  width: 150px;
+  text-align: center;
+  padding: 4px 20px !important;
+  margin: auto;
+  font-weight: bold !important;
+  color: #fff;
+  cursor: pointer;
+}
+
+.no-box-shadow {
+  box-shadow: none !important;
+}
+
+.login-offer-text {
+  margin: -2px 2px;
+}
+
+.green-text {
+  transition: all 0.15s;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.green-text:hover {
+  color: var(--primary-hover);
+}
+
+.word-prompt-items {
+  display: flex;
+}
+
+.article-sentence {
+  display: inline;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  -ms-transition: all 0.15s;
+  transition: all 0.15s;
+  /* padding: 4.5px 0px; */
+}
+
+.similarity-score {
+  color: black;
+  font-size: 0.65em;
+  margin-left: 5px;
+}
+
+.error-message {
+  color: #ee1212;
+  font-family: Lato, serif;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 18px;
+  width: 100%;
+  display: block;
+}
+
+.success-message {
+  color: #00ff00;
+  font-family: Lato, serif;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 18px;
+}
+
+.color-scale {
+  width: 100%;
+  height: 12px;
+  display: flex;
+  justify-content: space-around;
+  padding: 2px;
+  margin-top: 6px;
+  margin-left: -1px;
+}
+
+.color-button {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #737373;
+  margin-top: -2px;
+  margin: 8px 8px;
+  transition: all 0.1s;
+}
+
+.color-button-inside {
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.1s;
+  margin-top: -2px;
+  margin: 2px 2px;
+}
+
+.article-color-button {
+  background-color: #f8f8f8;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #737373;
+  margin-top: -2px;
+  margin: 3px 4px;
+  transition: all 0.1s;
+}
+
+.article-color-button-inside {
+  background-color: #f8f8f8;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: -2px;
+  margin: 1px 1px;
+  transition: all 0.1s;
+}
+
+.recaptcha-container {
+  position: absolute;
+}
+
+#example1 {
+  transition: all 0.1s;
+}
+
+.processing-payment {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 0;
+  margin-left: 0;
+  text-align: center;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.my-tooltip {
+  line-height: 20px;
+  font-size: 0.9em;
+  width: 210px;
+  text-align: center;
+  transition: all 0s;
+  z-index: 9000000;
+}
+
+.my-tooltip > h6 {
+  line-height: 0px;
+  margin-top: 18px;
+  font-size: 0.9em;
+  margin-bottom: 18px;
+  filter: brightness(100);
+  text-align: center;
+  transition: all 0s;
+}
+
+.p-lock {
+  margin-left: 1px;
+  width: 14px;
+  height: 14px;
+  opacity: 0.69;
+}
+
+.ap-lock {
+  width: 12px;
+  height: 12px;
+  opacity: 0.69;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.strength-list {
+  display: flex;
+  margin-top: 6px;
+  flex-direction: column;
+  margin-left: 4px;
+}
+
+.strength-list-row {
+  display: flex;
+  cursor: pointer;
+}
+
+.strength-tag {
+  color: rgb(86, 86, 86);
+  font-size: 0.8em;
+  line-height: 33px;
+  font-weight: bold;
+}
+
+.priority-divider {
+  border-top: 1px solid rgb(153, 153, 153);
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 7px;
+  margin-bottom: 3px;
+  margin-left: 12%;
+  margin-right: auto;
+}
+
+.credit-cards {
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+.credit-cards img {
+  padding-right: 5px;
+}
+
+.paypal-logo-click {
+  cursor: pointer;
+}
+
+.article-copy-textarea {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  font-family: Lato, sans-serif;
+  font-size: 1em;
+}
+
+/* ::-webkit-scrollbar {
+  width: 5px;
+  cursor: default;
+}
+*/
+/* Track */
+/* ::-webkit-scrollbar-track {
+  border-radius: 10px;
+} */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: gray;
+} */
+
+/* Loader css */
+#overlay {
+  background: #000000;
+  /* color: #666666; */
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  float: left;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.spinner {
+  margin: 0 auto;
+  height: 64px;
+  width: 64px;
+  animation: rotate 0.8s infinite linear;
+  border: 5px solid;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+.hotkey-command {
+  /* color: #8f8f8f !important; */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*================ new css code for new project ====================== */
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0px 12px;
+  width: 100%;
+}
+
+.extHeader {
+  /* background: #f1f7f3; */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.maximizeouticon {
+  width: 35px;
+  background: #828282;
+  height: 3px;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 11px;
+  display: block;
+}
+
+.kebabBtn {
+  padding: 6px 0px;
+  text-align: right;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  :root {
+    --new: #499557;
+    --new-hover: #41894e;
+    --new-secondary: #71b657;
+    --new-filter: saturate(150%) hue-rotate(25deg) brightness(92%);
+    --new-filter-hover: brightness(90%);
+    --new-banner: #6aab76;
+    --new-banner-hover: #65986f;
+
+    --traditional-filter: none;
+    --traditional-filter-hover: none;
+    --traditional-secondary: #8aad67;
+    --traditional: #849e63;
+    --traditional-hover: #687b50;
+    --traditional-banner: #99b576;
+    --traditional-banner-hover: #799655;
+
+    --primary: var(--new);
+    --secondary: #71b657;
+    --primary-hover: #41894e;
+    --image-filter: var(--new-filter);
+    --image-filter-hover: var(--new-filter-hover);
+    --banner: var(--new-banner);
+    --banner-hover: var(--new-banner-hover);
+
+    --default-font: Lato, sans-serif;
+  }
+
+  body {
+    text-rendering: optimizelegibility;
+    margin: 0 !important;
+  }
+
+  .manual-payment-container {
+    margin: auto;
+    margin-top: auto;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 0px solid #499557;
+    border-radius: 6px;
+    margin-top: 20px;
+    min-height: 162px;
+  }
+
+  .processing-payment {
+    position: absolute;
+    background-color: #ccc;
+    opacity: 0.4;
+    height: 100%;
+    margin: auto;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .__react_component_tooltip.show {
+    opacity: 1;
+    transition: all 0s;
+  }
+
+  .green-text {
+    transition: all 0.15s;
+    color: #499557;
+    cursor: pointer;
+  }
+
+  .green-text:hover {
+    color: #41894e;
+  }
+}
+
+/* Forcing font everywhere to be open sans. This not working*/
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px;
+  background: #fff;
+  overflow-y: auto;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+}
+
+/*
+using in commented code
+.nd-input-toast-container {
+  bottom: 25px;
+  width: calc(100% - 20px);
+  background: #2c2d33;
+  text-align: center;
+  font-family: monospace;
+  padding: 5px;
+  border-radius: 0px 0px 5px 5px;
+  margin: 2px 5px 5px 5px;
+  color: white;
+}*/
+
+.nd-word {
+  transition: all 0.05s;
+  position: relative;
+}
+
+/* #inputText[placeholder]:empty::before { // check
+  content: attr(placeholder);
+  color: #8497aa;
+} */
+
+#inputText[placeholder]:empty:focus::before {
+  content: '';
+}
+
+/* #inputBoxSummarizer[placeholder]:empty::before {
+  content: attr(placeholder);
+  color: #dcdcdc;
+} */
+
+#inputBoxSummarizer[placeholder]:empty:focus::before {
+  content: '';
+}
+
+/* ============= new design 2 css ================= */
+
+/* start of CSS for splitter */
+.Resizer {
+  background: #000;
+  opacity: 0.2;
+  z-index: 1;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.Pane {
+  display: flex;
+}
+
+/* .Resizer:hover {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+} */
+
+.extensionMidContainerWithScroll .Pane2 {
+  height: 40%;
+}
+
+.Resizer.horizontal {
+  height: 3px;
+  margin: -2.5px 0 -3.5px 0;
+  cursor: row-resize;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  min-height: 3px;
+}
+
+.Resizer.horizontal:hover {
+  background-color: #5f6368;
+}
+
+.Resizer.vertical {
+  width: 7px;
+  margin-right: -4px;
+  border-right: 4px solid rgba(255, 255, 255, 0);
+  cursor: col-resize;
+  border-bottom: 0px;
+}
+
+.Resizer.vertical:hover {
+  border-right: 4px solid rgba(0, 0, 0, 1);
+  width: 7px;
+}
+.Resizer.disabled {
+  cursor: not-allowed;
+}
+.Resizer.disabled:hover {
+  border-color: transparent;
+}
+
+/* =========== new design 3 =============== */
+
+.root-container {
+  flex-direction: column;
+  flex-wrap: unset !important;
+  display: flex;
+  min-height: calc(100vh - 280px);
+  /* background-color: #fff; */
+  padding-top: 25px !important;
+  padding-bottom: 30px !important;
+}
+
+.auth-root {
+  /* background-color: rgba(249, 250, 255); */
+  min-height: calc(100vh - 280px);
+}
+
+.mid-container {
+  max-width: 1300px !important;
+  width: 100%;
+}
+
+.page-header {
+  /* color: #4f4f4f; */
+  text-align: center;
+}
+
+.page-header:first-child,
+.page-header > p:first-child {
+  font-size: 28px !important;
+  text-align: center;
+}
+
+.home-container-gray {
+  /* background-color: #f1f1f1; */
+  min-height: unset;
+  padding-bottom: 40px !important;
+}
+
+.nd-mobile-container {
+  padding: 0px !important;
+  padding-top: 0px !important;
+  /* background: #fff; */
+}
+
+.nd-mobile-container-focused-content {
+  padding-top: 0px !important;
+}
+
+.home-container-premium {
+  min-height: calc(100vh - 60px);
+}
+
+.qbp-d-flex {
+  display: flex !important;
+}
+
+.qbp-pb50 {
+  padding-bottom: 50px !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.b-shadow {
+  box-shadow: none !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+/* == start from here === */
+.qbp-pb10 {
+  padding-bottom: 10px !important;
+}
+
+.qbp-pt20 {
+  padding-top: 20px !important;
+}
+
+.qbp-pb20 {
+  padding-bottom: 20px !important;
+}
+
+.qbp-textCenter {
+  text-align: center !important;
+}
+
+.qbp-mx16 {
+  margin: 0 16px !important;
+}
+
+.qbp-pb20 {
+  padding-bottom: 20px !important;
+}
+
+.qbp-py20 {
+  padding: 20px 0 !important;
+}
+
+.qbp-textYellow {
+  color: #ffb800;
+}
+
+.qbp-semibold {
+  font-weight: 600 !important;
+}
+
+.qbp-settings-item {
+  display: flex;
+  padding: 25px 0 15px !important;
+  justify-content: space-between;
+  border-bottom: 1px solid #8f8f8f;
+  color: #000;
+  align-items: center;
+}
+
+.card-pad {
+  padding: 10px 0 1px 0 !important;
+}
+
+.qbp-settings-item:last-child {
+  border-bottom: 0;
+}
+
+.details-subtitle {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: normal;
+  font-size: 14px !important;
+}
+
+.settting-span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-subtitle-highlight {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.6);
+  /* font-weight: bold !important; */
+  font-size: 14px !important;
+}
+
+.premium-container {
+  padding-top: 0 !important;
+}
+
+/*************************** Login/Sign up popup css ******************************/
+
+.auth-container {
+  max-width: 480px;
+  width: 100%;
+
+  /* background-color: white; */
+  position: relative;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 480px) {
+  .auth-root {
+    padding: 0px 15px;
+  }
+}
+
+.auth-container-top-border {
+  height: 5px;
+  width: 100%;
+  background: rgb(33, 150, 83);
+  background: linear-gradient(90deg, rgba(33, 150, 83, 1) 11.34%, rgba(41, 113, 254, 1) 100%);
+}
+
+.social-auth-btn {
+  margin: auto !important;
+  position: relative;
+}
+
+.social-auth-btn img {
+  position: absolute;
+  left: 15px;
+  height: 16px;
+}
+
+.auth-btn {
+  line-height: 32px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  height: 45px;
+}
+
+.qbp-useraccount-text {
+  color: #8a8a8a;
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+
+.qbp-reg-input {
+  border: 1px solid #a6a5a5;
+  color: #5b5b5b;
+  width: 100%;
+  display: block;
+  float: unset;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 14px;
+  transition: ease all 0.3s;
+  height: 45px;
+}
+
+.qbp-reg-input:focus {
+  box-shadow: 0px 0 16px 0 rgba(0, 0, 0, 0.4);
+  outline: none !important;
+}
+
+.qbp-error-message {
+  font-size: 11px;
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  color: #ee1212;
+}
+
+.qbp-error-message1 {
+  font-size: 11px;
+  padding-bottom: 10px;
+  color: #ee1212;
+}
+
+.qbp-success-message {
+  color: #27b027;
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.qbp-prem-input {
+  font-weight: normal;
+  font-size: 14px;
+  color: #151515 !important;
+  background-color: #fff;
+  width: 100%;
+  font-family: arial;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  height: 40px;
+  padding: 0px 15px;
+  outline: 0;
+}
+
+.login-drawer {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.style01 {
+  font-size: 1.5em;
+  font-weight: 600;
+  /* color: #fff; */
+}
+
+.linkstyle01 {
+  color: #fff;
+  padding: 0 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.flipperTextContainer {
+  padding: 0px 32px 0px 15px;
+  /* border-left: 1px solid #e0e0e0;*/
+  /* color: rgb(0, 0, 0, 0.75); */
+}
+
+.flipperTextContainer:hover {
+  /* color: black; */
+}
+
+.top-tabs .MuiButtonBase-root {
+  /* display: inline-block !important; */
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.payment-status {
+  font-weight: 600;
+  color: #a1a197;
+}
+
+/**************************Survey popup css stuff **********************/
+.survey-modal {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  display: flex;
+  min-width: 100vw;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  z-index: 1201;
+}
+
+.survey-container {
+  background-color: white;
+  max-width: 650px;
+  padding: 10px 15px 15px !important;
+  margin: auto !important;
+  position: relative !important;
+}
+
+@media (max-width: 350px) {
+  .survey-container {
+    margin: auto 12 !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .survey-container {
+    max-width: 350px;
+  }
+}
+
+.survey-header {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+}
+
+.survey-close-btn {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+}
+
+.survey-question {
+  font-size: 13px !important;
+  padding-bottom: 10px;
+}
+
+.so-checkbox-label {
+  font-size: 12px !important;
+  display: flex;
+  padding-bottom: 8px;
+  color: #5f6368;
+}
+
+.survey-submit-btn {
+  color: #2971fe !important;
+  font-size: 14px !important;
+  float: right;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.unsubscribe-reason {
+  width: 100%;
+}
+
+.steps {
+  font-weight: bold !important;
+}
+
+.feedback-textarea {
+  width: 100%;
+  height: 91px;
+  padding: 5px;
+  font-size: 0.87rem;
+  font-family: 'Open Sans', sans-serif;
+}
+/* .prompt-container {
+  background-color: #fff;
+  position: absolute;
+  top: 23px;
+  z-index: 1150;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  padding-bottom: 0;
+  transition: all 0.15s;
+
+  box-shadow: 0px 1px 1px #999;
+} */
+
+/* ============= do not remove this css =============*/
+.grecaptcha-badge {
+  visibility: hidden;
+}
+/* =========== do not remove css inside comment area ========== */
+
+/*================== responsive codes ============== */
+
+@media (max-width: 960px) {
+  .terms-main-container ol {
+    margin: 10px 0px;
+    padding-left: 20px;
+    word-break: break-word;
+  }
+
+  .terms-main-container ol li {
+    margin: 10px 0px;
+    padding-left: 20px;
+    word-break: break-word;
+  }
+}
+
+.CardElementHolder {
+  border: 1px #c4c4c4 solid;
+  border-radius: 3px;
+  margin-top: 8px;
+  padding: 11px 15px 10px;
+}
+
+.CardField-child {
+  background: #f00 !important;
+}
+
+/* ======= new global css start ============= */
+p {
+  font-size: 16px;
+}
+a {
+  color: #2971fe;
+}
+
+.btn-link {
+  /* color: #2971fe !important; */
+  cursor: pointer;
+}
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.pageTitle {
+  font-size: 30px;
+  margin: 30px 15px 15px;
+  line-height: 41px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.terms-main-container ol li::marker {
+  font-size: 16px;
+  font-weight: bold;
+}
+.terms-main-container ol li p b {
+  font-weight: 600;
+}
+
+/* .CbHosted--focus {
+  border: 1px solid #499557 !important;
+} */
+
+.chargebee-overwrites::placeholder {
+  color: #a0a0a0 !important;
+}
+
+.shadow-container {
+  height: 6px;
+  width: 100%;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.fix-error {
+  background: rgba(73, 149, 87, 0.2) !important;
+}
+
+#RESEARCH_EDITOR:before {
+  color: #828282;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin: 0 auto;
+}
+
+#RESEARCH_EDITOR * {
+  max-width: 672px;
+  white-space: pre-wrap !important;
+}
+/* .grammarbot-popover-root {
+  pointer-events: none !important;
+} */
+
+.page-wrapper {
+  padding: var(--main-editor__mce-content-body--padding-y) var(--main-editor__mce-content-body--padding-x);
+}
+
+#grammarbot:before {
+  color: #828282;
+  /* margin-left: 137px;
+  margin-right: 138px; */
+}
+
+#wordCounterBot:before {
+  color: #828282;
+}
+
+.grammarbot-correction-card-ignore-button {
+  padding-top: 13px;
+}
+.grammarbot-status-icons {
+  font-size: 40px !important;
+}
+
+.correction-card-wrapper {
+  margin-top: -10px;
+  padding-top: 8px;
+}
+
+.grammarbot-fix-all {
+  position: absolute !important;
+  top: -48px !important;
+  right: 30% !important;
+  z-index: 1 !important;
+}
+
+.notepadeditor:before {
+  color: #828282;
+  margin-left: 0px;
+}
+
+.notepadeditor {
+  width: 100%;
+  font-size: 13px !important;
+  margin-top: 12px !important;
+}
+
+.notepadeditor > p {
+  margin-block-start: 0em !important;
+  font-size: 13px !important;
+}
+
+#main-editor-parent {
+  /* ! THESE VARIABLES ARE BEING USED IN SCRIPTS */
+  --main-editor__mce-content-body--padding-x: 90px;
+  --main-editor__mce-content-body--padding-y: 90px;
+}
+
+#main-editor > .mce-content-body {
+  /* padding: var(--main-editor__mce-content-body--padding-y, 36px)
+    var(--main-editor__mce-content-body--padding-x, 36px); */
+  min-height: calc(100vh - 190px);
+
+  /* color: #252525; */
+}
+
+#rough-editor {
+  width: 100%;
+  overflow: auto;
+}
+
+#rough-editor > .mce-content-body {
+  height: calc(100vh - 122px);
+  width: 100%;
+  margin: 14px;
+  color: #252525;
+  overflow: auto;
+}
+
+#main-editor > .mce-content-body {
+  word-break: break-word !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+}
+
+#main-editor > .mce-content-body > p,
+#main-editor > .mce-content-body > .page-wrapper > p {
+  font-size: 14px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+sup,
+sub {
+  white-space: pre-wrap !important;
+}
+
+.tox-tinymce {
+  border: none !important;
+  position: absolute !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+#main-editor .tox-editor-header {
+  border: none !important;
+  border-bottom: 1px solid !important;
+}
+
+#toolbar-location .tox-editor-header {
+  border: none !important;
+  top: 20px !important;
+  left: 14px !important;
+}
+
+#toolbar-location .tox-toolbar {
+  background: none !important;
+}
+
+.tox .tox-toolbar-overlord {
+  background: none !important;
+}
+
+.tox-notification {
+  display: none !important;
+}
+
+.tox .tox-tbtn svg {
+  fill: #666666 !important;
+}
+
+.tox .tox-tbtn--disabled svg,
+.tox .tox-tbtn--disabled:hover svg,
+.tox .tox-tbtn:disabled svg,
+.tox .tox-tbtn:disabled:hover svg {
+  fill: rgba(34, 47, 62, 0.5) !important;
+}
+
+.tox .tox-tbtn__select-label {
+  color: #666666 !important;
+}
+
+.tox .tox-autocompleter {
+  max-width: 35em !important;
+}
+
+.tox .tox-autocompleter .tox-menu {
+  max-width: 35em !important;
+}
+
+.tox.tox-tinymce--toolbar-sticky-on .tox-editor-header {
+  box-shadow: none !important;
+}
+
+.tox-editor-header {
+  border-right: none !important;
+}
+
+.tox-toolbar__primary {
+  background: none !important;
+  /* box-shadow: 0px 1px 8px 0px rgba(31, 31, 31, 0.15) !important; */
+  /* border-bottom: 1px solid #ccc !important; */
+  /* border-top: 1px solid #ccc !important; */
+  /* padding-left: 15px !important; */
+  width: 100% !important;
+}
+
+.tox-toolbar__group {
+  border: none !important;
+  /* box-shadow: 2px -1px 3px -2px rgba(31, 31, 31, 0.15) !important; */
+}
+
+.tox-toolbar__group:last-child:after {
+  content: '';
+}
+
+.tox .tox-menu.tox-collection.tox-collection--list {
+  width: max-content;
+}
+
+.tox-toolbar__primary > .tox-toolbar__group:last-child {
+  box-shadow: none !important;
+}
+
+.quillSettingSpace {
+  -webkit-transition: all 0.1s ease-in-out !important;
+  -moz-transition: all 0.1s ease-in-out !important;
+  -o-transition: all 0.1s ease-in-out !important;
+  transition: all 0.1s ease-in-out !important;
+  margin-top: 26px !important;
+}
+
+.tox-tbtn,
+.tox-tbtn__select-label {
+  cursor: pointer !important;
+}
+
+.tox-tbtn--disabled {
+  cursor: not-allowed !important;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 26px 16px 0px 20px;
+  }
+}
+
+.showFadeEffect {
+  --animation-time: 2s;
+  animation: opacity-fade var(--animation-time) !important;
+}
+
+.dataRefHidden {
+  display: none !important;
+}
+
+.pulseLoader {
+  content: ' ';
+  width: 90px;
+  height: 12px;
+  display: inline-block;
+  background-color: #ccc;
+  animation: new-animation 1s infinite;
+  vertical-align: text-bottom;
+  border-radius: 3px;
+  margin-left: -5px;
+}
+
+@keyframes new-animation {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes opacity-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#doc-title {
+  padding: 46px 0px 13px 137px;
+  width: 70%;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before {
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block; /* For Firefox */
+  color: #828282 !important;
+}
+
+[contenteditable='true']:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block; /* For Firefox */
+  color: #828282 !important;
+}
+
+.red-underline {
+  border-bottom: #fb3f4b 2px solid;
+  transition: all 0.3s ease-in-out;
+}
+
+.red-underline:hover {
+  background-color: #fb3f4c14;
+  border-radius: 2px;
+}
+
+.red-underline.error-hovered {
+  background-color: #fb3f4c14;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.blue-underline {
+  border-bottom: #0067c5 2px solid;
+  transition: all 0.3s ease-in-out;
+}
+
+.blue-underline:hover {
+  background-color: #0067c514;
+  border-radius: 2px;
+}
+
+.blue-underline.error-hovered {
+  background-color: #0067c514;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.yellow-underline {
+  border-bottom: #f2b518 2px solid;
+  transition: all 0.3s ease-in-out;
+}
+
+.yellow-underline:hover {
+  background-color: #f2b51840;
+  border-radius: 2px;
+}
+
+.yellow-underline.error-hovered {
+  background-color: #f2b51840;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.magenta-underline {
+  border-bottom: #8051ff 2px solid;
+  transition: all 0.3s ease-in-out;
+}
+
+.magenta-underline:hover {
+  background-color: #8051ff24;
+  border-radius: 2px;
+}
+
+.magenta-underline.error-hovered {
+  background-color: #8051ff24;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+#fixed-toolbar-container .tox-tinymce-inline .tox-editor-header {
+  border: none !important;
+}
+/*
+  Citation Marker style
+*/
+#main-editor .CitationMarkerStyle {
+  padding: 3px;
+}
+
+.CitationMarkerStyle_Burst {
+  background-color: #ffefde !important;
+  color: orange !important;
+}
+
+.reduce-margin-block-end {
+  margin-block-end: -1em !important;
+}
+
+#grammar-checker pre {
+  white-space: pre-wrap;
+}
+
+#word-counter pre {
+  white-space: pre-wrap;
+}
+
+.sound-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sound-wave {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sound-wave .audioOnWithSpeech {
+  display: block;
+  width: 5px;
+  margin-right: 1px;
+  height: 90px;
+  background: #499557;
+  animation: sound 0ms -800ms linear infinite alternate;
+  transition: height 0.8s;
+}
+
+.sound-wave .audioOff {
+  display: block;
+  width: 5px;
+  margin-right: 0px;
+  height: 12px;
+  background: #9f9f9f;
+}
+
+.sound-wave .audioOnWithoutSpeech {
+  display: block;
+  width: 5px;
+  margin-right: 0px;
+  height: 12px;
+  background: #499557;
+}
+
+@keyframes sound {
+  0% {
+    opacity: 0.35;
+    height: 6px;
+  }
+  100% {
+    opacity: 1;
+    height: 46px;
+  }
+}
+
+@keyframes sound2 {
+  0% {
+    opacity: 0.35;
+    height: 6px;
+  }
+  100% {
+    opacity: 1;
+    height: 120px;
+  }
+}
+
+.audioOnWithSpeech:nth-child(1) {
+  height: 2px;
+  animation-duration: 274ms;
+}
+
+.audioOnWithSpeech:nth-child(2) {
+  height: 10px;
+  animation-duration: 233ms;
+}
+
+.audioOnWithSpeech:nth-child(3) {
+  height: 18px;
+  animation-duration: 207ms;
+}
+
+.audioOnWithSpeech:nth-child(4) {
+  height: 26px;
+  animation-duration: 258ms;
+}
+
+.audioOnWithSpeech:nth-child(5) {
+  height: 30px;
+  animation-duration: 200ms;
+}
+
+.audioOnWithSpeech:nth-child(6) {
+  height: 32px;
+  animation-duration: 227ms;
+}
+
+.audioOnWithSpeech:nth-child(7) {
+  height: 34px;
+  animation-duration: 241ms;
+}
+
+.audioOnWithSpeech:nth-child(8) {
+  height: 36px;
+  animation-duration: 219ms;
+}
+
+.audioOnWithSpeech:nth-child(9) {
+  height: 40px;
+  animation-duration: 287ms;
+}
+
+.audioOnWithSpeech:nth-child(10) {
+  height: 46px;
+  animation-duration: 242ms;
+}
+
+.audioOnWithSpeech:nth-child(11) {
+  height: 2px;
+  animation-duration: 274ms;
+}
+
+.audioOnWithSpeech:nth-child(12) {
+  height: 10px;
+  animation-duration: 233ms;
+}
+
+.audioOnWithSpeech:nth-child(13) {
+  height: 18px;
+  animation-duration: 207ms;
+}
+
+.audioOnWithSpeech:nth-child(14) {
+  height: 26px;
+  animation-duration: 258ms;
+}
+
+.audioOnWithSpeech:nth-child(15) {
+  height: 30px;
+  animation-duration: 200ms;
+}
+
+.audioOnWithSpeech:nth-child(16) {
+  height: 32px;
+  animation-duration: 227ms;
+}
+
+.audioOnWithSpeech:nth-child(17) {
+  height: 34px;
+  animation-duration: 241ms;
+}
+
+.audioOnWithSpeech:nth-child(18) {
+  height: 36px;
+  animation-duration: 219ms;
+}
+
+.audioOnWithSpeech:nth-child(19) {
+  height: 40px;
+  animation-duration: 287ms;
+}
+
+.audioOnWithSpeech:nth-child(20) {
+  height: 46px;
+  animation-duration: 242ms;
+}
+
+.audioOnWithSpeech:nth-child(21) {
+  height: 2px;
+  animation-duration: 274ms;
+}
+
+.audioOnWithSpeech:nth-child(22) {
+  height: 10px;
+  animation-duration: 233ms;
+}
+
+.audioOnWithSpeech:nth-child(23) {
+  height: 18px;
+  animation-duration: 207ms;
+}
+
+.audioOnWithSpeech:nth-child(24) {
+  height: 26px;
+  animation-duration: 258ms;
+}
+
+.audioOnWithSpeech:nth-child(25) {
+  height: 30px;
+  animation-duration: 200ms;
+}
+
+.audioOnWithSpeech:nth-child(26) {
+  height: 32px;
+  animation-duration: 227ms;
+}
+
+.audioOnWithSpeech:nth-child(27) {
+  height: 34px;
+  animation-duration: 241ms;
+}
+
+.mce-content-body [contentEditable='false'][data-mce-selected] {
+  cursor: not-allowed;
+  outline: 3px solid #f1f1f1 !important;
+}
+
+.display--none {
+  display: none;
+}
+
+/* [title='Font sizes'] {
+  width: 65px !important;
+} */
+
+.wave .dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  /* margin-right: 1px; */
+  background: #499557;
+  animation: wave 1s linear infinite;
+}
+.wave .dot:nth-child(1) {
+  animation-delay: -0.9s;
+}
+.wave .dot:nth-child(2) {
+  animation-delay: -0.7s;
+}
+.wave .dot:nth-child(3) {
+  animation-delay: -0.5s;
+}
+
+@keyframes wave {
+  0%,
+  60%,
+  100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-4px);
+  }
+}
+
+.cms-color-4C9459 {
+  color: #4c9459 !important;
+}
+
+.cms-color-E86060 {
+  color: #e86060 !important;
+}
+
+.default .text-default {
+  color: #434343;
+}
+.default .text-bold {
+  color: #252525;
+}
+.default .text-subtle {
+  color: #7c7c7c;
+}
+.default .text-stark {
+  color: #000000;
+}
+.default .text-inverse-default {
+  color: #f4f4f4;
+}
+.default .text-inverse-bold {
+  color: #ffffff;
+}
+.default .text-selected {
+  color: #178733;
+}
+.default .text-link-default {
+  color: #0067c5;
+}
+.default .text-link-pressed {
+  color: #00488a;
+}
+.default .text-link-inverse {
+  color: #ffffff;
+}
+.default .text-disabled {
+  color: #b4b4b4;
+}
+.default .text-error-bold {
+  color: #8f1c12;
+}
+.default .text-warning-bold {
+  color: #bd8800;
+}
+.default .text-info-bold {
+  color: #00488a;
+}
+.default .text-highlight-bold {
+  color: #3700ad;
+}
+.default .text-success-bold {
+  color: #0c6124;
+}
+
+.dark .text-default {
+  color: #d3d3d3;
+}
+.dark .text-bold {
+  color: #e0e0e0;
+}
+.dark .text-subtle {
+  color: #a8a8a8;
+}
+.dark .text-stark {
+  color: #ffffff;
+}
+.dark .text-inverse-default {
+  color: #303030;
+}
+.dark .text-inverse-bold {
+  color: #000000;
+}
+.dark .text-selected {
+  color: #2da74c;
+}
+.dark .text-link-default {
+  color: #0067c5;
+}
+.dark .text-link-pressed {
+  color: #319dff;
+}
+.dark .text-link-inverse {
+  color: #000000;
+}
+.dark .text-disabled {
+  color: #717171;
+}
+.dark .text-error-bold {
+  color: #f96767;
+}
+.dark .text-warning-bold {
+  color: #ffc754;
+}
+.dark .text-info-bold {
+  color: #319dff;
+}
+.dark .text-highlight-bold {
+  color: #bea3fc;
+}
+.dark .text-success-bold {
+  color: #71c185;
+}
+
+.font-display {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 68px;
+}
+.font-h1 {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 52px;
+}
+.font-h2 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.font-h3 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.font-h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.font-h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.font-h6 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.font-p1 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.font-p2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.font-p3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.font-subtitle1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.font-subtitle2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.font-subtitle3 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.font-caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* New UI Refresh colors */
+.default-refresh .text-default {
+  color: #2c3e5d;
+}
+.default-refresh .text-bold {
+  color: #172b4d;
+}
+.default-refresh .text-subtle {
+  color: #626f86;
+}
+.default-refresh .text-stark {
+  color: #101214;
+}
+.default-refresh .text-inverse-default {
+  color: #f1f2f4;
+}
+.default-refresh .text-inverse-bold {
+  color: #ffffff;
+}
+.default-refresh .text-selected {
+  color: #008847;
+}
+.default-refresh .text-link-default {
+  color: #1d7afc;
+}
+.default-refresh .text-link-pressed {
+  color: #0055cc;
+}
+.default-refresh .text-link-inverse {
+  color: #ffffff;
+}
+.default-refresh .text-disabled {
+  color: #8590a2;
+}
+.default-refresh .text-error-bold {
+  color: #ae2a19;
+}
+.default-refresh .text-warning-bold {
+  color: #7f5f01;
+}
+.default-refresh .text-info-bold {
+  color: #0055cc;
+}
+.default-refresh .text-highlight-bold {
+  color: #5004c8;
+}
+.default-refresh .text-success-bold {
+  color: #115735;
+}
+
+.dark-refresh .text-default {
+  color: #b6c2cf;
+}
+.dark-refresh .text-bold {
+  color: #c7d1db;
+}
+.dark-refresh .text-subtle {
+  color: #8c9bab;
+}
+.dark-refresh .text-stark {
+  color: #ffffff;
+}
+.dark-refresh .text-inverse-default {
+  color: #22272b;
+}
+.dark-refresh .text-inverse-bold {
+  color: #101214;
+}
+.dark-refresh .text-selected {
+  color: #18ab64;
+}
+.dark-refresh .text-link-default {
+  color: #388bff;
+}
+.dark-refresh .text-link-pressed {
+  color: #85b8ff;
+}
+.dark-refresh .text-link-inverse {
+  color: #101214;
+}
+.dark-refresh .text-disabled {
+  color: #596773;
+}
+.dark-refresh .text-error-bold {
+  color: #ff9c8f;
+}
+.dark-refresh .text-warning-bold {
+  color: #f5cd47;
+}
+.dark-refresh .text-info-bold {
+  color: #85b8ff;
+}
+.dark-refresh .text-highlight-bold {
+  color: #c8acf6;
+}
+.dark-refresh .text-success-bold {
+  color: #96eac2;
+}
+
+.hide-premium {
+  a[href*='/premium'],
+  [data-testid*='premium'] {
+    display: none !important;
+  }
+
+  a[href*='/upgrade'] {
+    display: none !important;
+  }
+}
+</style><style><style data-emotion="extn-css" data-s="">.extn-css-pud6r9{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;cursor:inherit;}</style><style data-emotion="extn-css" data-s="">.extn-css-1k7qiuy{z-index:1500;}</style><style data-emotion="extn-css" data-s="">.extn-css-1k7qiuy .MuiTooltip-tooltip{border-radius:4px;font-size:12px;text-align:center;padding:8px 16px;font-weight:400;line-height:normal;max-width:20em;background-color:#2c3e5d;-webkit-filter:drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.20));filter:drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.20));padding:4px;font-size:12px;font-family:'Open Sans',sans-serif;font-weight:400;line-height:16px;color:#172b4d;color:#FFFFFF;}</style><style data-emotion="extn-css" data-s="">.extn-css-1k7qiuy .MuiTooltip-arrow{color:#2c3e5d;}</style><style data-emotion="extn-css" data-s="">.extn-css-njdm88{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:small;}</style><style data-emotion="extn-css" data-s="">.extn-css-12f2pls{z-index:1500;pointer-events:none;z-index:1500;}</style><style data-emotion="extn-css" data-s="">.extn-css-12f2pls[data-popper-placement*="bottom"] .MuiTooltip-arrow{top:0;margin-top:-0.71em;}</style><style data-emotion="extn-css" data-s="">.extn-css-12f2pls[data-popper-placement*="bottom"] .MuiTooltip-arrow::before{transform-origin:0 100%;}</style><style data-emotion="extn-css" data-s="">.extn-css-12f2pls[data-popper-placement*="top"] .MuiTooltip-arrow{bottom:0;margin-bottom:-0.71em;}</style><style data-emotion="extn-css" data-s="">.extn-css-12f2pls[data-popper-placement*="top"] .MuiTooltip-arrow::before{transform-origin:100% 0;}</style><style data-emotion="extn-css" data-s="">.extn-css-12f2pls[data-popper-placement*="right"] .MuiTooltip-arrow{left:0;margin-left:-0.71em;height:1em;width:0.71em;}</style><style data-emotion="extn-css" data-s="">.extn-css-12f2pls[data-popper-placement*="right"] .MuiTooltip-arrow::before{transform-origin:100% 100%;}</style><style data-emotion="extn-css" data-s="">.extn-css-12f2pls[data-popper-placement*="left"] .MuiTooltip-arrow{right:0;margin-right:-0.71em;height:1em;width:0.71em;}</style><style data-emotion="extn-css" data-s="">.extn-css-12f2pls[data-popper-placement*="left"] .MuiTooltip-arrow::before{transform-origin:0 0;}</style><style data-emotion="extn-css" data-s="">.extn-css-12f2pls .MuiTooltip-tooltip{border-radius:4px;font-size:12px;text-align:center;padding:8px 16px;font-weight:400;line-height:normal;max-width:20em;background-color:#2c3e5d;-webkit-filter:drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.20));filter:drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.20));padding:4px;font-size:12px;font-family:'Open Sans',sans-serif;font-weight:400;line-height:16px;color:#172b4d;color:#FFFFFF;}</style><style data-emotion="extn-css" data-s="">.extn-css-12f2pls .MuiTooltip-arrow{color:#2c3e5d;}</style><style data-emotion="extn-css" data-s="">.extn-css-1arf74d{z-index:1500;pointer-events:none;z-index:1500;}</style><style data-emotion="extn-css" data-s="">.extn-css-1arf74d[data-popper-placement*="bottom"] .MuiTooltip-arrow{top:0;margin-top:-0.71em;}</style><style data-emotion="extn-css" data-s="">.extn-css-1arf74d[data-popper-placement*="bottom"] .MuiTooltip-arrow::before{transform-origin:0 100%;}</style><style data-emotion="extn-css" data-s="">.extn-css-1arf74d[data-popper-placement*="top"] .MuiTooltip-arrow{bottom:0;margin-bottom:-0.71em;}</style><style data-emotion="extn-css" data-s="">.extn-css-1arf74d[data-popper-placement*="top"] .MuiTooltip-arrow::before{transform-origin:100% 0;}</style><style data-emotion="extn-css" data-s="">.extn-css-1arf74d[data-popper-placement*="right"] .MuiTooltip-arrow{left:0;margin-left:-0.71em;height:1em;width:0.71em;}</style><style data-emotion="extn-css" data-s="">.extn-css-1arf74d[data-popper-placement*="right"] .MuiTooltip-arrow::before{transform-origin:100% 100%;}</style><style data-emotion="extn-css" data-s="">.extn-css-1arf74d[data-popper-placement*="left"] .MuiTooltip-arrow{right:0;margin-right:-0.71em;height:1em;width:0.71em;}</style><style data-emotion="extn-css" data-s="">.extn-css-1arf74d[data-popper-placement*="left"] .MuiTooltip-arrow::before{transform-origin:0 0;}</style><style data-emotion="extn-css" data-s="">.extn-css-1arf74d .MuiTooltip-tooltip{border-radius:4px;font-size:12px;text-align:center;padding:8px 16px;font-weight:400;line-height:normal;max-width:20em;background-color:#2c3e5d;-webkit-filter:drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.20));filter:drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.12)) drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.20));padding:4px;font-size:12px;font-family:'Open Sans',sans-serif;font-weight:400;line-height:16px;color:#172b4d;color:#FFFFFF;}</style><style data-emotion="extn-css" data-s="">.extn-css-1arf74d .MuiTooltip-arrow{color:#2c3e5d;}</style></style><style data-styled="active" data-styled-version="6.1.11">.deimYU{transition:all 0.2s ease-in-out;}.dVKBVQ{display:flex;justify-content:center;align-items:center;height:100%;min-height:24px;min-width:24px;background-color:#008847;color:white;font-style:normal;font-weight:700;cursor:pointer;transition:background-color 0.3s ease;border-top-right-radius:16px;border-bottom-right-radius:16px;}.dVKBVQ:hover{background-color:#115735;}.dkUNmA{position:relative;pointer-events:all;width:48px;height:24px;}.kKclYD{background-color:#ffffff;display:flex;border-radius:16px;box-shadow:0px 0px 2px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.12);position:absolute;bottom:0px;right:0px;height:24px;flex-direction:row-reverse;}.brfwkI{display:flex;flex-direction:column;overflow:hidden;width:0px;transition:width 0.3s ease-out;}.kkvWir{display:flex;justify-content:center;align-items:center;background-color:#ffffff;height:100%;min-height:24px;min-width:24px;cursor:pointer;border-top-left-radius:16px;border-bottom-left-radius:16px;}.kkvWir:hover{background-color:#17873314;}.kbueMB{display:flex;justify-content:center;cursor:pointer;align-items:center;background-color:#ffffff;height:100%;min-height:24px;min-width:24px;border-top-left-radius:16px;border-bottom-left-radius:16px;}.kbueMB:hover{background-color:#17873314;}</style><div id="qb-toolbar-container" class="styles__OuterContainer-sc-10g6rmm-0 dkUNmA"><div class="styles__Container-sc-10g6rmm-1 kKclYD"><div class="MuiBox-root extn-css-pud6r9" aria-label="Click to open assistant"><span class="MuiBox-root extn-css-njdm88"><div class="GrammarContainer__GCStyledContainer-sc-du8d7q-0 dVKBVQ"><svg fill="none" height="16" viewBox="0 0 17 16" width="17" xmlns="http://www.w3.org/2000/svg" class="ToolbarQuilly__StyledSvg-sc-1axa5ks-0 deimYU"><path clip-rule="evenodd" d="M9.69605 1.78864C9.18767 2.33711 8.33515 3.76792 8.00665 4.94436C7.86587 4.84897 7.70162 4.59461 7.81112 4.10177C7.81112 4.09382 7.90497 3.56919 8.14743 2.99687C8.34376 2.52923 8.44864 2.40396 8.48852 2.35633C8.49948 2.34324 8.50553 2.33602 8.50721 2.32916L8.52286 2.31327H8.54632L8.73403 2.47224C8.74967 2.48019 8.7575 2.45635 8.7575 2.45635L8.62453 2.11454V2.09864C8.74967 1.90787 9.0156 1.55812 9.47706 1.30375C10.0245 1.00169 10.5408 0.993745 10.7676 1.00169H10.7754V1.01759C10.6894 1.43888 10.572 1.78864 10.4704 2.05095C10.4666 2.05949 10.4613 2.072 10.4545 2.08816C10.404 2.20736 10.2693 2.52539 10.0558 2.91738C9.9598 3.09305 9.86378 3.24209 9.78491 3.36451C9.76742 3.39165 9.75077 3.41749 9.73516 3.44201H9.72734L9.29717 3.48176C9.28934 3.48971 9.29717 3.51355 9.29717 3.51355L9.52398 3.63279V3.65663L9.50834 3.68843C9.49636 3.69756 9.46891 3.75009 9.42752 3.82929C9.25267 4.16384 8.8291 4.97429 8.27258 5H14.9423C15.1258 5 15.2754 5.14786 15.2754 5.3291V12.7292C15.2754 12.9105 15.1258 13.0584 14.9423 13.0584H2.60848C2.42504 13.0584 2.27539 12.9105 2.27539 12.7292V5.3291C2.27539 5.14547 2.42262 5 2.60848 5H8.1709C8.45247 3.83946 9.06253 2.73456 9.77426 1.83633L9.80555 1.82043C9.80495 1.81859 9.80434 1.81666 9.80372 1.81466C9.79624 1.79069 9.78568 1.75684 9.73516 1.75684C9.72734 1.75684 9.69605 1.77274 9.69605 1.77274V1.78864ZM5.27563 10.137C4.68186 10.137 4.20153 9.66235 4.20153 9.07565C4.20153 8.48905 4.68186 8.01443 5.27563 8.01443C5.86941 8.01443 6.34973 8.48905 6.34973 9.07565C6.34973 9.65999 5.86941 10.137 5.27563 10.137ZM12.2013 10.137C11.6075 10.137 11.1272 9.66235 11.1272 9.07565C11.1272 8.48905 11.6075 8.01443 12.2013 8.01443C12.7951 8.01443 13.2754 8.48905 13.2754 9.07565C13.2754 9.65999 12.7951 10.137 12.2013 10.137ZM10.862 13.506H6.3078V14.2348H10.862V13.506Z" fill="white" fill-rule="evenodd"></path></svg></div></span></div><div class="MuiBox-root extn-css-pud6r9" aria-label="Start writing"><span class="MuiBox-root extn-css-njdm88"><div class="ParaphraserContainer__PphrStyledContainer-sc-qvrut5-0 kkvWir"><svg fill="none" height="16" viewBox="0 0 17 16" width="17" xmlns="http://www.w3.org/2000/svg"><path d="M9.60651 1.84387C10.3735 1.56193 10.9307 1.43619 11.6814 1.37663C11.9159 1.37088 12.1505 1.38038 12.3837 1.40508C12.8939 1.46928 13.3231 1.66319 13.6405 1.97359C14.0826 2.40509 14.2726 2.93057 14.2754 3.72806C14.2767 4.19001 14.229 4.54276 14.0908 5.0967C13.93 5.73933 13.4988 6.82471 13.2229 7.27872C12.6517 8.21873 11.6814 8.56084 8.73549 9.58716C10.1504 9.58716 12.2129 8.90295 11.1501 10.2675C11.086 10.3767 10.5874 10.8605 10.3088 11.0822C9.35311 11.8459 8.33814 12.2893 7.24211 12.4204C7.00574 12.4488 6.52278 12.4502 6.08546 12.4237C6.02142 12.4197 6.00848 12.433 5.5589 12.9631C5.03463 13.5826 4.63975 14.0432 4.40497 14.3158C4.31013 14.4259 4.12662 14.3737 4.1072 14.2314V13.3487C4.07954 13.1461 4.11002 12.5659 4.25775 12.4204C4.50302 12.1763 8.26707 7.2734 8.73549 6.80722C8.9399 6.60379 9.1638 6.23888 8.73549 5.98054C8.31043 5.72416 7.86258 6.31246 7.86258 6.31246C7.86258 6.31246 5.08287 9.92569 4.38754 10.6177C3.75227 10.6177 3.40762 9.11504 3.31166 8.57191C3.2633 8.28666 3.2633 7.62882 3.31166 7.32901C3.35935 7.0345 3.41793 6.7936 3.47038 6.67778C3.53358 6.54933 3.63334 6.44116 3.75784 6.36607C3.87228 6.3065 4.08958 6.31246 4.31846 6.38129C4.54734 6.45012 4.99414 7.19242 4.99414 7.19242C4.99414 5.57892 5.46435 4.83954 6.30275 3.93852C7.08816 3.09404 8.30136 2.32501 9.60651 1.84387Z" fill="#8590A2"></path></svg></div></span></div><div class="styles__CollapsedElements-sc-10g6rmm-2 brfwkI" style="overflow: hidden;"><div class="MuiBox-root extn-css-pud6r9" aria-label="Quick settings"><span class="MuiBox-root extn-css-njdm88"><div class="StandbyContainer__StandbyStyledContainer-sc-14nvg7m-0 kbueMB"><svg fill="none" height="16" viewBox="0 0 17 16" width="17" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M7.75977 7.75C7.75977 8.16 8.09977 8.5 8.50977 8.5C8.91977 8.5 9.25977 8.16 9.25977 7.75V2.75C9.25977 2.34 8.91977 2 8.50977 2C8.09977 2 7.75977 2.34 7.75977 2.75V7.75ZM4.08977 12.1699C5.26977 13.3499 6.83977 13.9999 8.50977 13.9999C10.1798 13.9999 11.7498 13.3499 12.9298 12.1699C14.1098 10.9899 14.7598 9.41994 14.7598 7.74994C14.7598 5.66994 13.7298 3.79994 11.9198 2.61994C11.5698 2.39994 11.1098 2.48994 10.8798 2.83994C10.6498 3.18994 10.7498 3.64994 11.0998 3.87994C12.4698 4.76994 13.2598 6.17994 13.2598 7.74994C13.2598 9.01994 12.7698 10.2099 11.8698 11.1099C10.9698 12.0099 9.77977 12.4999 8.50977 12.4999C7.23977 12.4999 6.04977 12.0099 5.14977 11.1099C4.24977 10.2099 3.75977 9.01994 3.75977 7.74994C3.75977 6.18994 4.54977 4.76994 5.91977 3.87994C6.26977 3.64994 6.36977 3.18994 6.13977 2.83994C5.90977 2.48994 5.44977 2.38994 5.09977 2.61994C3.29977 3.79994 2.25977 5.66994 2.25977 7.74994C2.25977 9.41994 2.90977 10.9899 4.08977 12.1699Z" fill="#2C3E5D" fill-rule="evenodd"></path></svg></div></span></div></div></div></div></template></qb-div></div></qb-div></qb-toolbar><div class="fixed bottom-0 left-0 right-0 top-0 z-dialog bg-token-bg-primary nf2:max-tablet:bottom-[var(--mobile-tab-bar-height)] nf2:tablet:left-[var(--sidebar-width)]" data-state="open" style="pointer-events: auto; opacity: 1; will-change: auto;" data-aria-hidden="true" aria-hidden="true"></div><div role="dialog" id="radix-:r51:" aria-describedby="radix-:r53:" aria-labelledby="radix-:r52:" data-state="open" class="fixed bottom-0 left-0 right-0 top-0 z-dialog outline-none nf2:max-tablet:bottom-[var(--mobile-tab-bar-height)] nf2:tablet:left-[var(--sidebar-width)]" tabindex="-1" style="pointer-events: auto;"><div class="fixed bottom-0 left-0 right-0 top-0 z-dialog nf2:max-tablet:bottom-[var(--mobile-tab-bar-height)] nf2:tablet:left-[var(--sidebar-width)]" style="opacity: 1; will-change: auto; transform: none;"><div class="max-h-screen min-h-screen w-full overflow-hidden"><div class="h-screen" style="padding-top: 60px;"><div class="flex h-full flex-col"><div class="flex flex-1 cursor-pointer"><div class="relative w-[15%]"></div><div class="relative w-[70%]" style="will-change: auto; transform: none;"><div class="absolute cursor-default" style="top: 0px; left: 350.13px; width: 374.927px; height: 562.391px; opacity: 1; filter: blur(0px); will-change: opacity, filter; transform: none; transform-origin: 50% 50% 0px;"><img alt="Generated image" src="./UrbanSync-Logo-new_files/assets_task_01k4t6mf8pfxg8y2p7cn42m9e7_1757521029_img_1.webp" width="1024" height="1536" class="h-full w-full"></div></div><div class="relative w-[15%]"></div></div><div class="relative shrink-0" style="opacity: 1; height: 120px;"><div class="absolute bottom-0 left-0 right-0" style="will-change: transform; transform: none;"><div><div class="flex flex-col items-center" style="height: 120px;"><div class="flex w-full items-center justify-center tablet:w-1/2" style="height: 60px;"><div class="flex h-8 max-w-full items-center justify-center font-semibold"><div class="flex max-w-full items-center gap-3 px-3 tablet:px-9"><div class="flex items-center gap-2 truncate"><div class="text-token-text-secondary">Prompt</div><button class="truncate" data-state="closed">create an image for me with the name urban sync, incorporate a modern vercel esk look , this will be a logo used in a navbar, as well as to represetn my project for my web app, this will be a modern take on a government website looking extrememly professional but not boring, also give me a translucent text with no background if you get what i mean, so its just like text</button></div></div></div></div><div class="w-full tablet:w-1/2"><div class="relative" style="height: 4px;"><div class="group absolute left-0 right-0 z-10 tablet:left-9 tablet:right-9" style="height: 28px; top: -16px;"><div class="absolute left-0 right-0 bg-token-bg-active tablet:rounded-full" style="height: 4px; top: 16px;"></div></div></div></div><div class="relative flex w-full flex-1 justify-center"><div class="flex max-w-full items-center overflow-x-auto px-3"><div data-state="closed"><button class="inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative text-token-text-primary hover:bg-token-bg-active data-[state=open]:bg-token-bg-active flex-col gap-1 py-1 px-2 text-[11px] leading-[12px] font-semibold h-11 min-w-[60px] max-w-[88px] rounded-xl shrink-0"><div class="flex w-full flex-col items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-5 w-5"><path fill="currentColor" d="M18.292 5.707a2.536 2.536 0 0 0-3.586 0L14.413 6 18 9.586l.293-.293c.99-.99.99-2.595 0-3.586M16.585 11l-3.586-3.585-5.843 5.842c-.564.565-.753.76-.9.973q-.21.309-.339.66c-.089.243-.137.51-.269 1.298l-.432 2.596 2.596-.433c.787-.131 1.055-.18 1.297-.269q.351-.129.66-.34c.214-.145.409-.335.973-.899zm-3.293-6.707a4.536 4.536 0 1 1 6.414 6.414l-7.55 7.55-.062.063c-.478.478-.81.81-1.196 1.074a5 5 0 0 1-1.1.566c-.44.161-.903.238-1.57.35l-.088.014-2.872.479-.028.004c-.161.027-.34.057-.497.07-.17.012-.44.016-.727-.106a1.5 1.5 0 0 1-.787-.788 1.5 1.5 0 0 1-.106-.727c.012-.156.042-.335.069-.496l.005-.029.479-2.872.014-.087c.111-.668.188-1.13.35-1.57q.214-.585.565-1.1c.264-.386.596-.718 1.075-1.197l.062-.062z"></path></svg><div class="w-full truncate">Edit prompt</div></div></button></div><div class="mx-4 h-6 w-px shrink-0 bg-token-border-active"></div><div data-state="closed"><button class="inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative text-token-text-primary hover:bg-token-bg-active data-[state=open]:bg-token-bg-active flex-col gap-1 py-1 px-2 text-[11px] leading-[12px] font-semibold h-11 min-w-[60px] max-w-[88px] rounded-xl shrink-0"><div class="flex w-full flex-col items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" class="h-5 w-5"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.556"></circle><path stroke="currentColor" stroke-linecap="round" stroke-width="1.556" d="M11.945 10c0-4.667-9.723-5.833-8.75 1.556"></path><path stroke="currentColor" stroke-linecap="round" stroke-width="1.556" d="M8.055 10c0 4.667 9.723 5.833 8.75-1.556"></path></svg><div class="w-full truncate">Remix</div></div></button></div><div data-state="closed"><button class="inline-flex items-center justify-center whitespace-nowrap focus-visible:outline-none data-[disabled=true]:pointer-events-none data-[disabled=true]:cursor-default data-[disabled=true]:opacity-50 group/button relative text-token-text-primary hover:bg-token-bg-active data-[state=open]:bg-token-bg-active flex-col gap-1 py-1 px-2 text-[11px] leading-[12px] font-semibold h-11 min-w-[60px] max-w-[88px] rounded-xl shrink-0"><div class="flex w-full flex-col items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-5 w-5"><path fill="currentColor" fill-rule="evenodd" d="M9.976 2c-1.14 0-2.061.003-2.813.065-.812.066-1.514.205-2.16.534a5.5 5.5 0 0 0-2.404 2.404c-.329.646-.468 1.348-.534 2.16a25 25 0 0 0-.062 1.758 1 1 0 0 0-.001.144Q2 9.575 2 10.157v3.686c0 1.224 0 2.203.065 2.994.066.812.205 1.514.534 2.16A5.5 5.5 0 0 0 5.003 21.4c.646.329 1.348.468 2.16.534.791.065 1.77.065 2.994.065h3.686c1.224 0 2.203 0 2.994-.065.812-.066 1.514-.205 2.16-.534a5.5 5.5 0 0 0 2.404-2.404c.329-.646.468-1.348.534-2.16.065-.791.065-1.77.065-2.994v-3.686q0-.582-.002-1.092a1 1 0 0 0-.001-.144 25 25 0 0 0-.062-1.758c-.066-.812-.205-1.514-.534-2.16a5.5 5.5 0 0 0-2.404-2.404c-.646-.329-1.348-.468-2.16-.534C16.046 2 15.067 2 13.843 2H9.976M19.98 8q-.012-.366-.037-.674c-.056-.689-.162-1.098-.323-1.415a3.5 3.5 0 0 0-1.53-1.53c-.308-.157-.704-.261-1.36-.318L15.396 8zm-5.34-4-1.356 4H9.387l1.334-4h3.918M20 10H4v3.8c0 1.277 0 2.174.058 2.874.056.689.162 1.098.323 1.415a3.5 3.5 0 0 0 1.53 1.53c.317.161.726.267 1.415.323.7.057 1.597.058 2.874.058h3.6c1.277 0 2.174 0 2.874-.058.689-.056 1.098-.162 1.415-.323a3.5 3.5 0 0 0 1.53-1.53c.161-.317.267-.726.323-1.415.057-.7.058-1.597.058-2.874V10M4.02 8h3.26l1.33-3.993c-.499.007-.918.021-1.284.051-.689.056-1.098.162-1.415.323a3.5 3.5 0 0 0-1.53 1.53c-.161.317-.267.726-.323 1.415q-.025.308-.037.674" clip-rule="evenodd"></path></svg><div class="w-full truncate">Create video</div></div></button></div></div><div class="absolute right-1.5 top-1/2 -translate-y-1/2"><a class="group inline-block rounded-xl px-2.5 py-2 hover:bg-token-bg-active" href="https://sora.chatgpt.com/t/task_01k4t6mf8pfxg8y2p7cn42m9e7"><div class="flex gap-1"><div class="h-8 w-8 opacity-50 group-hover:opacity-100"><img src="./UrbanSync-Logo-new_files/assets_task_01k4t6mf8pfxg8y2p7cn42m9e7_1757521029_img_0_thumb.webp" class="h-full w-full object-cover" alt="Sora generation"></div><div class="h-8 w-8"><img src="./UrbanSync-Logo-new_files/assets_task_01k4t6mf8pfxg8y2p7cn42m9e7_1757521029_img_1_thumb.webp" class="h-full w-full object-cover" alt="Sora generation"></div></div></a></div></div></div></div></div></div></div></div></div><div style="opacity: 1;"><div class="fixed left-0 right-0 top-0 z-50 flex flex-col"><div class="h-full w-full"><div class="mt-2 grid grid-cols-[1fr_auto_1fr] gap-1 md:grid-cols-[minmax(100px,_1fr)_minmax(300px,_auto)_minmax(100px,_1fr)] md:gap-4"><div class="flex gap-0.5 justify-start pl-1 tablet:pl-2"><div class=""><a href="https://sora.chatgpt.com/explore"><button class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-6 w-6"><g clip-path="url(#a)"><path fill="currentColor" d="M21.139 10.053a5.35 5.35 0 0 0-.46-4.392 5.41 5.41 0 0 0-5.824-2.594 5.35 5.35 0 0 0-4.033-1.798 5.41 5.41 0 0 0-5.158 3.744 5.35 5.35 0 0 0-3.576 2.594 5.41 5.41 0 0 0 .665 6.34 5.35 5.35 0 0 0 .46 4.392 5.41 5.41 0 0 0 5.824 2.595 5.35 5.35 0 0 0 4.033 1.798 5.41 5.41 0 0 0 5.16-3.747 5.35 5.35 0 0 0 3.576-2.593 5.41 5.41 0 0 0-.667-6.34m-8.067 11.276a4 4 0 0 1-2.575-.931l.127-.072 4.274-2.469a.7.7 0 0 0 .35-.608v-6.024l1.807 1.043a.07.07 0 0 1 .035.049v4.99a4.027 4.027 0 0 1-4.018 4.022M4.43 17.638a4 4 0 0 1-.48-2.696l.127.076 4.273 2.469a.7.7 0 0 0 .702 0l5.218-3.013v2.086a.07.07 0 0 1-.026.056l-4.32 2.494a4.026 4.026 0 0 1-5.494-1.472m-1.125-9.33A4 4 0 0 1 5.4 6.545l-.002.147v4.937a.7.7 0 0 0 .35.608l5.218 3.012-1.806 1.043a.06.06 0 0 1-.061.005l-4.32-2.496a4.026 4.026 0 0 1-1.473-5.493m14.841 3.454L12.93 8.749l1.806-1.042a.07.07 0 0 1 .06-.006l4.321 2.494a4.024 4.024 0 0 1-.621 7.26v-5.086a.7.7 0 0 0-.349-.607m1.798-2.706-.127-.076-4.273-2.468a.7.7 0 0 0-.702 0L9.624 9.524V7.438a.07.07 0 0 1 .026-.055l4.32-2.492a4.023 4.023 0 0 1 5.974 4.165M8.642 12.774l-1.807-1.043a.06.06 0 0 1-.035-.05v-4.99a4.023 4.023 0 0 1 6.597-3.088l-.127.072-4.274 2.469a.7.7 0 0 0-.351.607zm.981-2.116 2.324-1.342 2.324 1.342v2.683l-2.324 1.341-2.324-1.341z"></path></g><defs><clippath id="a"><path fill="#fff" d="M1 1h22v22H1z"></path></clippath></defs></svg><span class="sr-only">Home</span></div></button></a></div></div><div class="flex gap-0.5 justify-center overflow-hidden"><div class="overflow-hidden"><div class="surface-nav-element flex h-11 items-center overflow-hidden whitespace-nowrap rounded-full p-1 font-semibold"><div class="flex flex-col items-center overflow-hidden px-3"><div class="flex max-w-full flex-col items-center overflow-hidden tablet:flex-row tablet:gap-2"><div class="shrink-0"><a class="line-clamp-1 shrink text-token-text-secondary tablet:text-token-text-primary" href="https://sora.chatgpt.com/explore">Explore</a></div><div class="hidden text-token-text-secondary tablet:block">·</div><div class="shrink overflow-hidden whitespace-nowrap"><div class="truncate">Urban Sync Logo</div></div></div><div class="hidden gap-3.5 font-normal text-token-text-secondary tablet:flex"><div>Sep 10, 6:17PM</div></div></div></div></div></div><div class="flex gap-0.5 justify-end pr-1 tablet:pr-2"><div class=""><button class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11" data-state="closed"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-6 w-6"><path fill="currentColor" fill-rule="evenodd" d="M9.822 2.077c.957-1.696 3.4-1.696 4.356 0l2.086 3.7a.5.5 0 0 0 .337.245l4.163.84c1.91.386 2.664 2.71 1.346 4.143l-2.875 3.127a.5.5 0 0 0-.128.396l.488 4.22c.223 1.934-1.753 3.37-3.524 2.56l-3.863-1.768a.5.5 0 0 0-.416 0L7.93 21.308c-1.771.81-3.748-.626-3.524-2.56l.488-4.22a.5.5 0 0 0-.129-.396L1.89 11.005C.572 9.571 1.327 7.248 3.236 6.862l4.164-.84a.5.5 0 0 0 .337-.244zm2.614.982a.5.5 0 0 0-.871 0l-2.086 3.7a2.5 2.5 0 0 1-1.683 1.224l-4.164.84a.5.5 0 0 0-.27.829l2.875 3.127a2.5 2.5 0 0 1 .643 1.979l-.487 4.22a.5.5 0 0 0 .704.511l3.863-1.768a2.5 2.5 0 0 1 2.08 0l3.863 1.768a.5.5 0 0 0 .705-.512l-.488-4.22a2.5 2.5 0 0 1 .643-1.978l2.875-3.127a.5.5 0 0 0-.27-.829l-4.163-.84a2.5 2.5 0 0 1-1.683-1.223z" clip-rule="evenodd"></path></svg><span class="sr-only">Favorite</span></div></button></div><div class=""><button class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11" data-state="closed"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-6 w-6"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M12 5.822c6.504-6.44 17.654 5.52 0 15.178C-5.654 11.342 5.496-.618 12 5.822Z"></path></svg><span class="sr-only">Like</span></div></button></div><div class=""><button class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11" data-state="closed"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-6 w-6"><path fill="currentColor" d="M11.868 21.496a1 1 0 0 1-.992.496l-.454-.056a4 4 0 0 1-3.327-5.146l.553-1.797a16 16 0 0 1-.918-.039c-.605-.047-1.161-.149-1.666-.414a4 4 0 0 1-2.041-2.673c-.124-.557-.075-1.12.038-1.716.11-.582.305-1.292.542-2.163l.468-1.714.05-.182c.295-1.088.517-1.906 1.005-2.537a4 4 0 0 1 1.64-1.252C7.503 1.999 8.35 1.999 9.477 2q2.883.002 5.764 0c.805 0 1.47 0 2.01.044.563.046 1.08.145 1.565.392a4 4 0 0 1 1.748 1.748c.247.486.346 1.002.392 1.564C21 6.29 21 6.954 21 7.758v2.38c0 .795 0 1.386-.136 1.898a4 4 0 0 1-2.829 2.828c-.511.137-1.102.137-1.897.136H16c-.26 0-.5.14-.628.365zM16.47 4.008a4 4 0 0 1 .395.957C17 5.477 17 6.067 17 6.863v6.127c.258-.009.399-.026.518-.058a2 2 0 0 0 1.414-1.414c.06-.222.068-.523.068-1.518V7.8c0-.856 0-1.439-.038-1.889-.035-.438-.1-.662-.18-.819a2 2 0 0 0-.874-.874c-.156-.08-.38-.144-.82-.18a11 11 0 0 0-.619-.03M15 13.19V7c0-.994-.009-1.295-.068-1.517a2 2 0 0 0-1.414-1.415C13.295 4.008 12.994 4 12 4H9.666c-1.404 0-1.816.019-2.138.151a2 2 0 0 0-.82.627C6.496 5.053 6.37 5.446 6 6.8l-.457 1.675c-.25.92-.423 1.555-.517 2.05-.093.49-.088.741-.05.908a2 2 0 0 0 1.02 1.337c.152.08.392.151.89.19C7.389 13 8.046 13 9 13a1 1 0 0 1 .956 1.294l-.95 3.084a2 2 0 0 0 1.462 2.538l3.168-5.544A2.72 2.72 0 0 1 15 13.19"></path></svg><span class="sr-only">Give feedback</span></div></button></div><div class=""><button type="button" id="radix-:rfp:" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-6 w-6"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M4 15v.2c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311C6.28 20 7.12 20 8.8 20h6.4c1.68 0 2.52 0 3.162-.327a3 3 0 0 0 1.311-1.311C20 17.72 20 16.88 20 15.2V15"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 8 4-4m0 0 4 4m-4-4v11"></path></svg><span class="sr-only">Sharing options</span></div></button></div><div class=""><button class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11" data-state="closed"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-6 w-6"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"></circle><path fill="currentColor" fill-rule="evenodd" d="M12 7.1a.9.9 0 0 1 .9.9v4l-.05 1.9 1.514-1.536a.9.9 0 1 1 1.272 1.272l-3 3a.9.9 0 0 1-1.272 0l-3-3a.9.9 0 0 1 1.272-1.272L11.15 13.9 11.1 12V8a.9.9 0 0 1 .9-.9" clip-rule="evenodd"></path></svg><span class="sr-only">Download</span></div></button></div><div class=""><button type="button" id="radix-:rfu:" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-6 w-6"><path fill="currentColor" d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12"></path><path fill="currentColor" d="M13.3 12a1.3 1.3 0 1 1-2.6 0 1.3 1.3 0 0 1 2.6 0M17.3 12a1.3 1.3 0 1 1-2.6 0 1.3 1.3 0 0 1 2.6 0M9.3 12a1.3 1.3 0 1 1-2.6 0 1.3 1.3 0 0 1 2.6 0"></path></svg><span class="sr-only">More actions</span></div></button></div><div class=""><button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rg1:" data-state="closed" class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><div class="relative flex h-full w-full items-center justify-center"><div class="relative flex h-7 w-7 items-center justify-center tablet:h-6 tablet:w-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="h-full w-full"><path fill="currentColor" fill-rule="evenodd" d="M3.8 9.603a8.248 8.248 0 0 1 16.399 0l.674 6.18A2 2 0 0 1 18.885 18h-2.043a5.002 5.002 0 0 1-9.685 0H5.115a2 2 0 0 1-1.988-2.217zM9.273 18a3 3 0 0 0 5.456 0zM12 4.25a6.25 6.25 0 0 0-6.21 5.57L5.114 16h13.77l-.674-6.18A6.25 6.25 0 0 0 12 4.25" clip-rule="evenodd"></path></svg></div></div><span class="sr-only">Activity</span></div></button></div><div class=""><div type="button" id="radix-:rg3:" aria-haspopup="menu" aria-expanded="false" data-state="closed"><button class="surface-nav-element group flex h-11 items-center justify-center truncate rounded-full p-1 font-semibold w-11"><div class="flex h-full w-full items-center justify-center rounded-full group-hover:bg-token-bg-active"><div class="flex select-none items-center justify-center rounded-full bg-gray-500 text-white h-6 w-6">S</div><span class="sr-only">User menu</span></div></button></div></div></div></div></div></div></div></div></div><span data-radix-focus-guard="" tabindex="0" data-aria-hidden="true" aria-hidden="true" style="outline: none; opacity: 0; position: fixed; pointer-events: none;"></span></body></html>
