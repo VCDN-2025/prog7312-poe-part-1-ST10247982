@@ -7,7 +7,8 @@ namespace UrbanSync.Server.Route {
     public static class  ReportIssue {
 
         public static RouteGroupBuilder MapReportIssueApi(this RouteGroupBuilder group) {
-            group.MapPost("/", ReportIssueController.Create);
+            group.MapPost("/", ReportIssueController.CreateAsync);
+            group.MapGet("/", ReportIssueController.GetResultAsync);
             return group;
         }
     }
