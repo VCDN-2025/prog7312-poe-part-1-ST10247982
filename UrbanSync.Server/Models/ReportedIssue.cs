@@ -10,7 +10,9 @@ namespace UrbanSync.Server.Models {
         public string MunicipalityLevel { get; set; }
        
         public string MunicipalitySector { get; set; }
+        public string Status { get; set; }
 
+        public DateTime DateOfCreation { get; set; }
         public Guid UserId { get; set; }
         public User? User { get; set; }
     }

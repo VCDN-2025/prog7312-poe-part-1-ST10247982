@@ -10,6 +10,8 @@ import {
   Icon,
   Card,
   ChakraProvider,
+  Wrap,
+  WrapItem,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { LuUpload } from "react-icons/lu";
@@ -36,6 +38,7 @@ export function ReportIssue() {
   // Handle file upload
   const handleFiles = async (files) => {
     const base64Files = await Promise.all(
+      
       files.map(async (file) => ({
         name: file.name,
         preview: URL.createObjectURL(file),
@@ -46,9 +49,7 @@ export function ReportIssue() {
   };
 
   // Handle form submit
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
+  const handleUpload = async (e) => {
     const payload = {
       municipalityLevel,
       municipalitySector,
@@ -56,30 +57,46 @@ export function ReportIssue() {
       description,
       images: images.map((img) => img.base64), // send only base64
     };
-
+    
+    console.log(images.map((img) => img.base64));
     // Example: POST request
-    await fetch("/api/report-issue", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
   };
 
   return (
     <ChakraProvider value={system}>
-      <Card.Root
-        width={"lg"}
+      <Box
+        width={"100vw"}
+        height={"80vw"}
+        maxH={"2000px"}
+        justifyContent={"center"}
         alignItems={"center"}
-        bg={"brand.onContainer"}
-        p={"5"}
+        display={"flex"}
+        flexDirection={"column"}
+        bgColor={"brand.background"}
       >
-        <form onSubmit={handleSubmit}>
-          <Fieldset.Root size="lg" maxW="md" alignItems={"center"}>
+        <Card.Root
+          minWidth={"xs"}
+          width={"lg"}
+          alignItems={"center"}
+          bg={"brand.onContainer"}
+          height={"55vw"}
+          maxH={"800px"}
+          minH={"xs"}
+          p={"5"}
+          shadowColor="brand.accents"
+          _hover={{
+            shadow: "-1px 20px 50px var(--shadow-color)",
+            boxShadowColor: "brand.accents",
+          }}
+          transition="shadow"
+          transitionDuration="slow"
+        >
+          <Fieldset.Root size="lg" minWidth={"xs"} maxW="md">
             <Stack>
               <Fieldset.Legend alignSelf={"center"}>
                 Contact details
               </Fieldset.Legend>
-              <Fieldset.HelperText justifyContent={"center"}>
+              <Fieldset.HelperText alignSelf={"center"} minWidth={"xs"}>
                 Please provide your contact details below.
               </Fieldset.HelperText>
             </Stack>
@@ -99,7 +116,7 @@ export function ReportIssue() {
             </NativeSelect.Root>
 
             {/* Municipality Sector */}
-            <NativeSelect.Root size="sm" width="md">
+            <NativeSelect.Root minWidth={"xs"} size="sm" width="md">
               <NativeSelect.Field
                 placeholder="Select option"
                 value={municipalitySector}
@@ -168,12 +185,29 @@ export function ReportIssue() {
               ))}
             </Stack>
 
-            <Button type="submit" alignSelf="center" mt="4">
+            <Button
+              type="button"
+              onClick={handleUpload}
+              alignSelf="center"
+              mt="4"
+            >
               Submit
             </Button>
           </Fieldset.Root>
-        </form>
-      </Card.Root>
+
+          <Wrap spacing="12px">
+            {images.map((img, idx) => (
+              <WrapItem key={idx}>
+                <img
+                  src={img.preview}
+                  alt={img.name}
+                  style={{ width: "100px", borderRadius: "8px" }}
+                />
+              </WrapItem>
+            ))}
+          </Wrap>
+        </Card.Root>
+      </Box>
     </ChakraProvider>
   );
 }

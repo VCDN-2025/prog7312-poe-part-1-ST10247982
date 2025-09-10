@@ -6,8 +6,10 @@ namespace UrbanSync.Server.DTO {
         string Location,
          string Description,
           string? Image,
+          string Status,
           string MunicipalityLevel,
-           string MunicipalitySector) {
+           string MunicipalitySector,
+            DateTime DateOfCreation  ) {
 
     }
 }

@@ -24,7 +24,7 @@ function App() {
         <AppLayout />
 
         <Center>
-          <ReportIssue />
+          <Home />
         </Center>
       </ChakraProvider>
     </>

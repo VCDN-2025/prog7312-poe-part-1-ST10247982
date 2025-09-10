@@ -1,0 +1,1 @@
+public record PaginationDto(int PageNumber, int PageSize);
