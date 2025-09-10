@@ -3,7 +3,6 @@
         string Username,
         string Password,
         string Email,
-        string Name, 
-        DateTime DateOfRegistrstion
+        string Name
         ):BaseUserDto(Username, Password); 
     }

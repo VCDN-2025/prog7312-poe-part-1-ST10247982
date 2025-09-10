@@ -17,11 +17,13 @@ const config = defineConfig({
       colors: {
         brand: {
           primary: { value: "#497921ff" },
-          background: { value: "#171212ff" },
-          onContainer: { value: "#90cbb1ff" },
-          primaryText: { value: "#191717ff" },
+          background: { value: "#373f38ff" },
+          onContainer: { value: "#e8f0fe" },
+          input: { value: "#ddece6ff" },
+          primaryText: { value: "#2a2727ff" },
           accents: { value: "#d7d768ff" },
           error: { value: "#ae2929ff" },
+          placeholder: { value: "#ae2929ff" },
         },
       },
     },

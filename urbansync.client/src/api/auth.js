@@ -9,20 +9,13 @@ export const login = async (user) => {
   );
 };
 
-export const register = async (
-  username,
-  password,
-  email,
-  name,
-  dateOfRegistration
-) => {
+export const register = async (username, password, email, name) => {
   return apiHandler(() => {
     api.post("/api/auth/register", {
       username,
       password,
       email,
       name,
-      dateOfRegistration,
     });
   });
 };
