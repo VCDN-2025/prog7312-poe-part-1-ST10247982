@@ -40,7 +40,7 @@ namespace UrbanSync.Server.Controller {
                     MunicipalitySector = currentReportDto.MunicipalitySector,
                     UserId = Guid.Parse(userId),
                     DateOfCreation = DateTime.Now,
-                    Status = "Processing"
+                    Status = "Pending"
                 };
                 await db.ReportedIssues.AddAsync(reportedIssue);
                 await db.SaveChangesAsync();

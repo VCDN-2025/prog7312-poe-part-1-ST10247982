@@ -15,7 +15,7 @@ import {
 import { useEffect, useState } from "react";
 import { LuFileImage } from "react-icons/lu";
 import system from "../../chakra.config";
-import { useAuth } from "../authContext.jsx";
+
 import { createReportedIssue } from "../api/report.js";
 import { useNavigate } from "react-router-dom";
 
