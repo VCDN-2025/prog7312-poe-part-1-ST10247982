@@ -1,3 +1,5 @@
+import { apiHandler } from "./api.handler";
+
 export const createReportedIssue = async (
   location,
   description,
