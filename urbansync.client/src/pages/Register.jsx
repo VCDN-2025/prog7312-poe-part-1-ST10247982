@@ -87,13 +87,11 @@ export function Register() {
   };
 
   const onSubmit = async () => {
-    console.log("🔹 onSubmit called");
+    console.log(" onSubmit called");
 
     const isValid = validate();
-    console.log("✅ Validation result:", isValid);
 
     if (!isValid) {
-      console.log("⛔ Validation failed, aborting submit");
       return;
     }
 
@@ -108,23 +106,22 @@ export function Register() {
         name,
       });
 
-     const { apiSuccess, message, status } = await register(username, password, email, name);
-      console.log("📩 Response received:", message);
+      const { apiSuccess, message, status } = await register(
+        username,
+        password,
+        email,
+        name
+      );
 
-      if (status === 201 && apiSuccess===true) {
-        console.log("🎉 Registration successful");
+      if (status === 201 && apiSuccess === true) {
         setSuccess(true);
       } else {
-        console.log("⚠️ Registration failed with status:", status);
-        console.log("❌ Error message from server:", message);
         setErrorMessage(message);
       }
     } catch (error) {
-      console.error("🚨 Exception during registration:", error);
       setErrorMessage("Unexpected error occurred. Please try again.");
     } finally {
       setLoading(false);
-      console.log("✅ Loading set to false");
     }
   };
 
@@ -191,7 +188,6 @@ export function Register() {
             maxH={"700px"}
             minH={"xs"}
             p={"5"}
-         
             _hover={{
               shadow: "-1px 20px 50px var(--shadow-color)",
               boxShadowColor: "brand.primary",
