@@ -1,7 +1,7 @@
 import { apiHandler } from "./api.handler";
 import api from "./axios.config";
 
-export const login = async (user) => {
+export const loginApi = async (user) => {
   return apiHandler(() =>
     api.post("/api/auth/login", {
       username: user.username,

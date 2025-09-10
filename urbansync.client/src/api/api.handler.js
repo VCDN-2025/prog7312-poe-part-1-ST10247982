@@ -3,6 +3,6 @@ export const apiHandler = async (apiCall) => {
     const response = await apiCall();
     return { apiSuccess: true, message: response.data, status: response.status };
   } catch (error) {
-    return { apiSucces: false, message: response.data, status: response.status };
+    return { apiSucces: false, message: "Something went wrong", status: 500 };
   }
 };

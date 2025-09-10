@@ -14,7 +14,7 @@ import {
 import { PasswordInput } from "@/components/ui/password-input";
 import { useState, useEffect, useContext } from "react";
 import system from "../../chakra.config";
-import { login } from "../api/auth";
+import { loginApi } from "../api/auth";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../authContext.jsx";
 
@@ -47,7 +47,7 @@ export function Login() {
   const onSubmit = async () => {
     setLoading(true);
     const user = { username: username, password: password };
-    const { apiSuccess, message, status } = await login(user);
+    const { apiSuccess, message, status } = await loginApi(user);
     console.log(message);
     if (!apiSuccess) {
       setError("Something went wrong!");

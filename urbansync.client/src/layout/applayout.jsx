@@ -13,9 +13,11 @@ import {
 
 import { useNavigate } from "react-router-dom";
 import { MainMenu } from "../components/Menu";
+import { useAuth } from "../authContext";
 
 export function AppLayout() {
   const navigate = useNavigate();
+  const { isAuthenticated } = useAuth();
   return (
     <Flex
       bg={"blackAlpha.900"}
@@ -41,8 +43,8 @@ export function AppLayout() {
       <Spacer />
       <Box p={"10"} alignItems={"center"}>
         {" "}
-        <MainMenu isLoggedIn={false} />
-        </Box>
+        <MainMenu isLoggedIn={isAuthenticated} />
+      </Box>
     </Flex>
   );
 }
