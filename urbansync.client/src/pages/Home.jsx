@@ -1,10 +1,10 @@
 import { Flex, Avatar, Button, Card, Box, Center } from "@chakra-ui/react";
 import { useNavigate } from "react-router";
 import { DashboardCard } from "../components/DashBoardCard";
-import { useState } from "react";
+import { useAuth } from "../authContext.jsx";
 export function Home() {
   const navigate = useNavigate();
-  const [loggedIn, setLoggedIn] = useState(true);
+  const { isAuthenticated } = useAuth();
   return (
     <>
       <Box width={"100%"} bgColor={"brand.background"} height={"50vw"}>
@@ -33,10 +33,29 @@ export function Home() {
               </Card.Description>
             </Card.Body>
             <Card.Footer justifyContent="flex-end">
-              <Button variant="outline" onClick={() => navigate("/report")}>
+              <Button
+                variant="outline"
+                onClick={() => {
+                  if (isAuthenticated) {
+                    navigate("/report");
+                  } else {
+                    navigate("/login");
+                  }
+                }}
+              >
                 Report Issue
               </Button>
-              <Button onClick={() => navigate("/reports")}>Track Issues</Button>
+              <Button
+                onClick={() => {
+                  if (isAuthenticated) {
+                    navigate("/report");
+                  } else {
+                    navigate("/login");
+                  }
+                }}
+              >
+                Track Issues
+              </Button>
             </Card.Footer>
           </Card.Root>
           {/* Local Events & Announcements Card (Disabled) */}
@@ -52,7 +71,6 @@ export function Home() {
           >
             <Card.Body gap="2">
               <Avatar.Root size="lg" shape="rounded">
-                <Avatar.Image src="https://picsum.photos/200/302" />
                 <Avatar.Fallback name="Events" />
               </Avatar.Root>
               <Card.Title mt="2">Local Events & Announcements</Card.Title>

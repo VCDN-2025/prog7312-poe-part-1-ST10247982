@@ -7,7 +7,7 @@ import { Home } from "./pages/Home";
 
 import { DashboardCard } from "./components/DashBoardCard";
 function App() {
-  const [loggedIn, setLoggedIn] = useState(true);
+
 
   return (
     <>

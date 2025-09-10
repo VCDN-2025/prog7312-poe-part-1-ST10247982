@@ -17,14 +17,13 @@ import {
 import { useState } from "react";
 import { LuFileImage, LuX } from "react-icons/lu";
 import system from "../../chakra.config";
-
+import { useAuth } from "../authContext.jsx";
 export function ReportIssue() {
   const { isAuthenticated, logout } = useAuth();
   const [municipalityLevel, setMunicipalityLevel] = useState("");
   const [municipalitySector, setMunicipalitySector] = useState("");
   const [location, setLocation] = useState("");
   const [description, setDescription] = useState("");
-  const [image, setImage] = useState(null); // single file
 
   // Convert file → Base64
   const toBase64 = (file) =>
