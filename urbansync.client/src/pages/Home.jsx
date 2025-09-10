@@ -23,7 +23,7 @@ export function Home() {
             <Button variant="outline" onClick={() => navigate("/report")}>
               Report Issue
             </Button>
-            <Button onClick={() => navigate("/report/track")}>
+            <Button onClick={() => navigate("/reports")}>
               Track Issues
             </Button>
           </Card.Footer>

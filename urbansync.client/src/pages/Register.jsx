@@ -7,6 +7,9 @@ import {
   Heading,
   Stack,
   ChakraProvider,
+  Card,
+  Container,
+  Spacer,
 } from "@chakra-ui/react";
 import { PasswordInput } from "@/components/ui/password-input";
 import { useEffect, useState } from "react";
@@ -84,108 +87,123 @@ export function Register() {
         alignItems="center"
         width={"100vw"}
         height={"50vw"}
+        bgColor={"brand.background"}
       >
-        <Fieldset.Root
-          size={"lg"}
-          maxW={"md"}
-          rounded={"xl"}
-          shadow={"lg"}
+        <Card.Root
+          minWidth={"xs"}
+          width={"lg"}
+          alignItems={"center"}
+          bg={"brand.onContainer"}
+          height={"55vw"}
+          maxH={"700px"}
+          minH={"xs"}
+          p={"5"}
+          shadowColor="brand.accents"
+          _hover={{
+            shadow: "-1px 20px 50px var(--shadow-color)",
+            boxShadowColor: "brand.accents",
+          }}
+          transition="shadow"
+          transitionDuration="slow"
           backdropBlur={"md"}
-          bgColor={"brand.primary"}
         >
-          <Heading alignSelf="center" mb={4}>
-            UrbanSync
-          </Heading>
-          <Stack spacing={6}>
-            <Fieldset.Legend>Contact details</Fieldset.Legend>
-            <Fieldset.HelperText>
-              Please provide your contact details below.
-            </Fieldset.HelperText>
+          <Fieldset.Root maxW={"md"} rounded={"xl"}>
+            <Heading alignSelf="center" mb={4}>
+              UrbanSync
+            </Heading>
+            <Stack spacing={6}>
+              <Fieldset.Legend>Contact details</Fieldset.Legend>
+              <Fieldset.HelperText>
+                Please provide your contact details below.
+              </Fieldset.HelperText>
 
-            <Fieldset.Content>
-              {/* Username */}
-              <Field.Root invalid={usernameError}>
-                <Field.Label>Username</Field.Label>
-                <Input
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  placeholder="Something.1"
-                  name="username"
-                  type="text"
-                  variant="subtle"
-                  color={"brand.primary"}
-                />
+              <Fieldset.Content>
+                {/* Username */}
+                <Field.Root invalid={usernameError}>
+                  <Field.Label>Username</Field.Label>
+                  <Input
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    placeholder="Something.1"
+                    name="username"
+                    type="text"
+                    variant="subtle"
+                    color={"brand.primary"}
+                  />
 
-                <Field.ErrorText>{usernameError}</Field.ErrorText>
-              </Field.Root>
+                  <Field.ErrorText>{usernameError}</Field.ErrorText>
+                </Field.Root>
 
-              {/* Email */}
-              <Field.Root invalid={emailError}>
-                <Field.Label>Email address</Field.Label>
-                <Input
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  name="email"
-                  placeholder="UrbanSync@gmail.com"
-                  type="email"
-                  variant="subtle"
-                />
-                {emailError && <Field.ErrorText>{emailError}</Field.ErrorText>}
-              </Field.Root>
+                {/* Email */}
+                <Field.Root invalid={emailError}>
+                  <Field.Label>Email address</Field.Label>
+                  <Input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    name="email"
+                    placeholder="UrbanSync@gmail.com"
+                    type="email"
+                    variant="subtle"
+                  />
+                  {emailError && (
+                    <Field.ErrorText>{emailError}</Field.ErrorText>
+                  )}
+                </Field.Root>
 
-              {/* Name */}
-              <Field.Root invalid={nameError}>
-                <Field.Label>Name</Field.Label>
-                <Input
-                  placeholder="Urban Sync"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  name="name"
-                  variant="subtle"
-                />
-                {nameError && <Field.ErrorText>{nameError}</Field.ErrorText>}
-              </Field.Root>
+                {/* Name */}
+                <Field.Root invalid={nameError}>
+                  <Field.Label>Name</Field.Label>
+                  <Input
+                    placeholder="Urban Sync"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    name="name"
+                    variant="subtle"
+                  />
+                  {nameError && <Field.ErrorText>{nameError}</Field.ErrorText>}
+                </Field.Root>
 
-              {/* Password */}
-              <Field.Root invalid={passwordError}>
-                <Field.Label>Password</Field.Label>
-                <PasswordInput
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  name="password"
-                  variant="subtle"
-                />
-                {passwordError && (
-                  <Field.ErrorText>{passwordError}</Field.ErrorText>
-                )}
-              </Field.Root>
+                {/* Password */}
+                <Field.Root invalid={passwordError}>
+                  <Field.Label>Password</Field.Label>
+                  <PasswordInput
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    name="password"
+                    variant="subtle"
+                  />
+                  {passwordError && (
+                    <Field.ErrorText>{passwordError}</Field.ErrorText>
+                  )}
+                </Field.Root>
 
-              {/* Confirm Password */}
-              <Field.Root invalid={confirmPasswordError}>
-                <Field.Label>Confirm Password</Field.Label>
-                <PasswordInput
-                  value={confirmPassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                  name="confirmPassword"
-                  variant="subtle"
-                />
-                {confirmPasswordError && (
-                  <Field.ErrorText>{confirmPasswordError}</Field.ErrorText>
-                )}
-              </Field.Root>
-            </Fieldset.Content>
+                {/* Confirm Password */}
+                <Field.Root invalid={confirmPasswordError}>
+                  <Field.Label>Confirm Password</Field.Label>
+                  <PasswordInput
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    name="confirmPassword"
+                    variant="subtle"
+                  />
+                  {confirmPasswordError && (
+                    <Field.ErrorText>{confirmPasswordError}</Field.ErrorText>
+                  )}
+                </Field.Root>
+              </Fieldset.Content>
 
-            <Button
-              onClick={onSubmit}
-              type="button"
-              alignSelf="center"
-              width="50%"
-              colorScheme="blue"
-            >
-              Submit
-            </Button>
-          </Stack>
-        </Fieldset.Root>
+              <Button
+                onClick={onSubmit}
+                type="button"
+                alignSelf="center"
+                width="50%"
+                colorScheme="blue"
+              >
+                Submit
+              </Button>
+            </Stack>
+          </Fieldset.Root>
+        </Card.Root>
       </Box>
     </ChakraProvider>
   );

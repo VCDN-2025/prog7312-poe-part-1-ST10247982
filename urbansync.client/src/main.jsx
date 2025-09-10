@@ -11,6 +11,7 @@ import { Register } from "./pages/Register.jsx";
 import { Home } from "./pages/Home.jsx";
 import { ReportIssue } from "./pages/ReportIssue.jsx";
 import NotFound from "./pages/Error.jsx";
+import MunicipalIssuesList from "./pages/ReportHistory.jsx";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
   {
     path: "/report",
     Component: ReportIssue,
+    errorElement: NotFound,
+  },
+  {
+    path: "/reports",
+    Component: MunicipalIssuesList,
     errorElement: NotFound,
   },
 ]);
